@@ -1,4 +1,6 @@
 # Installation
+
+## Install
 === "Snap"
     ```
     sudo snap install miracle-wm --classic
@@ -7,6 +9,13 @@
 === "Fedora"
     ```
     sudo dnf install miracle-wm
+    ```
+    
+=== "Ubuntu (mantic and noble)"
+    ```
+    sudo add-apt-repository ppa:matthew-kosarek/miracle-wm
+    sudo apt update
+    sudo apt install miracle-wm
     ```
 
 === "Nightly"

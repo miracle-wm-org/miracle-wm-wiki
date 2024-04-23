@@ -20,4 +20,13 @@ nav:
     - configuration/file.md
     - configuration/action_key.md
     - configuration/default_keybinds.md
+    - configuration/custom_actions.md
+    - configuration/startup_apps.md
+    - configuration/inner_gaps.md
+    - configuration/outer_gaps.md
+    - configuration/terminal.md
+    - configuration/resize_jump.md
+    - configuration/environment_variables.md
+  - Mir's Built-in Configuration: configuration/mir.md
+  - Display Configuration: configuration/display_configuration.md
   - Roadmap: roadmap.md

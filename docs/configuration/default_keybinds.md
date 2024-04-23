@@ -45,7 +45,7 @@ A list of:
 - name: string
 
 # The key action that will trigger the default action
-- action: "up" | "down" | "repeat" | "modifiers"
+ - action: "up" | "down" | "repeat" | "modifiers"
 
 # A list of modifiers that need to accompany the action for the command to happen
 - modifiers: Modifier[]
