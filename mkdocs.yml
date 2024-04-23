@@ -1,0 +1,23 @@
+site_name: miracle-wm Wiki
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+repo_url: https://github.com/mattkae/miracle
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+nav:
+  - Home: index.md
+  - Getting Started:
+    - getting_started/installation.md
+    - getting_started/building.md
+  - Configuration: 
+    - configuration/file.md
+    - configuration/action_key.md
+    - configuration/default_keybinds.md
+  - Roadmap: roadmap.md
