@@ -30,3 +30,6 @@ nav:
   - Mir's Built-in Configuration: configuration/mir.md
   - Display Configuration: configuration/display_configuration.md
   - Roadmap: roadmap.md
+extra:
+  version:
+    provider: mike

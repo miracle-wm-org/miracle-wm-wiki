@@ -1,9 +1,8 @@
-name: Build/Publish Latest Release Docs
-
+name: Build/Publish Develop Docs 
 on:
-  release:
-    types: [published]
-
+  push:
+    branches:
+      - master
 permissions:
   contents: write
 jobs:
@@ -25,4 +24,4 @@ jobs:
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
       - name: Build Docs Website
-        run: mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
+        run: mike deploy --push develop
