@@ -24,6 +24,7 @@ nav:
     - configuration/startup_apps.md
     - configuration/inner_gaps.md
     - configuration/outer_gaps.md
+    - configuration/border.md
     - configuration/terminal.md
     - configuration/resize_jump.md
     - configuration/environment_variables.md
