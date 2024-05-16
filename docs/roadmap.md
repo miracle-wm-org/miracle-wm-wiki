@@ -40,7 +40,7 @@ Features:
     * [x] Override default keybindings
     * [x] Custom keybindings
 
-## 🚧 0.2.0
+## ✅ 0.2.0
 **Stabilization + Usability (Due: April 15th)**
 
 Features:
@@ -55,16 +55,13 @@ Features:
     * [x] Floating window support (pop out of/into tiles, resizing, moving)
     * [x] "Pin to workspace" mode
 - [x] I3 IPC support for workspaces
-- [ ] Multi monitor support
-    * [ ] Zero monitors
-- [ ] Packaging
+- [x] Packaging
     * [x] Deb (jammy, mantic, noble, multi-architecture)
     * [x] Fedora
-    * [ ] Arch
 
 
-## 0.3.0
-**Pre 1.0.0 Release (Due: June 1st)**
+## 🚧 0.3.0
+**Aimations + Sway IPC Release (Due: June 15th)**
 
 This release relies on having the *Mir*'s renderer capabilities opened up to us.
 If we can override the renderer, we can put *whatever we like* on the screen.
@@ -74,26 +71,38 @@ Features:
 - [ ] Configuration
     * [ ] Display configuration (depends on https://github.com/mattkae/miracle-wm/issues/93)
 - [ ] Full I3 IPC integration
-- [ ] Highlight border around selected window (carry over from **0.2.0**)
+- [x] Highlight border around selected window (carry over from **0.2.0**)
 - [ ] Animation (requires access to Mir renderer)
     * [ ] Window movement interpolation
     * [ ] Window size interpolation
     * [ ] Workspace change
     * [ ] Move window to workspace
     * [ ] Opening
-    * [ ] Closing
     * [ ] Configuration support
+- [ ] Multi monitor support
+    * [ ] Zero monitors
+
+## 0.4.0
+**Pointer Support +  (Due July 31st)**
+
+Features:
+
 - [ ] Stacking windows
+- [ ] Pointer support for tiling actions
+    - [ ] Drag tiles around
+    - [ ] Resize tiles with pointer
+- [ ] Animation
+    - [ ] Closing windows
 
 ## 1.0.0
-**Official Release (Due July 15th)**
+**Official Release (Due September 15th)**
 
 Features:
 
 - [ ] Bug free
+- [ ] Tons of test coverage
 - [ ] **IDEA**: Workspace/window overview view (similar to GNOME)
 - [ ] **IDEA**: Settings app
 - [ ] **IDEA**: Context menu on window with support for actions
 - [ ] **IDEA**: Focus mode, where the focused application appears up front and center
-- [ ] **IDEA**: "Picture in picture" mode (carry over from **0.2.0**)
 - [ ] **IDEA**: A minimal default shell, including a panel, launcher, background, etc.
