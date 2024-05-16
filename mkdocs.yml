@@ -16,7 +16,7 @@ nav:
     - getting_started/installation.md
     - getting_started/building.md
   - Configuration: 
-    - configuration/file.md
+    - configuration/introduction.md
     - configuration/action_key.md
     - configuration/default_keybinds.md
     - configuration/custom_actions.md
