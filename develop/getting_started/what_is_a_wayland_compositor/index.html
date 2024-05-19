@@ -889,6 +889,9 @@
 <li>Wayland protocols are specified in XML files and do not necessarily have support across different systems</li>
 <li>Wayland is the succesor to the <strong>X11</strong> protocol</li>
 <li>Window managers implement the Wayland protocol</li>
+<li>Window managers rely on <strong>DRM/KMS</strong>, <strong>GBM</strong>, and <strong>EGLStreams</strong> (only Nvidia) for graphics buffer and display management</li>
+<li>Window managers rely on <strong>libinput</strong> for processing input and routing it to the proper windows</li>
+<li><a href="https://github.com/canonical/mir">Mir</a> is the C++ library for writing Wayland compositors that <code>miracle-wm</code> uses</li>
 </ul>
 <h2 id="how-do-desktop-applications-work-on-linux">How do desktop applications work on Linux?</h2>
 <p>Imagine that we would like to build a "Todo list" desktop application for computers that are running the Linux operating system. We might want to build our application with the following features:</p>
