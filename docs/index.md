@@ -1,9 +1,11 @@
 # miracle-wm
 
-## About
 miracle-wm is a Wayland compositor based on [Mir](https://github.com/MirServer/mir). It features a tiling window manager at its core, very much in the style of [i3](https://i3wm.org/) and [sway](https://github.com/swaywm/sway). The intention is to build a compositor that is flashier and more feature-rich than either of those compositors, like [swayfx](https://github.com/WillPower3309/swayfx).
 
 See the [installation guide](getting_started/installation.md) for installation instructions on your platform.
+
+!!! note
+    If none of this makes any sense to you or you're new to Wayland or Linux, check out the [newcomer corner](getting_started/newcomer_corner.md) document for a structured walk through the entire ecosystem.
 
 ## Features
 - A tiling window manager, similar to `i3` and `sway`

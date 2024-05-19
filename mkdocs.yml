@@ -10,10 +10,14 @@ markdown_extensions:
       alternate_style: true
   - def_list
   - pymdownx.tasklist
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 nav:
   - Home: index.md
   - Getting Started:
     - getting_started/installation.md
+    - getting_started/newcomer_corner.md
     - getting_started/building.md
   - Configuration: 
     - configuration/introduction.md

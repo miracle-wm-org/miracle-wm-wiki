@@ -1,11 +1,12 @@
 # Introduction
-Miracle is configured via a `YAML` format. This section describes the settings that you may define in that file.
+Miracle is configured via a `YAML` file. This section describes the settings that you may define in that file.
 
 ## File location
-The configuration file will be written blank the first time that you start the compositor. The file is named miracle-wm.yaml and it is written to your config directory, most likely at:
+The configuration file will be written blank the first time that you start the compositor. The file is located at `$XDG_CONFIG_HOME/miracle-wm.yaml`. It is written on the initial startup of `miracle` if it does not yet exist. The most likely location is:
 
 ```
 ~/.config/miracle-wm.yaml.
 ```
 
-The configuration is in the `YAML` file format.
+!!! note
+    See the [arch user guide](https://wiki.archlinux.org/title/XDG_Base_Directory) for information about `$XDG_CONFIG_HOME`.
