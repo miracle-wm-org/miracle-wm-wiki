@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../../getting_started/building/">
+        <link rel="prev" href="../../getting_started/what_is_a_wayland_compositor/">
       
       
         <link rel="next" href="../action_key/">
@@ -300,6 +300,27 @@
   
   <span class="md-ellipsis">
     Building
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/what_is_a_wayland_compositor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is a Wayland compositor?
   </span>
   
 
@@ -754,12 +775,15 @@
 
 
 <h1 id="introduction">Introduction</h1>
-<p>Miracle is configured via a <code>YAML</code> format. This section describes the settings that you may define in that file.</p>
+<p>Miracle is configured via a <code>YAML</code> file. This section describes the settings that you may define in that file.</p>
 <h2 id="file-location">File location</h2>
-<p>The configuration file will be written blank the first time that you start the compositor. The file is named miracle-wm.yaml and it is written to your config directory, most likely at:</p>
+<p>The configuration file will be written blank the first time that you start the compositor. The file is located at <code>$XDG_CONFIG_HOME/miracle-wm.yaml</code>. It is written on the initial startup of <code>miracle</code> if it does not yet exist. The most likely location is:</p>
 <div class="highlight"><pre><span></span><code>~/.config/miracle-wm.yaml.
 </code></pre></div>
-<p>The configuration is in the <code>YAML</code> file format.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>See the <a href="https://wiki.archlinux.org/title/XDG_Base_Directory">arch user guide</a> for information about <code>$XDG_CONFIG_HOME</code>.</p>
+</div>
 
 
 
