@@ -17,8 +17,8 @@ nav:
   - Home: index.md
   - Getting Started:
     - getting_started/installation.md
-    - getting_started/newcomer_corner.md
     - getting_started/building.md
+    - getting_started/what_is_a_wayland_compositor.md
   - Configuration: 
     - configuration/introduction.md
     - configuration/action_key.md

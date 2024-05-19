@@ -5,7 +5,7 @@ miracle-wm is a Wayland compositor based on [Mir](https://github.com/MirServer/m
 See the [installation guide](getting_started/installation.md) for installation instructions on your platform.
 
 !!! note
-    If none of this makes any sense to you or you're new to Wayland or Linux, check out the [newcomer corner](getting_started/newcomer_corner.md) document for a structured walk through the entire ecosystem.
+    If none of this makes any sense to you or you're new to Wayland or Linux, check out the [What is a Wayland compositor?](getting_started/what_is_a_wayland_compositor.md) document for a structured walk through the entire ecosystem.
 
 ## Features
 - A tiling window manager, similar to `i3` and `sway`
