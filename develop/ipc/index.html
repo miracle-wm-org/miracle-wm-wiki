@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../introduction/">
+        <link rel="prev" href="../configuration/environment_variables/">
       
       
-        <link rel="next" href="../default_keybinds/">
+        <link rel="next" href="../configuration/mir/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
     
     
       
-        <title>Action Key - miracle-wm Wiki</title>
+        <title>IPC Support - miracle-wm Wiki</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
       
       
 
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#action-key" class="md-skip">
+        <a href="#ipc-support" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="miracle-wm Wiki" class="md-header__button md-logo" aria-label="miracle-wm Wiki" data-md-component="logo">
+    <a href=".." title="miracle-wm Wiki" class="md-header__button md-logo" aria-label="miracle-wm Wiki" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Action Key
+              IPC Support
             
           </span>
         </div>
@@ -189,7 +189,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="miracle-wm Wiki" class="md-nav__button md-logo" aria-label="miracle-wm Wiki" data-md-component="logo">
+    <a href=".." title="miracle-wm Wiki" class="md-nav__button md-logo" aria-label="miracle-wm Wiki" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -219,7 +219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -274,7 +274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/installation/" class="md-nav__link">
+      <a href="../getting_started/installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -295,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/building/" class="md-nav__link">
+      <a href="../getting_started/building/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -316,7 +316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/what_is_a_wayland_compositor/" class="md-nav__link">
+      <a href="../getting_started/what_is_a_wayland_compositor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -341,19 +341,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -367,7 +365,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Configuration
@@ -381,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../configuration/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -399,30 +397,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Action Key
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../configuration/action_key/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -431,62 +409,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
-    <span class="md-ellipsis">
-      Value
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#default" class="md-nav__link">
-    <span class="md-ellipsis">
-      Default
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -499,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../default_keybinds/" class="md-nav__link">
+      <a href="../configuration/default_keybinds/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -520,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../custom_actions/" class="md-nav__link">
+      <a href="../configuration/custom_actions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../startup_apps/" class="md-nav__link">
+      <a href="../configuration/startup_apps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -562,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../inner_gaps/" class="md-nav__link">
+      <a href="../configuration/inner_gaps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -583,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../outer_gaps/" class="md-nav__link">
+      <a href="../configuration/outer_gaps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -604,7 +526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../border/" class="md-nav__link">
+      <a href="../configuration/border/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -625,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../terminal/" class="md-nav__link">
+      <a href="../configuration/terminal/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -646,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../resize_jump/" class="md-nav__link">
+      <a href="../configuration/resize_jump/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -667,7 +589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../environment_variables/" class="md-nav__link">
+      <a href="../configuration/environment_variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -692,10 +614,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../ipc/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    IPC Support
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -704,6 +646,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#i3-ipc-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      i3 IPC Support
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="i3 IPC Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run_command-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      RUN_COMMAND Support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -715,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mir/" class="md-nav__link">
+      <a href="../configuration/mir/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -735,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../display_configuration/" class="md-nav__link">
+      <a href="../configuration/display_configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -755,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../roadmap/" class="md-nav__link">
+      <a href="../roadmap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -795,38 +781,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
+  <a href="#i3-ipc-support" class="md-nav__link">
     <span class="md-ellipsis">
-      Key
+      i3 IPC Support
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="i3 IPC Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run_command-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      RUN_COMMAND Support
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
-    <span class="md-ellipsis">
-      Value
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#default" class="md-nav__link">
-    <span class="md-ellipsis">
-      Default
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -848,103 +822,78 @@
   
 
 
-<h1 id="action-key">Action Key</h1>
-<p>The <strong>action key</strong> defines the primary key that will initiate a command in the compositor.
-<a href="../default_keybinds/">Default Keybinds</a> and <a href="../custom_actions/">Custom Actions</a> can refer
-to this key using the word <code>primary</code> as a modifier key. Please see those configuration options
-for more info.</p>
-<h2 id="key">Key</h2>
-<div class="highlight"><pre><span></span><code>action_key
-</code></pre></div>
-<h2 id="value">Value</h2>
-<p>A <code>Modifier</code> string, which is defined as a name in the following table:</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>alt</code></td>
-<td>Any alt key</td>
-</tr>
-<tr>
-<td><code>alt_left</code></td>
-<td>The left alt key only</td>
-</tr>
-<tr>
-<td><code>alt_right</code></td>
-<td>The right alt key only</td>
-</tr>
-<tr>
-<td><code>shift</code></td>
-<td>Any shift key</td>
-</tr>
-<tr>
-<td><code>shift_left</code></td>
-<td>The left shift key only</td>
-</tr>
-<tr>
-<td><code>shift_right</code></td>
-<td>The right shift key only</td>
-</tr>
-<tr>
-<td><code>ctrl</code></td>
-<td>Any ctrl key</td>
-</tr>
-<tr>
-<td><code>ctrl_left</code></td>
-<td>The left ctrl key only</td>
-</tr>
-<tr>
-<td><code>ctrl_right</code></td>
-<td>The right ctrl key only</td>
-</tr>
-<tr>
-<td><code>meta</code></td>
-<td>The <code>super</code> or <code>windows</code> key</td>
-</tr>
-<tr>
-<td><code>meta_left</code></td>
-<td>The left <code>super</code> or <code>windows</code> key only</td>
-</tr>
-<tr>
-<td><code>meta_right</code></td>
-<td>The right <code>super</code> or <code>windows</code> key only</td>
-</tr>
-<tr>
-<td><code>sym</code></td>
-<td>The sym key</td>
-</tr>
-<tr>
-<td><code>function</code></td>
-<td>The <code>fn</code> key</td>
-</tr>
-<tr>
-<td><code>caps_lock</code></td>
-<td>The caps lock key</td>
-</tr>
-<tr>
-<td><code>num_lock</code></td>
-<td>The num lock key</td>
-</tr>
-<tr>
-<td><code>scroll_lock</code></td>
-<td>The scroll lock key</td>
-</tr>
-</tbody>
-</table>
-<h2 id="default">Default</h2>
-<div class="highlight"><pre><span></span><code>meta
-</code></pre></div>
-<p>This is the <code>super</code> or <code>windows</code> key.</p>
-<h2 id="example">Example</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm.yaml</span>
-
-<span class="nt">action_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">shift</span>
-</code></pre></div>
+<h1 id="ipc-support">IPC Support</h1>
+<p>Miracle implements <a href="https://i3wm.org/docs/ipc.html">i3's ipc support</a>. In the future, miracle will extend this communication channel for its own purposes.</p>
+<h2 id="i3-ipc-support">i3 IPC Support</h2>
+<p>The following provides the list of requests that are fully supported:</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <code>RUN_COMMAND</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>GET_WORKSPACES</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>SUBSCRIBE</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>GET_OUTPUTS</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>GET_TREE</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>GET_BAR_CONFIG</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>GET_VERSION</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>GET_BINDING_NODES</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>GET_CONFIG</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>SEND_TICK</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>SYNC</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>GET_BINDING_STATE</code></li>
+</ul>
+<h3 id="run_command-support"><code>RUN_COMMAND</code> Support</h3>
+<p>i3 supports a <a href="https://i3wm.org/docs/userguide.html#list_of_commands">list of commands</a>.</p>
+<p>The following provides a list of <strong>criteria</strong> queries that are supported:</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled checked/> <code>all</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>class</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>instance</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>window_role</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>window_type</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>machine</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>id</code></li>
+<li class="task-list-item"><input type="checkbox" disabled checked/> <code>title</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>urgent</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>workspace</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>con_mark</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>con_id</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>floating</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>floating_from</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>tiling</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>tiling_from</code></li>
+</ul>
+<p>The following provides a list of <strong>commands</strong> that are supported:</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled checked/> <code>exec</code></li>
+<li class="task-list-item"><input type="checkbox" disabled checked/> <code>split</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>layout</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>focus</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>move</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>swap</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>sticky</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>workspace</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> Changing</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Moving windows between</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Renaming</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Moving containers or windows to a different screen</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Moving containers or windows to a mark</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>resize</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>mark</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>unmark</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>title_format</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>title_window_icon</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>border</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>shmlog</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>debuglog</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>restart</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>reload</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>exit</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>scratchpad</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> Move</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Show</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>nop</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>bar</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>gaps</code></li>
+</ul>
 
 
 
@@ -991,10 +940,10 @@ for more info.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
   </body>
