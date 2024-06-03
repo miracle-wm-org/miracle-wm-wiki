@@ -95,7 +95,7 @@ Features:
     - [ ] Closing windows
 
 ## 1.0.0
-**Official Release (Due September 15th)**
+**Official Release (Due October 15th)**
 
 Features:
 
@@ -106,3 +106,5 @@ Features:
 - [ ] **IDEA**: Context menu on window with support for actions
 - [ ] **IDEA**: Focus mode, where the focused application appears up front and center
 - [ ] **IDEA**: A minimal default shell, including a panel, launcher, background, etc.
+- [ ] **IDEA**: "Freestyle tiling": This would mean that tiling can extend beyond the screen and that the screen can be navigated via scrolling, panning, or anchor points. Workspaces would still be available in this mode, although they would be less relevant.
+- [ ] **IDEA**: Workspaces could be unified in one mega scrolling view to give the illusion of one continuous workspace with "sections"
