@@ -44,8 +44,8 @@ The following provides a list of **commands** that are supported:
 - [x] `exec`
 - [x] `split`
 - [ ] `layout`
-- [ ] `focus`
-- [ ] `move`
+- [x] `focus`
+- [x] `move`
 - [ ] `swap`
 - [ ] `sticky`
 - [ ] `workspace`
