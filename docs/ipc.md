@@ -47,7 +47,7 @@ The following provides a list of **commands** that are supported:
 - [x] `focus`
 - [x] `move`
 - [ ] `swap`
-- [ ] `sticky`
+- [x] `sticky`
 - [ ] `workspace`
   - [ ] Changing
   - [ ] Moving windows between
