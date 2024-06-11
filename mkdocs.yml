@@ -1,4 +1,4 @@
-site_name: miracle-wm Wiki
+site_name: miracle-wm wiki
 theme:
   name: material
   icon:
@@ -28,6 +28,8 @@ nav:
     - configuration/inner_gaps.md
     - configuration/outer_gaps.md
     - configuration/border.md
+    - configuration/enable_animations.md
+    - configuration/animations.md
     - configuration/terminal.md
     - configuration/resize_jump.md
     - configuration/environment_variables.md
