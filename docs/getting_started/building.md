@@ -2,8 +2,8 @@
 
 ## Dependencies
 - [cmake](https://cmake.org/) >= 3.7
-- [gcc](https://gcc.gnu.org/) or [clang](https://clang.llvm.org/) with C++20 support
-- [miral](https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/) >= 6
+- [gcc](https://gcc.gnu.org/) or [clang](https://clang.llvm.org/) with C++23 support
+- [miral](https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/) >= 7
 - [mir-graphics-drivers-desktop](https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/) >= 2.14
 - [mir-graphics-drivers-nvidia](https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/) >= 2.14 (NVIDIA Only)
 - [glib-2.0](https://docs.gtk.org/glib/)
