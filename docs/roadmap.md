@@ -68,22 +68,17 @@ If we can override the renderer, we can put *whatever we like* on the screen.
 
 Features:
 
-- [ ] Configuration
-    * [ ] Display configuration (depends on https://github.com/mattkae/miracle-wm/issues/93)
-- [ ] Full I3 IPC integration
 - [x] Highlight border around selected window (carry over from **0.2.0**)
-- [ ] Animation (requires access to Mir renderer)
-    * [ ] Window movement interpolation
-    * [ ] Window size interpolation
-    * [ ] Workspace change
-    * [ ] Move window to workspace
-    * [ ] Opening
-    * [ ] Configuration support
-- [ ] Multi monitor support
-    * [ ] Zero monitors
+- [x] Animation (requires access to Mir renderer)
+    * [x] Window movement interpolation
+    * [x] Window size interpolation
+    * [x] Workspace change
+    * [x] Move window to workspace
+    * [x] Opening
+    * [x] Configuration support
 
 ## 0.4.0
-**Pointer Support +  (Due July 31st)**
+**Pointer Support + Animation + More I3 IPC (Due July 31st)**
 
 Features:
 
@@ -93,6 +88,11 @@ Features:
     - [ ] Resize tiles with pointer
 - [ ] Animation
     - [ ] Closing windows
+- [ ] Configuration
+    * [ ] Display configuration (depends on https://github.com/mattkae/miracle-wm/issues/93)
+- [ ] Full I3 IPC integration
+- [ ] Multi monitor support
+    * [ ] Zero monitors
 
 ## 1.0.0
 **Official Release (Due October 15th)**

@@ -34,6 +34,7 @@ nav:
     - configuration/resize_jump.md
     - configuration/environment_variables.md
   - IPC Support: ipc.md
+  - Screen Sharing: screenshare.md
   - Mir's Built-in Configuration: configuration/mir.md
   - Display Configuration: configuration/display_configuration.md
   - Roadmap: roadmap.md
