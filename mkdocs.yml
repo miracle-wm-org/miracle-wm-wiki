@@ -33,6 +33,7 @@ nav:
     - configuration/terminal.md
     - configuration/resize_jump.md
     - configuration/environment_variables.md
+    - configuration/workspaces.md
   - IPC Support: ipc.md
   - Screen Sharing: screenshare.md
   - Mir's Built-in Configuration: configuration/mir.md
