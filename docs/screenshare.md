@@ -36,12 +36,12 @@ First, let's add a new environment variable to our Mir configuration:
 
 environment_variables:
   - key: XDG_CURRENT_DESKTOP
-    value: Mir
+    value: mir
 ```
 
-Next, create a file at `~/.config/xdg-desktop-portal/Mir-portals.conf` and write:
+Next, create a file at `~/.config/xdg-desktop-portal/mir-portals.conf` and write:
 ```
-# ~/.config/xdg-desktop-portal/Mir-portals.conf
+# ~/.config/xdg-desktop-portal/mir-portals.conf
 
 [preferred]
 default=gtk
@@ -63,11 +63,11 @@ chooser_type=simple
 chooser_cmd=slurp -f %o -or
 ```
 
-Finally modify `/usr/local/share/xdg-desktop-portal/portals/wlr.portal` to include "Mir" in the "UseIn"
+Finally modify `/usr/share/xdg-desktop-portal/portals/wlr.portal` to include "Mir" in the "UseIn"
 value:
 
 ```
-# /usr/local/share/xdg-desktop-portal/portals/wlr.portal
+# /usr/share/xdg-desktop-portal/portals/wlr.portal
 
 [portal]
 DBusName=org.freedesktop.impl.portal.desktop.wlr
@@ -76,14 +76,32 @@ UseIn=wlroots;sway;Wayfire;river;phosh;Hyprland;Mir;
 ```
 
 ### Running
+First, create a script somewhere called `run_xdg_desktop_portal_wlr.sh` with the following contents:
+
+```sh
+# /usr/local/bin/run_xdg_desktop_portal_wlr.sh
+
+# Export WAYLAND_DISPLAY and XDG_CURRENT_DESKTOP to dbus
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=mir
+
+# Stop xdg-desktop-portal
+systemctl --user stop xdg-desktop-portal
+
+# Also, you may want do stop any other portal service that you have enabled, e.g.:
+systemctl --user stop xdg-desktop-portal-gtk
+
+# Start xdg-desktop-portal-*
+systemctl --user start xdg-desktop-portal
+systemctl --user start xdg-desktop-portal-wlr
+```
+
 In your `miracle-wm.yaml` configuration file, add:
 
 ```yaml
 # ~/.confg/miracle-wm.yaml
 
 startup_apps:
-  - command: /usr/local/libexec/xdg-desktop-portal-wlr -r
-    restart_on_death: true
+  - command: run_xdg_desktop_portal_wlr.sh
 ```
 
 Restart your compositor and then open up `obs-studio` or `Google Meet` and see that you are able
