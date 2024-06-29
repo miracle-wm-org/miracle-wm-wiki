@@ -971,10 +971,10 @@ sudo<span class="w"> </span>ninja<span class="w"> </span>install
 
 <span class="nt">environment_variables</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">XDG_CURRENT_DESKTOP</span>
-<span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Mir</span>
+<span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mir</span>
 </code></pre></div></p>
-<p>Next, create a file at <code>~/.config/xdg-desktop-portal/Mir-portals.conf</code> and write:
-<div class="highlight"><pre><span></span><code># ~/.config/xdg-desktop-portal/Mir-portals.conf
+<p>Next, create a file at <code>~/.config/xdg-desktop-portal/mir-portals.conf</code> and write:
+<div class="highlight"><pre><span></span><code># ~/.config/xdg-desktop-portal/mir-portals.conf
 
 [preferred]
 default=gtk
@@ -992,9 +992,9 @@ max_fps=30
 chooser_type=simple
 chooser_cmd=slurp -f %o -or
 </code></pre></div>
-<p>Finally modify <code>/usr/local/share/xdg-desktop-portal/portals/wlr.portal</code> to include "Mir" in the "UseIn"
+<p>Finally modify <code>/usr/share/xdg-desktop-portal/portals/wlr.portal</code> to include "Mir" in the "UseIn"
 value:</p>
-<div class="highlight"><pre><span></span><code># /usr/local/share/xdg-desktop-portal/portals/wlr.portal
+<div class="highlight"><pre><span></span><code># /usr/share/xdg-desktop-portal/portals/wlr.portal
 
 [portal]
 DBusName=org.freedesktop.impl.portal.desktop.wlr
@@ -1002,12 +1002,27 @@ Interfaces=org.freedesktop.impl.portal.Screenshot;org.freedesktop.impl.portal.Sc
 UseIn=wlroots;sway;Wayfire;river;phosh;Hyprland;Mir;
 </code></pre></div>
 <h3 id="running">Running</h3>
+<p>First, create a script somewhere called <code>run_xdg_desktop_portal_wlr.sh</code> with the following contents:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># /usr/local/bin/run_xdg_desktop_portal_wlr.sh</span>
+
+<span class="c1"># Export WAYLAND_DISPLAY and XDG_CURRENT_DESKTOP to dbus</span>
+dbus-update-activation-environment<span class="w"> </span>--systemd<span class="w"> </span>WAYLAND_DISPLAY<span class="w"> </span><span class="nv">XDG_CURRENT_DESKTOP</span><span class="o">=</span>mir
+
+<span class="c1"># Stop xdg-desktop-portal</span>
+systemctl<span class="w"> </span>--user<span class="w"> </span>stop<span class="w"> </span>xdg-desktop-portal
+
+<span class="c1"># Also, you may want do stop any other portal service that you have enabled, e.g.:</span>
+systemctl<span class="w"> </span>--user<span class="w"> </span>stop<span class="w"> </span>xdg-desktop-portal-gtk
+
+<span class="c1"># Start xdg-desktop-portal-*</span>
+systemctl<span class="w"> </span>--user<span class="w"> </span>start<span class="w"> </span>xdg-desktop-portal
+systemctl<span class="w"> </span>--user<span class="w"> </span>start<span class="w"> </span>xdg-desktop-portal-wlr
+</code></pre></div>
 <p>In your <code>miracle-wm.yaml</code> configuration file, add:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># ~/.confg/miracle-wm.yaml</span>
 
 <span class="nt">startup_apps</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/local/libexec/xdg-desktop-portal-wlr -r</span>
-<span class="w">    </span><span class="nt">restart_on_death</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">run_xdg_desktop_portal_wlr.sh</span>
 </code></pre></div>
 <p>Restart your compositor and then open up <code>obs-studio</code> or <code>Google Meet</code> and see that you are able
 to share your screen.</p>
