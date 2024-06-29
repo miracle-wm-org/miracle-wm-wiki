@@ -76,13 +76,16 @@ Features:
     * [x] Move window to workspace
     * [x] Opening
     * [x] Configuration support
+- [x] Multi monitor support
+    * [x] Zero monitors
 
 ## 0.4.0
-**Pointer Support + Animation + More I3 IPC (Due July 31st)**
+**Pointer Support + Animation + More I3 IPC (Due August 30th)**
 
 Features:
 
 - [ ] Stacking windows
+- [ ] Support for i3 containers
 - [ ] Pointer support for tiling actions
     - [ ] Drag tiles around
     - [ ] Resize tiles with pointer
@@ -91,8 +94,7 @@ Features:
 - [ ] Configuration
     * [ ] Display configuration (depends on https://github.com/mattkae/miracle-wm/issues/93)
 - [ ] Full I3 IPC integration
-- [ ] Multi monitor support
-    * [ ] Zero monitors
+- [ ] Increase test coverage using thew new harness
 
 ## 1.0.0
 **Official Release (Due October 15th)**
