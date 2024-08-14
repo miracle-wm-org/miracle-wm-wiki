@@ -11,7 +11,7 @@ See the [installation guide](getting_started/installation.md) for installation i
 - A tiling window manager, similar to `i3` and `sway`
     - Built-in support for inner/outer gaps
 - An optional floating window manager for individual windows
-- A [YAML configuration file](./configuration/file.md)
+- A [YAML configuration file](./configuration/introduction.md)
 - Support for the following wayland protocols:
     - ext_session_lock_manager_v1
     - mir_shell_v1
@@ -38,8 +38,6 @@ See the [installation guide](getting_started/installation.md) for installation i
 - Workspace support
 - Growing support for `i3`/`sway` IPC
     - A minimal implementation for `waybar` at the moment
-
-
 
 ## Links
 - [Github Repository](https://github.com/mattkae/miracle-wm)

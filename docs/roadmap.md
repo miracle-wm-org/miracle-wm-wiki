@@ -60,7 +60,7 @@ Features:
     * [x] Fedora
 
 
-## 🚧 0.3.0
+## ✅ 0.3.0
 **Aimations + Sway IPC Release (Due: June 15th)**
 
 This release relies on having the *Mir*'s renderer capabilities opened up to us.
@@ -79,32 +79,32 @@ Features:
 - [x] Multi monitor support
     * [x] Zero monitors
 
-## 0.4.0
-**Pointer Support + Animation + More I3 IPC (Due August 30th)**
+## 🚧 0.4.0
+**Pointer Support + Animation + More I3 IPC (Due September 30th)**
 
 Features:
 
 - [ ] Stacking windows
-- [ ] Support for i3 containers
 - [ ] Pointer support for tiling actions
     - [ ] Drag tiles around
     - [ ] Resize tiles with pointer
+- [ ] Full I3 IPC integration
+    - [ ] Support for i3 containers
+- [ ] Increase test coverage using the new harness
+- [ ] Settings application
+
+## 1.0.0
+**Official Release (Due December 15th)**
+
+Features:
+
 - [ ] Animation
     - [ ] Closing windows
 - [ ] Configuration
     * [ ] Display configuration (depends on https://github.com/mattkae/miracle-wm/issues/93)
-- [ ] Full I3 IPC integration
-- [ ] Increase test coverage using thew new harness
-
-## 1.0.0
-**Official Release (Due October 15th)**
-
-Features:
-
 - [ ] Bug free
 - [ ] Tons of test coverage
 - [ ] **IDEA**: Workspace/window overview view (similar to GNOME)
-- [ ] **IDEA**: Settings app
 - [ ] **IDEA**: Context menu on window with support for actions
 - [ ] **IDEA**: Focus mode, where the focused application appears up front and center
 - [ ] **IDEA**: A minimal default shell, including a panel, launcher, background, etc.

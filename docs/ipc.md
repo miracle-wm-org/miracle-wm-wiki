@@ -61,7 +61,7 @@ The following provides a list of **commands** that are supported:
 - ❌ `debuglog`
 - ❌ `restart`
 - ❌ `reload`
-- ❌ `exit`
+- ✅ `exit`
 - ❌ `scratchpad`
 - ❌ `nop`
 - ❌ `bar`
