@@ -1,8 +1,13 @@
-# IPC Support
-Miracle implements [i3's ipc support](https://i3wm.org/docs/ipc.html). In the future, miracle will extend this communication channel for its own purposes.
+# Programming
+On top of being able to configure miracle with a configuration, miracle also
+opens a socket that any client can listen on and send requessts to. This socket
+is largely in line with [i3's ipc support](https://i3wm.org/docs/ipc.html),
+with additional support for commands provided by [sway's ipc]
+(https://github.com/swaywm/sway/blob/master/sway/sway-ipc.7.scd).
+In the future, miracle will extend this communication channel for its own purposes.
 
-## i3 IPC Support
-The following provides the list of requests that are fully supported:
+## Supported Messages
+The following provides the list of requests that are supported:
 
 - ✅ `RUN_COMMAND`
 - ✅ `GET_WORKSPACES`
@@ -17,8 +22,8 @@ The following provides the list of requests that are fully supported:
 - ❌ `SYNC`
 - ✅ `GET_BINDING_STATE`
 
-### `RUN_COMMAND` Support
-i3 supports a [list of commands](https://i3wm.org/docs/userguide.html#list_of_commands).
+## Supported commands:
+i3 and sway support a [list of commands](https://i3wm.org/docs/userguide.html#list_of_commands).
 
 The following provides a list of **criteria** queries that are supported:
 
