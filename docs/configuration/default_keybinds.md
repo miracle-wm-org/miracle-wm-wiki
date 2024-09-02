@@ -30,6 +30,7 @@ The default commands defined in the compositor are described in this table:
 | `select_workspace_[0-9]` | Move the currently selected window to the workspace between 0-9 | `❖ Super + ⇧ Shift + [0-9]` |
 | `toggle_floating` | Toggle whether or not the currently selected window is floating | `❖ Super + Space` |
 | `toggle_pinned_to_workspace` | Toggle whether a floating window is pinned outside of a workspace or not | `❖ Super + ⇧ Shift + P` |
+| `toggle_tabbing` | Toggle whether or not the currently selected container is in a tabbed layout mode | `❖ Super + W` |
 
 
 ## Key
