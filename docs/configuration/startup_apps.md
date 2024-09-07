@@ -14,6 +14,9 @@ A list of:
 
 # If true, the application will automatically restart
 - restart_on_death: bool
+
+# If true, the application will be started with "systemd-run --user --property Restart=on-failure <COMMAND>"
+- in_systemd_scope: bool
 ```
 
 ## Example
@@ -26,4 +29,5 @@ startup_apps:
     restart_on_death: true
   - command: swaybg -i /path/to/my/image
     restart_on_death: true
+    in_systemd_scoipe: true
 ```
