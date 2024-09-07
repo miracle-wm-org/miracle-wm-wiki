@@ -358,6 +358,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="From source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cmake-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      CMake Options
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -927,6 +942,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="From source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cmake-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      CMake Options
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -962,6 +992,11 @@
 <li><a href="https://cmake.org/">cmake</a> &gt;= 3.7</li>
 <li><a href="https://gcc.gnu.org/">gcc</a> or <a href="https://clang.llvm.org/">clang</a> with C++23 support</li>
 <li><a href="https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/">miral</a> &gt;= 7</li>
+<li><a href="https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/">miroil</a></li>
+<li><a href="https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/">mirrenderer</a></li>
+<li><a href="https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/">mirwayland</a></li>
+<li><a href="https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/">mirserver</a></li>
+<li><a href="https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/">mirserver-internal</a></li>
 <li><a href="https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/">mir-graphics-drivers-desktop</a> &gt;= 2.14</li>
 <li><a href="https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/">mir-graphics-drivers-nvidia</a> &gt;= 2.14 (NVIDIA Only)</li>
 <li><a href="https://docs.gtk.org/glib/">glib-2.0</a></li>
@@ -969,16 +1004,27 @@
 <li><a href="https://www.freedesktop.org/wiki/Software/libevdev/">libevdev</a></li>
 <li><a href="https://github.com/nlohmann/json">nlohmann json</a> &gt;= 3.2.0</li>
 <li><a href="https://gitlab.gnome.org/GNOME/libnotify">libnotify</a></li>
-<li><a href="https://github.com/xkbcommon/libxkbcommon">libxkbcommon-devel</a></li>
+<li><a href="https://github.com/xkbcommon/libxkbcommon">libxkbcommon</a></li>
+<li><a href="https://docs.mesa3d.org/opengles.html">libgles2-mesa-dev</a></li>
+<li><a href="https://github.com/json-c/json-c">json-c</a> &gt;= 0.17</li>
 </ul>
 <h2 id="from-source">From source</h2>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/mattkae/miracle-wm.git
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/miracle-window-manager/miracle-wm.git
 <span class="nb">cd</span><span class="w"> </span>miracle-wm
 
 cmake<span class="w"> </span>-Bbuild
 cmake<span class="w"> </span>--build<span class="w"> </span>build
 <span class="nv">WAYLAND_DISPLAY</span><span class="o">=</span>wayland-98<span class="w"> </span>./build/bin/miracle-wm
 </code></pre></div>
+<h3 id="cmake-options">CMake Options</h3>
+<p>The following options are available at build time:</p>
+<ul>
+<li><code>-DSNAP_BUILD</code>: Informs cmake that this is being built for a snap
+  since some parameters need to be tweaked for that use case.</li>
+<li><code>-DSYSTEMD_INTEGRATION</code>: If enabled, miracle will build with full
+  systemd integration, including establishing a user session and
+  importing the proper environment variables in to systemd.</li>
+</ul>
 <h2 id="snap">Snap</h2>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>miracle-wm
 snapcraft

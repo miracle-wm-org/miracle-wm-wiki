@@ -967,6 +967,9 @@
 
 <span class="c1"># If true, the application will automatically restart</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">restart_on_death</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bool</span>
+
+<span class="c1"># If true, the application will be started with &quot;systemd-run --user --property Restart=on-failure &lt;COMMAND&gt;&quot;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">in_systemd_scope</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bool</span>
 </code></pre></div>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm.yaml</span>
@@ -977,6 +980,7 @@
 <span class="w">    </span><span class="nt">restart_on_death</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">swaybg -i /path/to/my/image</span>
 <span class="w">    </span><span class="nt">restart_on_death</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">in_systemd_scoipe</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 
 
