@@ -2,7 +2,7 @@
 This repository contains documentation for [miracle-wm](https://github.com/mattkae/miracle-wm).
 There will be a new release of this documentation every time that `miracle-wm` has a release.
 
-The docs can be found at: https://mattkae.github.io/miracle-wm-wiki/latest/.
+The docs can be found at: https://wiki.miracle-wm.org/latest/.
 
 ## Setup
 ```sh
