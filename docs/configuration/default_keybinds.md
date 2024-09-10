@@ -31,7 +31,7 @@ The default commands defined in the compositor are described in this table:
 | `toggle_floating` | Toggle whether or not the currently selected window is floating | `❖ Super + Space` |
 | `toggle_pinned_to_workspace` | Toggle whether a floating window is pinned outside of a workspace or not | `❖ Super + ⇧ Shift + P` |
 | `toggle_tabbing` | Toggle whether or not the currently selected container is in a tabbed layout mode | `❖ Super + W` |
-
+| `toggle_stacking` | Toggle whether or not the currently selected container is in a stacking layout mode | `❖ Super + S` |
 
 ## Key
 ```

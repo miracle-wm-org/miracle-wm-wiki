@@ -80,7 +80,7 @@ Features:
     * [x] Zero monitors
 
 ## 🚧 0.4.0
-**Pointer Support + Animation + More I3 IPC (Due September 30th)**
+**Pointer Support + Animation + More I3 IPC (Due October 15th)**
 
 Features:
 
