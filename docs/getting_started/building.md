@@ -3,14 +3,14 @@
 ## Dependencies
 - [cmake](https://cmake.org/) >= 3.7
 - [gcc](https://gcc.gnu.org/) or [clang](https://clang.llvm.org/) with C++23 support
-- [miral](https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/) >= 7
-- [miroil](https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/)
-- [mirrenderer](https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/)
-- [mirwayland](https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/)
-- [mirserver](https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/)
-- [mirserver-internal](https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/)
-- [mir-graphics-drivers-desktop](https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/) >= 2.14
-- [mir-graphics-drivers-nvidia](https://canonical-mir.readthedocs-hosted.com/stable/getting_and_using_mir/) >= 2.14 (NVIDIA Only)
+- [miral](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/) >= 7
+- [miroil](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
+- [mirrenderer](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
+- [mirwayland](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
+- [mirserver](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
+- [mirserver-internal](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
+- [mir-graphics-drivers-desktop](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/) >= 2.14
+- [mir-graphics-drivers-nvidia](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/) >= 2.14 (NVIDIA Only)
 - [glib-2.0](https://docs.gtk.org/glib/)
 - [yaml-cpp](https://github.com/jbeder/yaml-cpp)
 - [libevdev](https://www.freedesktop.org/wiki/Software/libevdev/)
