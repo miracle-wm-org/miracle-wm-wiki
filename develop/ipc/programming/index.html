@@ -12,19 +12,19 @@
         <link rel="prev" href="../../configuration/workspaces/">
       
       
-        <link rel="next" href="../../screenshare/">
+        <link rel="next" href="../commands/layout_command/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
     
     
       
-        <title>Programming - miracle-wm wiki</title>
+        <title>Introduction - miracle-wm wiki</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
       
 
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#programming" class="md-skip">
+        <a href="#introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Programming
+              Introduction
             
           </span>
         </div>
@@ -730,7 +730,7 @@
           
   
   <span class="md-ellipsis">
-    Programming
+    Introduction
   </span>
   
 
@@ -741,7 +741,7 @@
         
   
   <span class="md-ellipsis">
-    Programming
+    Introduction
   </span>
   
 
@@ -763,9 +763,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#supported-messages" class="md-nav__link">
+  <a href="#messages" class="md-nav__link">
     <span class="md-ellipsis">
-      Supported Messages
+      Messages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
     </span>
   </a>
   
@@ -783,6 +792,70 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Commands
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Commands
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/layout_command/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layout
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -903,9 +976,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#supported-messages" class="md-nav__link">
+  <a href="#messages" class="md-nav__link">
     <span class="md-ellipsis">
-      Supported Messages
+      Messages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
     </span>
   </a>
   
@@ -938,14 +1020,14 @@
   
 
 
-<h1 id="programming">Programming</h1>
+<h1 id="introduction">Introduction</h1>
 <p>On top of being able to configure miracle with a configuration, miracle also
 opens a socket that any client can listen on and send requessts to. This socket
 is largely in line with <a href="https://i3wm.org/docs/ipc.html">i3's ipc support</a>,
 with additional support for commands provided by [sway's ipc]
 (https://github.com/swaywm/sway/blob/master/sway/sway-ipc.7.scd).
 In the future, miracle will extend this communication channel for its own purposes.</p>
-<h2 id="supported-messages">Supported Messages</h2>
+<h2 id="messages">Messages</h2>
 <p>The following provides the list of requests that are supported:</p>
 <ul>
 <li>✅ <code>RUN_COMMAND</code></li>
@@ -960,6 +1042,10 @@ In the future, miracle will extend this communication channel for its own purpos
 <li>❌ <code>SEND_TICK</code></li>
 <li>❌ <code>SYNC</code></li>
 <li>✅ <code>GET_BINDING_STATE</code></li>
+</ul>
+<h2 id="commands">Commands</h2>
+<ul>
+<li><a href="../commands/layout_command/">Layout</a></li>
 </ul>
 <h2 id="supported-commands">Supported commands:</h2>
 <p>i3 and sway support a <a href="https://i3wm.org/docs/userguide.html#list_of_commands">list of commands</a>.</p>
@@ -1056,10 +1142,10 @@ In the future, miracle will extend this communication channel for its own purpos
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
