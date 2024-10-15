@@ -7,6 +7,7 @@ The docs can be found at: https://wiki.miracle-wm.org/latest/.
 ## Setup
 ```sh
 python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
