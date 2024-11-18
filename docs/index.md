@@ -21,6 +21,7 @@ See the [installation guide](getting_started/installation.md) for installation i
 
 ## Links
 - [Github Repository](https://github.com/miracle-wm-org/miracle-wm)
+- [Trello Board](https://trello.com/b/ldzWTZDK/miracle)
 - [Snapcraft.io listing](https://snapcraft.io/miracle-wm)
 - [Fedora Miracle Spin](https://fedoraproject.org/spins/miraclewm/)
 - [Mir](https://github.com/canonical/mir), the library that `miracle-wm` uses for all of the heavy-lifting
