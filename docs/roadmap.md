@@ -80,21 +80,33 @@ Features:
     * [x] Zero monitors
 
 ## 🚧 0.4.0
-**Pointer Support + Animation + More I3 IPC (Due October 15th)**
+**Complete i3 ipc implementation (Due November 30th)**
 
 Features:
 
-- [ ] Stacking windows
+- [x] Stacking windows
+- [ ] Full I3 IPC integration
+    - [x] Support for i3 containers
+- [x] Increase test coverage using the new harness
+
+## 0.5.0
+**Pointer Support (Due December 31st)**
+
+Features:
+
 - [ ] Pointer support for tiling actions
     - [ ] Drag tiles around
     - [ ] Resize tiles with pointer
-- [ ] Full I3 IPC integration
-    - [ ] Support for i3 containers
-- [ ] Increase test coverage using the new harness
+    
+## 0.6.0
+**Settings Application (Due January 31st)**
+
+Features:
+
 - [ ] Settings application
 
 ## 1.0.0
-**Official Release (Due December 15th)**
+**Feature Complete (Due March 31st)**
 
 Features:
 
