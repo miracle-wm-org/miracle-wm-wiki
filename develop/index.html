@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
@@ -999,58 +999,36 @@
 
 
 <h1 id="miracle-wm">miracle-wm</h1>
-<p>miracle-wm is a Wayland compositor based on <a href="https://github.com/MirServer/mir">Mir</a>. It features a tiling window manager at its core, very much in the style of <a href="https://i3wm.org/">i3</a> and <a href="https://github.com/swaywm/sway">sway</a>. The intention is to build a compositor that is flashier and more feature-rich than either of those compositors, like <a href="https://github.com/WillPower3309/swayfx">swayfx</a>.</p>
+<p>miracle-wm is a Wayland compositor based on
+<a href="https://github.com/MirServer/mir">Mir</a>. It features a tiling window manager at
+its core, very much in the style of <a href="https://i3wm.org/">i3</a> and
+<a href="https://github.com/swaywm/sway">sway</a>. Miracle provides an experience that is flashier and more feature-rich than either of those compositors, like <a href="https://github.com/WillPower3309/swayfx">swayfx</a>.</p>
 <p>See the <a href="getting_started/installation/">installation guide</a> for installation instructions on your platform.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Support for manual tiling window management</li>
+<li>Support for floating window management</li>
+<li>Driven by a <a href="configuration/introduction/">YAML configuration file</a></li>
+<li>Support for many common wayland protocols which you can see on <a href="https://wayland.app/protocols/">Wayland Explorer</a></li>
+<li>Support for a wide array of graphics cards, including hybrid systems and outputs driven by Nvidia's proprietary drivers</li>
+<li>Workspace support</li>
+<li>Support for <a href="https://i3wm.org/docs/ipc.html">i3 ipc</a></li>
+<li>Animation support</li>
+<li>Window bordering</li>
+<li>etc.</li>
+</ul>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://github.com/miracle-wm-org/miracle-wm">Github Repository</a></li>
+<li><a href="https://snapcraft.io/miracle-wm">Snapcraft.io listing</a></li>
+<li><a href="https://fedoraproject.org/spins/miraclewm/">Fedora Miracle Spin</a></li>
+<li><a href="https://github.com/canonical/mir">Mir</a>, the library that <code>miracle-wm</code> uses for all of the heavy-lifting</li>
+<li><a href="https://github.com/Miriway/Miriway">Miriway</a>, another compositor built on top of <em>Mir</em></li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If none of this makes any sense to you or you're new to Wayland or Linux, check out the <a href="getting_started/what_is_a_wayland_compositor/">What is a Wayland compositor?</a> document for a structured walk through the entire ecosystem.</p>
 </div>
-<h2 id="features">Features</h2>
-<ul>
-<li>A tiling window manager, similar to <code>i3</code> and <code>sway</code><ul>
-<li>Built-in support for inner/outer gaps</li>
-</ul>
-</li>
-<li>An optional floating window manager for individual windows</li>
-<li>A <a href="configuration/introduction/">YAML configuration file</a></li>
-<li>Support for the following wayland protocols:<ul>
-<li>ext_session_lock_manager_v1</li>
-<li>mir_shell_v1</li>
-<li>wl_shell</li>
-<li>xdg_wm_base</li>
-<li>zwlr_foreign_toplevel_manager_v1</li>
-<li>zwlr_layer_shell_v1</li>
-<li>zwlr_screencopy_manager_v1</li>
-<li>zwlr_virtual_pointer_manager_v1</li>
-<li>zwp_input_method_manager_v2</li>
-<li>zwp_text_input_manager_v1</li>
-<li>zwp_text_input_manager_v2</li>
-<li>zwp_text_input_manager_v3</li>
-<li>zwp_virtual_keyboard_manager_v1</li>
-<li>zxdg_output_manager_v1</li>
-<li>zxdg_shell_v6</li>
-<li>zwp_idle_inhibit_manager_v1</li>
-<li>zwp_input_method_v1</li>
-<li>zwp_input_panel_v1</li>
-<li>zwp_pointer_constraints_v1</li>
-<li>zwp_primary_selection_device_manager_v1</li>
-<li>zwp_relative_pointer_manager_v1</li>
-</ul>
-</li>
-<li>Support for a wide array of graphics cards, including hybrid systems and outputs driven by Nvidia's proprietary drivers</li>
-<li>Workspace support</li>
-<li>Growing support for <code>i3</code>/<code>sway</code> IPC<ul>
-<li>A minimal implementation for <code>waybar</code> at the moment</li>
-</ul>
-</li>
-</ul>
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="https://github.com/mattkae/miracle-wm">Github Repository</a></li>
-<li><a href="https://snapcraft.io/miracle-wm">Snapcraft.io listing</a></li>
-<li><a href="https://github.com/canonical/mir">Mir</a>, the library that <code>miracle-wm</code> uses for all of the heavy-lifting</li>
-<li><a href="https://github.com/Miriway/Miriway">Miriway</a>, another compositor built on top of <em>Mir</em></li>
-</ul>
 
 
 
