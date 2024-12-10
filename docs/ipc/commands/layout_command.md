@@ -5,10 +5,10 @@ of the currently selected container.
 
 ## Example
 ```sh
-miraclemsg command "layout splitv"  # Set the layout to 'vertical'
-miraclemsg command "layout splith"  # Set the layout to 'horizontal'
-miraclemsg command "layout toggle split"  # Set the layout to 'vertical' if 'horizontal' and vice versa
-miraclemsg command "layout toggle tabbed splith splitv"  # Cycle through the layouts in the list
+miraclemsg "layout splitv"  # Set the layout to 'vertical'
+miraclemsg "layout splith"  # Set the layout to 'horizontal'
+miraclemsg "layout toggle split"  # Set the layout to 'vertical' if 'horizontal' and vice versa
+miraclemsg "layout toggle tabbed splith splitv"  # Cycle through the layouts in the list
 ```
 
 ## Links
