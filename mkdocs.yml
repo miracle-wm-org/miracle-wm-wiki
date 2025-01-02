@@ -34,6 +34,7 @@ nav:
     - configuration/resize_jump.md
     - configuration/environment_variables.md
     - configuration/workspaces.md
+    - configuration/drag_and_drop.md
   - Programming:
     - ipc/programming.md
     - Commands:

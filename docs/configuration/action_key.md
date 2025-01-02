@@ -10,7 +10,7 @@ action_key
 ```
 
 ## Value
-A `Modifier` string, which is defined as a name in the following table:
+A `modifier` string, which is defined as a name in the following table:
 
 | Name | Description |
 | ---- | ----------- |
