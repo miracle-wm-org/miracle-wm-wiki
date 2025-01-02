@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../custom_actions/">
+        <link rel="prev" href="../workspaces/">
       
       
-        <link rel="next" href="../inner_gaps/">
+        <link rel="next" href="../../ipc/programming/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Startup Apps - miracle-wm wiki</title>
+        <title>Drag and Drop - miracle-wm wiki</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#startup-apps" class="md-skip">
+        <a href="#drag-and-drop" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Startup Apps
+              Drag and Drop
             
           </span>
         </div>
@@ -462,30 +462,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Startup Apps
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../startup_apps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -494,53 +474,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
-    <span class="md-ellipsis">
-      Value
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -739,10 +672,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../drag_and_drop/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Drag and Drop
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -751,6 +704,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Value
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1062,31 +1062,29 @@
   
 
 
-<h1 id="startup-apps">Startup Apps</h1>
-<p>A list of applications that will be started when the compositor starts.</p>
+<h1 id="drag-and-drop">Drag and Drop</h1>
+<p>The <strong>drag and drop</strong> configuration defines how containers can be moved using
+the cursor in <code>miracle-wm</code>.</p>
 <h2 id="key">Key</h2>
-<div class="highlight"><pre><span></span><code>startup_apps
+<div class="highlight"><pre><span></span><code>drag_and_drop
 </code></pre></div>
 <h2 id="value">Value</h2>
-<p>A list of:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span><span class="w">  </span><span class="c1"># A shell command to be executed</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># When set to false, drag and drop is disabled entirely</span>
+<span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">boolean</span>
 
-<span class="c1"># If true, the application will automatically restart</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">restart_on_death</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bool</span>
-
-<span class="c1"># If true, the application will be started with &quot;systemd-run --user --property Restart=on-failure &lt;COMMAND&gt;&quot;</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">in_systemd_scope</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bool</span>
+<span class="c1"># List of modifiers expected to be held when left clicking.</span>
+<span class="c1"># Defaults to the primary action key</span>
+<span class="nt">modifiers</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">String[]</span>
 </code></pre></div>
+<p>For a list of valid modifiers, see <a href="../action_key/">Action Key</a>.</p>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm.yaml</span>
 
-<span class="c1"># Start waybar and swaybg on startup</span>
-<span class="nt">startup_apps</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">waybar</span>
-<span class="w">    </span><span class="nt">restart_on_death</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">swaybg -i /path/to/my/image</span>
-<span class="w">    </span><span class="nt">restart_on_death</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">    </span><span class="nt">in_systemd_scoipe</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="nt">drag_and_drop</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">modifiers</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">primary</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alt</span>
 </code></pre></div>
 
 
