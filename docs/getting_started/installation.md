@@ -17,6 +17,11 @@
     sudo apt update
     sudo apt install miracle-wm
     ```
+    
+=== "Arch Linux (AUR)"
+    ```
+    https://aur.archlinux.org/packages/miracle-wm
+    ```
 
 === "Nightly"
     ```
