@@ -29,5 +29,5 @@ startup_apps:
     restart_on_death: true
   - command: swaybg -i /path/to/my/image
     restart_on_death: true
-    in_systemd_scoipe: true
+    in_systemd_scope: true
 ```
