@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../terminal/">
+        <link rel="prev" href="../workspaces/">
       
       
-        <link rel="next" href="../environment_variables/">
+        <link rel="next" href="../drag_and_drop/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Resize Jump - miracle-wm wiki</title>
+        <title>Move Modifier - miracle-wm wiki</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#resize-jump" class="md-skip">
+        <a href="#move-modifier" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Resize Jump
+              Move Modifier
             
           </span>
         </div>
@@ -626,6 +626,72 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../resize_jump/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resize Jump
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../environment_variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Environment Variables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workspaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workspaces
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -642,7 +708,7 @@
           
   
   <span class="md-ellipsis">
-    Resize Jump
+    Move Modifier
     
   </span>
   
@@ -654,7 +720,7 @@
         
   
   <span class="md-ellipsis">
-    Resize Jump
+    Move Modifier
     
   </span>
   
@@ -716,72 +782,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../environment_variables/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Environment Variables
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../workspaces/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Workspaces
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../move_modifier/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Move Modifier
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1134,21 +1134,29 @@
   
 
 
-<h1 id="resize-jump">Resize Jump</h1>
-<p>Defines the number of pixels that a window will be resized by for each resize request.
-This value affects any direction (up, down, left, or right).</p>
+<h1 id="move-modifier">Move Modifier</h1>
+<p>While the specified modifier is held and the user clicks the primary mouse
+button, they will be able to translate the container 
+under the pointer to the resulting position of the cursor. If this
+container belongs to a group of containers (e.g. a floating mini tree), then
+the entire tree will be translated. This command does <strong>not</strong></p>
 <h2 id="key">Key</h2>
-<div class="highlight"><pre><span></span><code>resize_jump
+<div class="highlight"><pre><span></span><code>move_modifier
 </code></pre></div>
 <h2 id="value">Value</h2>
-<p>An integer describing the number of pixels</p>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">String[]</span>
+</code></pre></div>
+<p>For a list of valid modifiers, see <a href="../action_key/">Action Key</a>.</p>
 <h2 id="default">Default</h2>
-<div class="highlight"><pre><span></span><code>50
+<div class="highlight"><pre><span></span><code><span class="nt">move_modifier</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">primary</span>
 </code></pre></div>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm.yaml</span>
 
-<span class="nt">resize_jump</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">25</span><span class="w"> </span><span class="c1"># Each resize will now add or remove 25px from the current window size</span>
+<span class="nt">move_modifier</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">primary</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">shift</span>
 </code></pre></div>
 
 
