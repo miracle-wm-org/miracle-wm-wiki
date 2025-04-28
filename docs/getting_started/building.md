@@ -4,7 +4,6 @@
 - [cmake](https://cmake.org/) >= 3.7
 - [gcc](https://gcc.gnu.org/) or [clang](https://clang.llvm.org/) with C++23 support
 - [miral](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/) >= 7
-- [miroil](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
 - [mirrenderer](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
 - [mirwayland](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
 - [mirserver](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
