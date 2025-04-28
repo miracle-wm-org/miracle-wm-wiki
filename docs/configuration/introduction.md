@@ -2,10 +2,10 @@
 Miracle is configured via a `YAML` file. This section describes the settings that you may define in that file.
 
 ## File location
-The configuration file will be written blank the first time that you start the compositor. The file is located at `$XDG_CONFIG_HOME/miracle-wm.yaml`. It is written on the initial startup of `miracle` if it does not yet exist. The most likely location is:
+The configuration file will be written blank the first time that you start the compositor. The file is located at `$XDG_CONFIG_HOME/miracle-wm/config.yaml`. It is written on the initial startup of `miracle` if it does not yet exist. The most likely location is:
 
 ```
-~/.config/miracle-wm.yaml.
+~/.config/miracle-wm/config.yaml.
 ```
 
 !!! note

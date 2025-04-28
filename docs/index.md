@@ -15,7 +15,7 @@ See the [installation guide](getting_started/installation.md) for installation i
 - Support for a wide array of graphics cards, including hybrid systems and outputs driven by Nvidia's proprietary drivers
 - Workspace support
 - Support for [i3 ipc](https://i3wm.org/docs/ipc.html)
-- Animation support
+- Animations
 - Window bordering
 - etc.
 

@@ -1,5 +1,5 @@
 # Roadmap
-The goal is to have an environment that I am comfortable daily-driving by **July 2024**.
+The goal is to have an environment that I am comfortable daily-driving by **July 2025**.
 This goal will be marked by the `1.0.0` release. Until then, all releases will be
 `0.x.0`.
 
@@ -9,7 +9,7 @@ in progress if priority changes, which may push back the release date.
 
 
 ## ✅ 0.1.0
-**Proof of Concept (Due: February 17th)**
+**Proof of Concept (Due: February 17th 2024)**
 
 Features:
 
@@ -41,7 +41,7 @@ Features:
     * [x] Custom keybindings
 
 ## ✅ 0.2.0
-**Stabilization + Usability (Due: April 15th)**
+**Stabilization + Usability (Due: April 15th 2024)**
 
 Features:
 
@@ -61,7 +61,7 @@ Features:
 
 
 ## ✅ 0.3.0
-**Aimations + Sway IPC Release (Due: June 15th)**
+**Aimations + Sway IPC Release (Due: June 15th 2024)**
 
 This release relies on having the *Mir*'s renderer capabilities opened up to us.
 If we can override the renderer, we can put *whatever we like* on the screen.
@@ -79,8 +79,8 @@ Features:
 - [x] Multi monitor support
     * [x] Zero monitors
 
-## 🚧 0.4.0
-**Complete i3 ipc implementation (Due November 30th)**
+##  0.4.0
+**Complete i3 ipc implementation (Due: November 30th 2024)**
 
 Features:
 
@@ -89,31 +89,35 @@ Features:
     - [x] Support for i3 containers
 - [x] Increase test coverage using the new harness
 
-## 0.5.0
-**Pointer Support (Due December 31st)**
+## ✅ 0.5.0
+**Pointer Support (Due: January 2025)**
 
 Features:
 
-- [ ] Pointer support for tiling actions
-    - [ ] Drag tiles around
-    - [ ] Resize tiles with pointer
+- [x] Pointer support for tiling actions
+    - [x] Drag tiles around
+    - [x] Resize tiles with pointer
+- [x] Animation
+    - [x] Closing windows
     
-## 0.6.0
-**Settings Application (Due January 31st)**
+## 🚧 0.6.0
+**Settings Application (Due May 2025)**
 
 Features:
 
 - [ ] Settings application
 
+## 0.7.0
+
+Features:
+- [ ] TBD
+
 ## 1.0.0
-**Feature Complete (Due March 31st)**
+**Feature Complete**
 
 Features:
 
-- [ ] Animation
-    - [ ] Closing windows
-- [ ] Configuration
-    * [ ] Display configuration (depends on https://github.com/mattkae/miracle-wm/issues/93)
+- [ ] Display Configuration
 - [ ] Bug free
 - [ ] Tons of test coverage
 - [ ] **IDEA**: Workspace/window overview view (similar to GNOME)
