@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../mir/">
+        <link rel="prev" href="../../ipc/commands/resize_command/">
       
       
-        <link rel="next" href="../../roadmap/">
+        <link rel="next" href="../../screenshare/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -928,6 +928,88 @@
       
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Display Configuration
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Display Configuration
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     <li class="md-nav__item">
@@ -964,38 +1046,6 @@
   
 
       </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Display Configuration
-    
-  </span>
-  
-
-      </a>
-      
     </li>
   
 
@@ -1042,6 +1092,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1060,20 +1136,71 @@
 
 
 <h1 id="display-configuration">Display Configuration</h1>
-<blockquote>
-<p>Please note that the display configuration **is distinct from the configuration defined in
-the <a href="file.md">configuration section</a>. The two may indeed overlap with one another. There is a task
-in miracle-wm to <a href="https://github.com/mattkae/miracle-wm/issues/93">fix this</a>.</p>
-</blockquote>
-<p>The <a href="https://github.com/canonical/mir">Mir</a> project provides a mechanism for configuring
-the display in a reproducible way. To use this, you may provide the following commandline
-argument when running miracle:</p>
-<div class="highlight"><pre><span></span><code>--display-config=static=/path/to/a/display/file.yaml
+<p>The display configuration is a distinct YAML file from the regular configuration.
+It is populated on the initial startup of <code>miracle</code> with a basic information for
+your particular monitor sitation if it does not yet exist.</p>
+<p>The most likely location is:</p>
+<div class="highlight"><pre><span></span><code>~/.config/miracle-wm/display.yaml.
 </code></pre></div>
-<p>Alternatively, you may define the <code>display-config</code> option in <a href="../mir/">Mir's Built-in Configuration</a>, e.g.:</p>
-<div class="highlight"><pre><span></span><code># ~/.config/miracle-wm.config
-
-display-config=static=/path/to/a/display/file.yaml
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>See the <a href="https://wiki.archlinux.org/title/XDG_Base_Directory">arch user guide</a> for information about <code>$XDG_CONFIG_HOME</code>.</p>
+</div>
+<p>You may specify an alternative location by providing the commandline argument:</p>
+<div class="highlight"><pre><span></span><code>miracle-wm<span class="w"> </span>--display-config-path<span class="o">=</span>/path/to/file
+</code></pre></div>
+<h2 id="configuration">Configuration</h2>
+<p>The contents of the file describe a list of layouts that a user may choose from. Each
+layout has a unique name and a list of outputs. If the output is in the list, it is
+considered "used" and will have the provided attributes applied to it. An output is
+matched by its <code>name</code>. All attributes aside from the <code>name</code> are optional.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">layouts</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">    </span><span class="nt">outputs</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span><span class="w">      </span><span class="c1"># the name of the output to match</span>
+<span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">boolean</span><span class="w">  </span><span class="c1"># whether or not the output is used</span>
+<span class="w">      </span><span class="nt">position</span><span class="p">:</span><span class="w">         </span><span class="c1"># the XY position of the output</span>
+<span class="w">        </span><span class="nt">x</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">int</span>
+<span class="w">        </span><span class="nt">y</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">int</span>
+<span class="w">      </span><span class="nt">size</span><span class="p">:</span><span class="w">             </span><span class="c1"># the size of the output, must match a resolution that the output supports, otherwise ignored</span>
+<span class="w">        </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">int</span>
+<span class="w">        </span><span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">int</span>
+<span class="w">      </span><span class="nt">refresh</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">double</span><span class="w">   </span><span class="c1"># the refresh rate of the output, must match a valid resolution that the output supports, otherwise ignored</span>
+<span class="w">      </span><span class="nt">orientation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal | inverted | left | right</span>
+<span class="w">      </span><span class="nt">scale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">float</span><span class="w">      </span><span class="c1"># a scale factor for the whole output</span>
+<span class="w">      </span><span class="nt">group_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">int</span><span class="w">     </span><span class="c1"># when non-zero, outputs with the same group_id will display the same content</span>
+</code></pre></div>
+<h2 id="example">Example</h2>
+<p>The following example is similar to something that might populate the default configuration. It tells the
+displays to be displayed side-by-side with their own content at normal orientations.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm/display.yaml </span>
+<span class="nt">layouts</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<span class="w">    </span><span class="nt">outputs</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HDMI-A-1</span>
+<span class="w">        </span><span class="nt">position</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">x</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">          </span><span class="nt">y</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">        </span><span class="nt">size</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1920</span>
+<span class="w">          </span><span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1290</span>
+<span class="w">        </span><span class="nt">refresh</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">60</span>
+<span class="w">        </span><span class="nt">orientation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="w">        </span><span class="nt">scale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">        </span><span class="nt">group_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HDMI-A-2</span>
+<span class="w">        </span><span class="nt">position</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">x</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1280</span>
+<span class="w">          </span><span class="nt">y</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">        </span><span class="nt">size</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">800</span>
+<span class="w">          </span><span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">600</span>
+<span class="w">        </span><span class="nt">refresh</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">60</span>
+<span class="w">        </span><span class="nt">orientation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">normal</span>
+<span class="w">        </span><span class="nt">scale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">        </span><span class="nt">group_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
 </code></pre></div>
 
 
