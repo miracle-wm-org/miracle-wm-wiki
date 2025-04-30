@@ -41,9 +41,9 @@ nav:
     - Commands:
       - ipc/commands/layout_command.md
       - ipc/commands/resize_command.md
+  - Display Configuration: configuration/display_configuration.md
   - Screen Sharing: screenshare.md
   - Mir's Built-in Configuration: configuration/mir.md
-  - Display Configuration: configuration/display_configuration.md
   - Roadmap: roadmap.md
 extra:
   version:
