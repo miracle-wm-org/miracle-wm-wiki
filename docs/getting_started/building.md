@@ -27,7 +27,7 @@ cd miracle-wm
 
 cmake -Bbuild
 cmake --build build
-WAYLAND_DISPLAY=wayland-98 ./build/bin/miracle-wm
+WAYLAND_DISPLAY=wayland-98 ./build/miracle-wm
 ```
 
 ### CMake Options
