@@ -1,10 +1,36 @@
-# Introduction
-On top of being able to configure miracle with a configuration, miracle also
-opens a socket that any client can listen on and send requessts to. This socket
-is largely in line with [i3's ipc support](https://i3wm.org/docs/ipc.html),
-with additional support for commands provided by [sway's ipc]
-(https://github.com/swaywm/sway/blob/master/sway/sway-ipc.7.scd).
-In the future, miracle will extend this communication channel for its own purposes.
+# IPC
+Miracle provides an IPC mechanism for interacting with the compositor at runtime.
+This socket is largely in line with both [i3](https://i3wm.org/docs/ipc.html) and 
+[sway]((https://github.com/swaywm/sway/blob/master/sway/sway-ipc.7.scd))'s IPC implementation.
+
+ The IPC protocol uses a UNIX socket as the method of communication. The path to the socket
+ is stored in the environment variable `MIRACLESOCK`  and, for backwards compatibility with sway, SWAYSOCK,
+ and, for backwards compatibility with i3, I3SOCK.
+
+## Format
+The format for messages and replies is:
+
+```
+    <magic-string> <payload-length> <payload-type> <payload>
+
+Where
+    <magic-string> is i3-ipc, for compatibility with i3
+    <payload-length> is a 32-bit integer in native byte order
+    <payload-type> is a 32-bit integer in native byte order
+```
+
+For example, sending the exit command would look like the following hexdump:
+
+```
+00000000 | 69 33 2d 69 70 63 04 00 00 00 00 00 00 00 65 78 |i3-ipc........ex|
+00000010 | 69 74                                           |it              |
+```
+
+The payload for replies will be a valid serialized JSON data structure.
+
+## Messages
+- [RUN_COMMAND](run_command.md)
+- [GET_WORKSPACES](get_workspaces.md)
 
 ## Messages
 The following provides the list of requests that are supported:

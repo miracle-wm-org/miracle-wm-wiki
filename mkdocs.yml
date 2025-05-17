@@ -36,8 +36,9 @@ nav:
     - configuration/workspaces.md
     - configuration/move_modifier.md
     - configuration/drag_and_drop.md
-  - Programming:
-    - ipc/programming.md
+  - IPC:
+    - ipc/index.md
+    - ipc/get_workspaces.md
     - Commands:
       - ipc/commands/layout_command.md
       - ipc/commands/resize_command.md
