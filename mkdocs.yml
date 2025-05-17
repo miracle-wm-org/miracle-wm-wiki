@@ -40,6 +40,7 @@ nav:
     - ipc/index.md
     - ipc/get_workspaces.md
     - ipc/subscribe.md
+    - ipc/get_outputs.md
     - Commands:
       - ipc/commands/layout_command.md
       - ipc/commands/resize_command.md

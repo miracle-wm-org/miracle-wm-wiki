@@ -32,6 +32,7 @@ The payload for replies will be a valid serialized JSON data structure.
 - [RUN_COMMAND](run_command.md)
 - [GET_WORKSPACES](get_workspaces.md)
 - [SUBSCRIBE](subscribe.md)
+- [GET_OUTPUTS](get_outputs.md)
 
 ## Messages
 The following provides the list of requests that are supported:

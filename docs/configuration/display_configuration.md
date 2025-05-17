@@ -28,6 +28,7 @@ matched by its `name`. All attributes aside from the `name` are optional.
   outputs:
     name: string      # the name of the output to match
     enabled: boolean  # whether or not the output is used
+    primary: boolean  # whether or not the output is primary. If set true on multiple outputs, only the first one will be primary.
     position:         # the XY position of the output
       x: int
       y: int
