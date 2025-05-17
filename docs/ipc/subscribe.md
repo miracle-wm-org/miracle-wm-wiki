@@ -1,8 +1,10 @@
 # SUBSCRIBE
 Subscribe this IPC connection to the event types specified in the message payload.
 
-## Payload
+## Type Number
+2
 
+## Payload
 An array of events names. Events are specified according to the following
 table:
 

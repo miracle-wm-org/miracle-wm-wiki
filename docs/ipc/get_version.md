@@ -1,6 +1,9 @@
 # GET_VERSION
 Retrieves information about the version of miracle that is running.
 
+## Type Number
+7
+
 ## Payload
 Empty
 

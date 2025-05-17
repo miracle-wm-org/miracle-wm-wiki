@@ -1,6 +1,9 @@
 # GET_VERSION
 Retrieves a list of valid binding modes. The "default" binding mode is always in the list.
 
+## Type Number
+8
+
 ## Payload
 Empty
 

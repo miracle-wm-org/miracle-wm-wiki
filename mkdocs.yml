@@ -41,10 +41,13 @@ nav:
     - ipc/get_workspaces.md
     - ipc/subscribe.md
     - ipc/get_outputs.md
+    - ipc/get_tree.md
+    - ipc/get_marks.md
     - ipc/get_version.md
     - ipc/get_binding_modes.md
     - ipc/send_tick.md
     - ipc/sync.md
+    - ipc/get_binding_state.md
     - Commands:
       - ipc/commands/layout_command.md
       - ipc/commands/resize_command.md

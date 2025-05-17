@@ -1,6 +1,9 @@
 # GET_WORKSPACES
 Retrieves the list of workspaces.
 
+## Type Number
+3
+
 ## Payload
 Empty
 
