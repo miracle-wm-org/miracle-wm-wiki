@@ -26,8 +26,7 @@ The reply is an array of objects corresponding to the following schema:
 ]
 ```
 
-## Example
-
+For example:
 ````json
 [
     {
