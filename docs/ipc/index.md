@@ -34,6 +34,12 @@ The payload for replies will be a valid serialized JSON data structure.
 - [SUBSCRIBE](subscribe.md)
 - [GET_OUTPUTS](get_outputs.md)
 - [GET_VERSION](get_version.md)
+- [GET_BINDING_MODES](get_binding_modes.md)
+
+For those familiar with sway, miracle will always lack support for particular messages
+such as:
+- `GET_CONFIG`
+- `GET_BAR_CONFIG`
 
 ## Messages
 The following provides the list of requests that are supported:
@@ -44,9 +50,9 @@ The following provides the list of requests that are supported:
 - ✅ `GET_OUTPUTS`
 - 🔨 `GET_TREE`
 - ❌ `GET_BAR_CONFIG`
+- ❌ `GET_MARKS`
 - ✅ `GET_VERSION`
 - ✅ `GET_BINDING_NODES`
-- ❌ `GET_CONFIG`
 - ❌ `SEND_TICK`
 - ❌ `SYNC`
 - ✅ `GET_BINDING_STATE`

@@ -42,6 +42,7 @@ nav:
     - ipc/subscribe.md
     - ipc/get_outputs.md
     - ipc/get_version.md
+    - ipc/get_binding_modes.md
     - Commands:
       - ipc/commands/layout_command.md
       - ipc/commands/resize_command.md
