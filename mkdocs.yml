@@ -44,6 +44,7 @@ nav:
     - ipc/get_version.md
     - ipc/get_binding_modes.md
     - ipc/send_tick.md
+    - ipc/sync.md
     - Commands:
       - ipc/commands/layout_command.md
       - ipc/commands/resize_command.md

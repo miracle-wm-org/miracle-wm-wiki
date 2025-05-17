@@ -36,6 +36,7 @@ The payload for replies will be a valid serialized JSON data structure.
 - [GET_VERSION](get_version.md)
 - [GET_BINDING_MODES](get_binding_modes.md)
 - [SEND_TICK](send_tick.md)
+- [SYNC](sync.md)
 
 For those familiar with sway, miracle will always lack support for particular messages
 such as:
