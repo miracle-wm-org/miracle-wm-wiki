@@ -43,9 +43,12 @@ nav:
     - ipc/get_outputs.md
     - ipc/get_version.md
     - ipc/get_binding_modes.md
+    - ipc/send_tick.md
     - Commands:
       - ipc/commands/layout_command.md
       - ipc/commands/resize_command.md
+    - Events:
+      - ipc/events/tick.md
   - Display Configuration: configuration/display_configuration.md
   - Screen Sharing: screenshare.md
   - Mir's Built-in Configuration: configuration/mir.md
