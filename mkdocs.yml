@@ -38,6 +38,7 @@ nav:
     - configuration/drag_and_drop.md
   - IPC:
     - ipc/index.md
+    - ipc/run_command.md
     - ipc/get_workspaces.md
     - ipc/subscribe.md
     - ipc/get_outputs.md
