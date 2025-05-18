@@ -43,7 +43,7 @@ The reply is an array of objects corresponding to the following schema:
 ```
 
 ### Example
-````json
+```json
 [
     {
         "name": "HDMI-A-2",
