@@ -1,8 +1,5 @@
-# GET_VERSION
+# GET_VERSION (7)
 Retrieves information about the version of miracle that is running.
-
-## Type Number
-7
 
 ## Payload
 Empty
@@ -18,7 +15,7 @@ Empty
 }
 ```
 
-For example:
+### Example
 ```json
 {
     "major": 0,

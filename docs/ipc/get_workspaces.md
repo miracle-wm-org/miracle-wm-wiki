@@ -1,8 +1,5 @@
-# GET_WORKSPACES
+# GET_WORKSPACES (1)
 Retrieves the list of workspaces.
-
-## Type Number
-1
 
 ## Payload
 Empty
@@ -29,8 +26,8 @@ The reply is an array of objects corresponding to the following schema:
 ]
 ```
 
-For example:
-````json
+### Example
+```json
 [
     {
         "num": 1,

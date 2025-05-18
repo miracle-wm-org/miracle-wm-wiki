@@ -1,7 +1,4 @@
-# RUN_COMMAND
-
-## Type Number
-0
+# RUN_COMMAND (0)
 
 ## Payload
 A string representing a command(s) to run.
@@ -22,6 +19,7 @@ command:
 
 `parse_error` and `error` will be omitted when `success` is true.
 
+### Example
 For example, if a user sends a `RUN_COMMAND` with the following payload:
 
 ```

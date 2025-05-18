@@ -1,4 +1,4 @@
-# IPC
+# Introduction
 Miracle provides an IPC mechanism for interacting with the compositor at runtime.
 This socket is largely in line with both [i3](https://i3wm.org/docs/ipc.html) and 
 [sway]((https://github.com/swaywm/sway/blob/master/sway/sway-ipc.7.scd))'s IPC implementation.
@@ -29,26 +29,37 @@ For example, sending the exit command would look like the following hexdump:
 The payload for replies will be a valid serialized JSON data structure.
 
 ## Messages
-- [RUN_COMMAND](run_command.md)
-- [GET_WORKSPACES](get_workspaces.md)
-- [SUBSCRIBE](subscribe.md)
-- [GET_OUTPUTS](get_outputs.md)
-- [GET_TREE](get_tree.md)
-- [GET_MARKS](get_marks.md)
-- [GET_VERSION](get_version.md)
-- [GET_BINDING_MODES](get_binding_modes.md)
-- [SEND_TICK](send_tick.md)
-- [SYNC](sync.md)
-- [GET_BINDING_STATE](get_binding_state.md)
+Each message is associated with a "Message Type" that is given by the number in parentheses. This is
+the value that users will send from the client when they want to send the corresponding message.
+
+- [RUN_COMMAND (0)](run_command.md)
+- [GET_WORKSPACES (1)](get_workspaces.md)
+- [SUBSCRIBE (2)](subscribe.md)
+- [GET_OUTPUTS (3)](get_outputs.md)
+- [GET_TREE (4)](get_tree.md)
+- [GET_MARKS (5)](get_marks.md)
+- [GET_VERSION (7)](get_version.md)
+- [GET_BINDING_MODES (8)](get_binding_modes.md)
+- [SEND_TICK (10)](send_tick.md)
+- [SYNC (11)](sync.md)
+- [GET_BINDING_STATE (12)](get_binding_state.md)
 
 For those familiar with sway, miracle will always lack support for particular messages
 such as:
+
 - `GET_CONFIG`
 - `GET_BAR_CONFIG`
 
 The following are unimplemented, but may be implemented in the future:
+
 - `GET_INPUTS`
 - `GET_SEATS`
+
+## Events
+- [tick (0x80000007)](./events/tick.md)
+
+## Commands
+- [Layout](./commands/layout_command.md)
 
 ## Messages
 The following provides the list of requests that are supported:
@@ -66,8 +77,6 @@ The following provides the list of requests that are supported:
 - ❌ `SYNC`
 - ✅ `GET_BINDING_STATE`
 
-## Commands
-- [Layout](./commands/layout_command.md)
 
 ## Supported commands:
 i3 and sway support a [list of commands](https://i3wm.org/docs/userguide.html#list_of_commands).

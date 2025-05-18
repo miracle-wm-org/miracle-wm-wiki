@@ -1,8 +1,5 @@
-# tick
+# tick (0x80000007)
 Sent when an ipc client sends a [SEND_TICK](../send_tick.md) message.
-
-## Event Code
-0x80000007
 
 ## Payload
 ```json
@@ -12,7 +9,7 @@ Sent when an ipc client sends a [SEND_TICK](../send_tick.md) message.
 }
 ```
 
-For example:
+### Example
 ```json
 {
     "first": true,

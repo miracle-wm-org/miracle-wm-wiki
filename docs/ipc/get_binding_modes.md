@@ -1,8 +1,5 @@
-# GET_VERSION
+# GET_BINDING_MODES (8)
 Retrieves a list of valid binding modes. The "default" binding mode is always in the list.
-
-## Type Number
-8
 
 ## Payload
 Empty
@@ -14,7 +11,7 @@ Empty
 ]
 ```
 
-For example:
+### Example
 ```json
 [
     "default",

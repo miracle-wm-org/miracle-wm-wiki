@@ -1,8 +1,5 @@
-# SUBSCRIBE
+# SUBSCRIBE (2)
 Subscribe this IPC connection to the event types specified in the message payload.
-
-## Type Number
-2
 
 ## Payload
 An array of events names. Events are specified according to the following
@@ -18,8 +15,7 @@ table:
 | 0x80000007 | tick | sent when an ipc client sends a [SEND_TICK](send_tick.md) message |
 | 0x80000015 | input | sent when something related to input changes |
 
-For example, a valid payload for subscribin to workspace and mode
-changes would be:
+### Example
 
 ```json
 [ "workspace", "mode" ]
@@ -33,7 +29,7 @@ changes would be:
 }
 ```
 
-For example:
+### Example
 ```json
 {
     "success": true

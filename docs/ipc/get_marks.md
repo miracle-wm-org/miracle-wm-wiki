@@ -1,4 +1,1 @@
-# GET_MARKS
-
-## Type Number
-5
+# GET_MARKS (5)

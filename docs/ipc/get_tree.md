@@ -1,4 +1,1 @@
-# GET_TREE
-
-## Type Number
-4
+# GET_TREE (4)
