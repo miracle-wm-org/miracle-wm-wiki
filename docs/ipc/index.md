@@ -60,6 +60,7 @@ The following are unimplemented, but may be implemented in the future:
 
 ## Commands
 - [Layout](./commands/layout_command.md)
+- [mark](./commands/mark.md)
 
 ## Messages
 The following provides the list of requests that are supported:

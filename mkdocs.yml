@@ -52,6 +52,7 @@ nav:
     - Commands:
       - ipc/commands/layout_command.md
       - ipc/commands/resize_command.md
+      - ipc/commands/mark.md
     - Events:
       - ipc/events/tick.md
   - Display Configuration: configuration/display_configuration.md
