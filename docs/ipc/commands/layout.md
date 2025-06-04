@@ -1,4 +1,4 @@
-# Layout
+# layout
 
 Introduced in v0.4.0, the `layout` command allows users to to change the layout
 of the currently selected container.

@@ -59,8 +59,10 @@ The following are unimplemented, but may be implemented in the future:
 - [tick (0x80000007)](./events/tick.md)
 
 ## Commands
-- [Layout](./commands/layout_command.md)
+- [layout](./commands/layout.md)
 - [mark](./commands/mark.md)
+- [resize](./commands/resize.md)
+- [swap](./commands/swap.md)
 
 ## Messages
 The following provides the list of requests that are supported:

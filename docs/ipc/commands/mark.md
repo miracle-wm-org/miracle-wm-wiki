@@ -1,4 +1,4 @@
-# marks
+# mark
 A `mark` is a convenient way to tag a container such that you can easily reference
 it later. A window is marked using the `mark` command and unmarked using the `unmark`
 command. Specifying `unmark` with no identifier removes all marks from the specified
@@ -15,6 +15,12 @@ When marking, you can specify a number of options:
 mark [--add|--replace] [--toggle] <identifier>
 [con_mark="identifier"] focus
 unmark <identifier>
+```
+
+## Example
+```sh
+miraclemsg mark hi # Marks the focused container as 'hi'
+unmark             # Removes all marks from the focused container
 ```
 
 

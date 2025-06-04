@@ -1,4 +1,4 @@
-# Resize
+# resize
 
 Introduced in v0.4.0, the `resize` command allows users to to change the resize
 the currently selected container
