@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../get_binding_state/">
+        <link rel="prev" href="../layout/">
       
       
-        <link rel="next" href="../resize_command/">
+        <link rel="next" href="../mark/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Layout - miracle-wm wiki</title>
+        <title>resize - miracle-wm wiki</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#layout" class="md-skip">
+        <a href="#resize" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Layout
+              resize
             
           </span>
         </div>
@@ -1124,6 +1124,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../layout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    layout
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1141,7 +1164,7 @@
   
   
   <span class="md-ellipsis">
-    Layout
+    resize
     
   </span>
   
@@ -1154,7 +1177,7 @@
   
   
   <span class="md-ellipsis">
-    Layout
+    resize
     
   </span>
   
@@ -1210,12 +1233,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../resize_command/" class="md-nav__link">
+      <a href="../mark/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Resize
+    mark
     
   </span>
   
@@ -1233,12 +1256,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../mark/" class="md-nav__link">
+      <a href="../swap/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    marks
+    swap
     
   </span>
   
@@ -1484,18 +1507,17 @@
   
 
 
-<h1 id="layout">Layout</h1>
-<p>Introduced in v0.4.0, the <code>layout</code> command allows users to to change the layout
-of the currently selected container.</p>
+<h1 id="resize">resize</h1>
+<p>Introduced in v0.4.0, the <code>resize</code> command allows users to to change the resize
+the currently selected container</p>
 <h2 id="example">Example</h2>
-<div class="highlight"><pre><span></span><code>miraclemsg<span class="w"> </span><span class="s2">&quot;layout splitv&quot;</span><span class="w">  </span><span class="c1"># Set the layout to &#39;vertical&#39;</span>
-miraclemsg<span class="w"> </span><span class="s2">&quot;layout splith&quot;</span><span class="w">  </span><span class="c1"># Set the layout to &#39;horizontal&#39;</span>
-miraclemsg<span class="w"> </span><span class="s2">&quot;layout toggle split&quot;</span><span class="w">  </span><span class="c1"># Set the layout to &#39;vertical&#39; if &#39;horizontal&#39; and vice versa</span>
-miraclemsg<span class="w"> </span><span class="s2">&quot;layout toggle tabbed splith splitv&quot;</span><span class="w">  </span><span class="c1"># Cycle through the layouts in the list</span>
+<div class="highlight"><pre><span></span><code>miraclemsg<span class="w"> </span><span class="s2">&quot;resize grow width 10&quot;</span><span class="w">  </span><span class="c1"># Grow width by 10px</span>
+miraclemsg<span class="w"> </span><span class="s2">&quot;resize shrink height 10 ppt&quot;</span><span class="w">  </span><span class="c1"># Shrinks the height by 10% of the screen</span>
+miraclemsg<span class="w"> </span><span class="s2">&quot;resize set 100px 50 ppt&quot;</span><span class="w">  </span><span class="c1"># Sets the dimensions of the container to 100px width and 50% of the screen</span>
 </code></pre></div>
 <h2 id="links">Links</h2>
 <ul>
-<li><a href="https://i3wm.org/docs/userguide.html#manipulating_layout">i3 documentation</a></li>
+<li><a href="https://i3wm.org/docs/userguide.html#resizingconfig">i3 documentation</a></li>
 </ul>
 
 

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../resize_command/">
+        <link rel="prev" href="../resize/">
       
       
-        <link rel="next" href="../../events/tick/">
+        <link rel="next" href="../swap/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>marks - miracle-wm wiki</title>
+        <title>mark - miracle-wm wiki</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#marks" class="md-skip">
+        <a href="#mark" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              marks
+              mark
             
           </span>
         </div>
@@ -1127,12 +1127,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../layout_command/" class="md-nav__link">
+      <a href="../layout/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Layout
+    layout
     
   </span>
   
@@ -1150,12 +1150,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../resize_command/" class="md-nav__link">
+      <a href="../resize/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Resize
+    resize
     
   </span>
   
@@ -1187,7 +1187,7 @@
   
   
   <span class="md-ellipsis">
-    marks
+    mark
     
   </span>
   
@@ -1200,7 +1200,7 @@
   
   
   <span class="md-ellipsis">
-    marks
+    mark
     
   </span>
   
@@ -1231,10 +1231,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../swap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    swap
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1447,6 +1479,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1466,7 +1507,7 @@
   
 
 
-<h1 id="marks">marks</h1>
+<h1 id="mark">mark</h1>
 <p>A <code>mark</code> is a convenient way to tag a container such that you can easily reference
 it later. A window is marked using the <code>mark</code> command and unmarked using the <code>unmark</code>
 command. Specifying <code>unmark</code> with no identifier removes all marks from the specified
@@ -1481,6 +1522,10 @@ containers. Marks do not need to be unique, meaning that multiple containers can
 <div class="highlight"><pre><span></span><code>mark [--add|--replace] [--toggle] &lt;identifier&gt;
 [con_mark=&quot;identifier&quot;] focus
 unmark &lt;identifier&gt;
+</code></pre></div>
+<h2 id="example">Example</h2>
+<div class="highlight"><pre><span></span><code>miraclemsg<span class="w"> </span>mark<span class="w"> </span>hi<span class="w"> </span><span class="c1"># Marks the focused container as &#39;hi&#39;</span>
+unmark<span class="w">             </span><span class="c1"># Removes all marks from the focused container</span>
 </code></pre></div>
 
 
