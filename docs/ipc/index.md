@@ -63,6 +63,7 @@ The following are unimplemented, but may be implemented in the future:
 - [mark](./commands/mark.md)
 - [resize](./commands/resize.md)
 - [swap](./commands/swap.md)
+- [sticky](./commands/sticky.md)
 
 ## Messages
 The following provides the list of requests that are supported:
