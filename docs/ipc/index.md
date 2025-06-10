@@ -64,6 +64,8 @@ The following are unimplemented, but may be implemented in the future:
 - [resize](./commands/resize.md)
 - [swap](./commands/swap.md)
 - [sticky](./commands/sticky.md)
+- [workspace](./commands/workspace.md)
+- [rename](./commands/rename.md)
 
 ## Messages
 The following provides the list of requests that are supported:
