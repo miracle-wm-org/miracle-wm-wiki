@@ -18,6 +18,8 @@
 - [libxkbcommon](https://github.com/xkbcommon/libxkbcommon)
 - [libgles2-mesa-dev](https://docs.mesa3d.org/opengles.html)
 - [json-c](https://github.com/json-c/json-c) >= 0.17
+- [dbus-next](https://pypi.org/project/dbus-next/)
+- [tenacity](https://pypi.org/project/tenacity/)
 
 
 ## From source
