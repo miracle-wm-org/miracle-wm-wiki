@@ -60,6 +60,7 @@ nav:
       - ipc/commands/rename.md
     - Events:
       - ipc/events/tick.md
+      - ipc/events/window.md
   - Display Configuration: configuration/display_configuration.md
   - Screen Sharing: screenshare.md
   - Mir's Built-in Configuration: configuration/mir.md

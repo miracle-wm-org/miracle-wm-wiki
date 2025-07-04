@@ -57,6 +57,7 @@ The following are unimplemented, but may be implemented in the future:
 
 ## Events
 - [tick (0x80000007)](./events/tick.md)
+- [window (0x80000003)](./events/window.md)
 
 ## Commands
 - [layout](./commands/layout.md)
