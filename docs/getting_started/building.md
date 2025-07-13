@@ -40,6 +40,8 @@ The following options are available at build time:
 - `-DSYSTEMD_INTEGRATION`: If enabled, miracle will build with full
   systemd integration, including establishing a user session and
   importing the proper environment variables in to systemd.
+- `-DEND_TO_END_TESTS`: If enabled, miracle's end-to-end tests will
+  be compiled as part of the test suite.
 
 
 ## Snap
