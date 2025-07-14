@@ -57,6 +57,7 @@ The following are unimplemented, but may be implemented in the future:
 
 ## Events
 - [workspace (0x80000000)](./events/workspace.md)
+- [output (0x80000001)](./events/output.md)
 - [window (0x80000003)](./events/window.md)
 - [tick (0x80000007)](./events/tick.md)
 

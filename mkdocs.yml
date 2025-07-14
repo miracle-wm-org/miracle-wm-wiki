@@ -60,6 +60,7 @@ nav:
       - ipc/commands/rename.md
     - Events:
       - ipc/events/workspace.md
+      - ipc/events/output.md
       - ipc/events/window.md
       - ipc/events/tick.md
   - Display Configuration: configuration/display_configuration.md
