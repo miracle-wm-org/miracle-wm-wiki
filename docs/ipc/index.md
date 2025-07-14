@@ -56,8 +56,9 @@ The following are unimplemented, but may be implemented in the future:
 - `GET_SEATS`
 
 ## Events
-- [tick (0x80000007)](./events/tick.md)
+- [workspace (0x80000000)](./events/workspace.md)
 - [window (0x80000003)](./events/window.md)
+- [tick (0x80000007)](./events/tick.md)
 
 ## Commands
 - [layout](./commands/layout.md)
