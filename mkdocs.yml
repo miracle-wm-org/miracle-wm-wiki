@@ -62,6 +62,7 @@ nav:
       - ipc/events/workspace.md
       - ipc/events/output.md
       - ipc/events/window.md
+      - ipc/events/binding.md
       - ipc/events/tick.md
   - Display Configuration: configuration/display_configuration.md
   - Screen Sharing: screenshare.md
