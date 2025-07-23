@@ -70,3 +70,4 @@ The following are unimplemented, but may be implemented in the future:
 - [sticky](./commands/sticky.md)
 - [workspace](./commands/workspace.md)
 - [rename](./commands/rename.md)
+- [gaps](./commands/gaps.md)

@@ -58,6 +58,7 @@ nav:
       - ipc/commands/sticky.md
       - ipc/commands/workspace.md
       - ipc/commands/rename.md
+      - ipc/commands/gaps.md
     - Events:
       - ipc/events/workspace.md
       - ipc/events/output.md
