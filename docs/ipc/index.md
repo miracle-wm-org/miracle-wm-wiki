@@ -64,6 +64,7 @@ The following are unimplemented, but may be implemented in the future:
 
 ## Commands
 - [layout](./commands/layout.md)
+- [move](./commands/move.md)
 - [mark](./commands/mark.md)
 - [resize](./commands/resize.md)
 - [swap](./commands/swap.md)

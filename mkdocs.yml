@@ -52,6 +52,7 @@ nav:
     - ipc/get_binding_state.md
     - Commands:
       - ipc/commands/layout.md
+      - ipc/commands/move.md
       - ipc/commands/resize.md
       - ipc/commands/mark.md
       - ipc/commands/swap.md
