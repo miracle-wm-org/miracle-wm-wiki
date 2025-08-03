@@ -1760,13 +1760,16 @@
 containers and workspaces in a variety of ways.</p>
 <h2 id="syntax">syntax</h2>
 <div class="highlight"><pre><span></span><code>move<span class="w"> </span>window<span class="p">|</span>container<span class="w"> </span>to<span class="w"> </span>mark<span class="w"> </span>&lt;mark&gt;<span class="w">  </span><span class="c1"># Moves the container/window to the mark provided by &lt;mark&gt;, if any exists</span>
+move<span class="w"> </span>workspace<span class="w"> </span>to<span class="w"> </span>output<span class="w"> </span>left<span class="p">|</span>right<span class="p">|</span>down<span class="p">|</span>up<span class="p">|</span>current<span class="p">|</span>primary<span class="p">|</span>nonprimary<span class="p">|</span>next<span class="p">|</span>&lt;output1&gt;<span class="w"> </span><span class="o">[</span>output2<span class="o">]</span>…<span class="w">  </span><span class="c1"># Moves the active workspace to another output</span>
 </code></pre></div>
 <h2 id="example">Example</h2>
-<div class="highlight"><pre><span></span><code>move<span class="w"> </span>container<span class="w"> </span>to<span class="w"> </span>mark<span class="w"> </span>meow<span class="w"> </span><span class="c1"># Moves the focused container to mark &quot;meow&quot;</span>
+<div class="highlight"><pre><span></span><code>move<span class="w"> </span>container<span class="w"> </span>to<span class="w"> </span>mark<span class="w"> </span>meow<span class="w">     </span><span class="c1"># Moves the focused container to mark &quot;meow&quot;</span>
+move<span class="w"> </span>workspace<span class="w"> </span>to<span class="w"> </span>output<span class="w"> </span>right<span class="w">  </span><span class="c1"># Moves the current workspace to the output directly to the right of the active output</span>
 </code></pre></div>
 <h2 id="links">Links</h2>
 <ul>
-<li><a href="https://i3wm.org/docs/userguide.html#move_to_mark">i3 documentation</a></li>
+<li><a href="https://i3wm.org/docs/userguide.html#move_to_mark">i3 documentation for "move ... to mark"</a></li>
+<li><a href="https://i3wm.org/docs/userguide.html#_moving_workspaces_to_a_different_screen">i3 documentation for "move workspace"</a></li>
 </ul>
 
 
