@@ -60,6 +60,7 @@ nav:
       - ipc/commands/workspace.md
       - ipc/commands/rename.md
       - ipc/commands/gaps.md
+      - ipc/commands/nop.md
     - Events:
       - ipc/events/workspace.md
       - ipc/events/output.md

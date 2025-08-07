@@ -72,3 +72,4 @@ The following are unimplemented, but may be implemented in the future:
 - [workspace](./commands/workspace.md)
 - [rename](./commands/rename.md)
 - [gaps](./commands/gaps.md)
+- [nop](./commands/nop.md);
