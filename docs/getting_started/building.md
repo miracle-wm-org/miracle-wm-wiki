@@ -24,11 +24,19 @@
 
 ## From source
 ```sh
+# First, clone the repo:
 git clone https://github.com/miracle-window-manager/miracle-wm.git
 cd miracle-wm
 
-cmake -Bbuild
+# The, build a debug build...
+cmake -B build -DCMAKE_BUILD_TYPE=Debug
 cmake --build build
+
+# ... or a max-performance release build:
+cmake -B build -DCMAKE_BUILD_TYPE=Release -DENABLE_LTO=ON
+cmake --build build
+
+# Then run with:
 WAYLAND_DISPLAY=wayland-98 ./build/miracle-wm
 ```
 
