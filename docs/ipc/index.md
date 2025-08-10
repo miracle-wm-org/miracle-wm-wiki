@@ -61,6 +61,7 @@ The following are unimplemented, but may be implemented in the future:
 - [mode (0x80000002)](./events/mode.md)
 - [window (0x80000003)](./events/window.md)
 - [binding (0x80000005)](./events/binding.md)
+- [shutdown (0x80000006)](./events/shutdown.md)
 - [tick (0x80000007)](./events/tick.md)
 
 ## Commands

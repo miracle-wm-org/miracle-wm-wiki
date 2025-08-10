@@ -67,6 +67,7 @@ nav:
       - ipc/events/mode.md
       - ipc/events/window.md
       - ipc/events/binding.md
+      - ipc/events/shutdown.md
       - ipc/events/tick.md
   - Display Configuration: configuration/display_configuration.md
   - Screen Sharing: screenshare.md
