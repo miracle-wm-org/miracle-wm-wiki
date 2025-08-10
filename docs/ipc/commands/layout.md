@@ -3,6 +3,13 @@
 Introduced in v0.4.0, the `layout` command allows users to to change the layout
 of the currently selected container.
 
+## Syntax
+```sh
+layout default|tabbed|stacking|splitv|splith
+layout toggle [split|all]
+layout toggle [split|tabbed|stacking|splitv|splith] [split|tabbed|stacking|splitv|splith] ...
+```
+
 ## Example
 ```sh
 miraclemsg "layout splitv"  # Set the layout to 'vertical'
