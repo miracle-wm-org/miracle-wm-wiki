@@ -58,6 +58,7 @@ The following are unimplemented, but may be implemented in the future:
 ## Events
 - [workspace (0x80000000)](./events/workspace.md)
 - [output (0x80000001)](./events/output.md)
+- [mode (0x80000002)](./events/mode.md)
 - [window (0x80000003)](./events/window.md)
 - [binding (0x80000005)](./events/binding.md)
 - [tick (0x80000007)](./events/tick.md)
