@@ -65,6 +65,7 @@ The following are unimplemented, but may be implemented in the future:
 - [tick (0x80000007)](./events/tick.md)
 
 ## Commands
+- [exec](./commands/exec.md)
 - [layout](./commands/layout.md)
 - [move](./commands/move.md)
 - [mark](./commands/mark.md)

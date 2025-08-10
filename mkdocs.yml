@@ -51,6 +51,7 @@ nav:
     - ipc/sync.md
     - ipc/get_binding_state.md
     - Commands:
+      - ipc/commands/exec.md
       - ipc/commands/layout.md
       - ipc/commands/move.md
       - ipc/commands/resize.md
