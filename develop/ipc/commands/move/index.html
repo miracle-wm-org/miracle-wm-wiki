@@ -1923,6 +1923,18 @@ move<span class="w"> </span>position<span class="w"> </span>mouse
 <span class="c1"># if the mark exists.</span>
 move<span class="w"> </span>window<span class="p">|</span>container<span class="w"> </span>to<span class="w"> </span>mark<span class="w"> </span>&lt;mark&gt;
 
+<span class="c1"># Move the container to a workspace by name.</span>
+move<span class="w"> </span><span class="o">[</span>--no-auto-back-and-forth<span class="o">]</span><span class="w"> </span><span class="o">[</span>window<span class="p">|</span>container<span class="o">]</span><span class="w"> </span><span class="o">[</span>to<span class="o">]</span><span class="w"> </span>workspace<span class="w"> </span>&lt;name&gt;
+
+<span class="c1"># Move the container to a workspace by number and optionally name.</span>
+move<span class="w"> </span><span class="o">[</span>--no-auto-back-and-forth<span class="o">]</span><span class="w"> </span><span class="o">[</span>window<span class="p">|</span>container<span class="o">]</span><span class="w"> </span><span class="o">[</span>to<span class="o">]</span><span class="w"> </span>workspace<span class="w"> </span>number<span class="w"> </span>&lt;name&gt;
+
+<span class="c1"># Move the container to a workspace by direction.</span>
+move<span class="w"> </span><span class="o">[</span>window<span class="p">|</span>container<span class="o">]</span><span class="w"> </span><span class="o">[</span>to<span class="o">]</span><span class="w"> </span>workspace<span class="w"> </span>prev<span class="p">|</span>next<span class="p">|</span>current
+
+<span class="c1"># Moves the active container to a different output.</span>
+move<span class="w"> </span>container<span class="w"> </span>to<span class="w"> </span>output<span class="w"> </span>left<span class="p">|</span>right<span class="p">|</span>down<span class="p">|</span>up<span class="p">|</span>current<span class="p">|</span>primary<span class="p">|</span>nonprimary<span class="p">|</span>next<span class="p">|</span>&lt;output1&gt;<span class="w"> </span><span class="o">[</span>output2<span class="o">]</span>…
+
 <span class="c1"># Moves the active workspace to a different output.</span>
 <span class="c1"># If the workspace is already on that output, then this is a noop.</span>
 <span class="c1"># Multiple outputs may be specified by name, (e.g. move workspace</span>
@@ -1935,6 +1947,7 @@ move<span class="w"> </span>workspace<span class="w"> </span>to<span class="w"> 
 move<span class="w"> </span>position<span class="w"> </span><span class="m">10</span><span class="w"> </span>ppt<span class="w"> </span><span class="m">10</span><span class="w"> </span>ppt<span class="w">     </span><span class="c1"># Move the focused container to the 10% position of the current output</span>
 move<span class="w"> </span>position<span class="w"> </span>center<span class="w">            </span><span class="c1"># Move the focused container to the center of the current output</span>
 move<span class="w"> </span>container<span class="w"> </span>to<span class="w"> </span>mark<span class="w"> </span>meow<span class="w">     </span><span class="c1"># Moves the focused container to mark &quot;meow&quot;</span>
+move<span class="w"> </span>container<span class="w"> </span>to<span class="w"> </span>workspace<span class="w"> </span><span class="m">1</span><span class="w">   </span><span class="c1"># Moves the focused container to workspace 1</span>
 move<span class="w"> </span>workspace<span class="w"> </span>to<span class="w"> </span>output<span class="w"> </span>right<span class="w">  </span><span class="c1"># Moves the current workspace to the output directly to the right of the active output</span>
 </code></pre></div>
 <h2 id="links">Links</h2>

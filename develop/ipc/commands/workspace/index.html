@@ -1876,24 +1876,34 @@
 
 
 <h1 id="workspace">workspace</h1>
-<p>The <code>workspace</code> command lets you switch to a different workspace.</p>
-<p><code>workspace next</code> focuses the numerically greater workspace after the currently
-focused one. <code>workspace prev</code> focuses in the opposite direction.
-<code>workspace next_on_output</code> and <code>workspace prev_on_output</code> does the same thing
-as the previous two commands, but instead the focus list is confined to those
-on the focused output.</p>
-<p><code>workspace back_and_forth</code> focuses the previously focused workspace.</p>
-<p><code>workspace [--no-auto-back-and-forth] &lt;name&gt;</code> focuses a workspace by name.</p>
-<p><code>workspace [--no-auto-back-and-forth] number &lt;name&gt;</code> focuses a workspace by name
-and number.</p>
+<p>Change the name of a workspace or change focus to a specific workspace.</p>
 <h2 id="syntax">Syntax</h2>
-<div class="highlight"><pre><span></span><code>workspace<span class="w"> </span>next<span class="p">|</span>prev<span class="p">|</span>next_on_output<span class="p">|</span>prev_on_output
+<div class="highlight"><pre><span></span><code><span class="c1"># Sets the name on the workspace to &lt;name&gt;.</span>
+workspace<span class="w"> </span>&lt;name&gt;
+
+<span class="c1"># Set the number on the workspace and optionally the name.</span>
+workspace<span class="w"> </span>&lt;num&gt;:<span class="w"> </span><span class="o">[</span>&lt;name&gt;<span class="o">]</span>
+
+<span class="c1"># `workspace next` focuses the numerically greater workspace after the currently</span>
+<span class="c1"># focused one. `workspace prev` focuses in the opposite direction.</span>
+<span class="c1"># `workspace next_on_output` and `workspace prev_on_output` does the same thing</span>
+<span class="c1"># as the previous two commands, but instead the focus list is confined to those</span>
+<span class="c1"># on the focused output.</span>
+workspace<span class="w"> </span>next<span class="p">|</span>prev<span class="p">|</span>next_on_output<span class="p">|</span>prev_on_output
+
+<span class="c1"># `workspace back_and_forth` focuses the previously focused workspace.</span>
 workspace<span class="w"> </span>back_and_forth
+
+<span class="c1"># `workspace [--no-auto-back-and-forth] &lt;name&gt;` focuses a workspace by name.</span>
 workspace<span class="w"> </span><span class="o">[</span>--no-auto-back-and-forth<span class="o">]</span><span class="w"> </span>&lt;name&gt;
+
+<span class="c1"># `workspace [--no-auto-back-and-forth] number &lt;name&gt;` focuses a workspace by name</span>
+<span class="c1"># and number.</span>
 workspace<span class="w"> </span><span class="o">[</span>--no-auto-back-and-forth<span class="o">]</span><span class="w"> </span>number<span class="w"> </span>&lt;name&gt;
 </code></pre></div>
 <h2 id="example">Example</h2>
-<div class="highlight"><pre><span></span><code>miraclemsg<span class="w"> </span>workspace<span class="w"> </span><span class="m">1</span><span class="w">     </span><span class="c1"># Focus workspace 1</span>
+<div class="highlight"><pre><span></span><code>miraclemsg<span class="w"> </span>workspace<span class="w"> </span>hello<span class="w"> </span><span class="c1"># Change the name of the current workspace to &#39;hello&#39;</span>
+miraclemsg<span class="w"> </span>workspace<span class="w"> </span><span class="m">1</span><span class="w">     </span><span class="c1"># Focus workspace 1</span>
 miraclemsg<span class="w"> </span>workspace<span class="w"> </span>next<span class="w">  </span><span class="c1"># Focus workspace after 1 (e.g. if workspace 3 exists, 3 would be focused)</span>
 miraclemsg<span class="w"> </span>workspace<span class="w"> </span>hi<span class="w">    </span><span class="c1"># Focus non-numeric workspace named &quot;hi&quot;</span>
 </code></pre></div>
