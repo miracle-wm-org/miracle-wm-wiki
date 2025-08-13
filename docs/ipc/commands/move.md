@@ -30,6 +30,18 @@ move position mouse
 # if the mark exists.
 move window|container to mark <mark>
 
+# Move the container to a workspace by name.
+move [--no-auto-back-and-forth] [window|container] [to] workspace <name>
+
+# Move the container to a workspace by number and optionally name.
+move [--no-auto-back-and-forth] [window|container] [to] workspace number <name>
+
+# Move the container to a workspace by direction.
+move [window|container] [to] workspace prev|next|current
+
+# Moves the active container to a different output.
+move container to output left|right|down|up|current|primary|nonprimary|next|<output1> [output2]…
+
 # Moves the active workspace to a different output.
 # If the workspace is already on that output, then this is a noop.
 # Multiple outputs may be specified by name, (e.g. move workspace
@@ -44,6 +56,7 @@ move left 20                    # Moves the focused container left by 20px, only
 move position 10 ppt 10 ppt     # Move the focused container to the 10% position of the current output
 move position center            # Move the focused container to the center of the current output
 move container to mark meow     # Moves the focused container to mark "meow"
+move container to workspace 1   # Moves the focused container to workspace 1
 move workspace to output right  # Moves the current workspace to the output directly to the right of the active output
 ```
 

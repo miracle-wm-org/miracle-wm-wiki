@@ -9,7 +9,7 @@ second container can be selected using one of the following methods:
 - **mark**: a container with the specified mark
 
 ## Syntax
-```
+```sh
 swap container with id|mark <arg>
 ```
 

@@ -7,7 +7,7 @@ workspace, and many other things.
 Being "sticky" only applies to floating windows.
 
 ## Syntax
-```
+```sh
 sticky enable|disable|toggle
 ```
 
