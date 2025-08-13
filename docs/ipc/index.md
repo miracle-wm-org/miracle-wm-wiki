@@ -68,6 +68,7 @@ The following are unimplemented, but may be implemented in the future:
 - [exec](./commands/exec.md)
 - [split](./commands/split.md)
 - [layout](./commands/layout.md)
+- [focus](./commands/focus.md)
 - [move](./commands/move.md)
 - [mark](./commands/mark.md)
 - [resize](./commands/resize.md)

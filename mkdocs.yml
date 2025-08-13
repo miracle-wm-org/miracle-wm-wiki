@@ -54,6 +54,7 @@ nav:
       - ipc/commands/exec.md
       - ipc/commands/split.md
       - ipc/commands/layout.md
+      - ipc/commands/focus.md
       - ipc/commands/move.md
       - ipc/commands/resize.md
       - ipc/commands/mark.md
