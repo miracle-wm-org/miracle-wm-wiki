@@ -12,6 +12,7 @@ border:
   size: int  # Size in pixels
   color: Color # Hex color (rgba) or rgba YAML object
   focus_color: Color # Hex color (rgba) or rgba YAML object
+  radius: int # Radius in pixels
 ```
 
 ## Example
@@ -26,4 +27,5 @@ border:
     g: 255
     b: 0
     a: 255
+  radius: 16
 ```
