@@ -13,7 +13,7 @@ keymap:
     # The language.
     #
     # You may list the available languages using:
-    #   localectl list-x11-keymap-variants
+    #   localectl list-x11-keymap-layouts
     language: string
 
     # The variant of the language.
