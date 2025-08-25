@@ -1,5 +1,5 @@
-# Mouse Devices
-Defines the configuration of your mouse input device.
+# Mouse Configuration
+Configure the mouse input device.
 
 ## Key
 ```

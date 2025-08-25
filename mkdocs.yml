@@ -38,6 +38,7 @@ nav:
     - configuration/move_modifier.md
     - configuration/drag_and_drop.md
     - configuration/mouse.md
+    - configuration/keyboard.md
   - IPC:
     - ipc/index.md
     - ipc/run_command.md
