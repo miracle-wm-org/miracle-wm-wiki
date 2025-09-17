@@ -41,6 +41,7 @@ nav:
     - configuration/keyboard.md
     - Accessibility:
       - configuration/accessibility/hover_click.md
+      - configuration/accessibility/simulated_secondary_click.md
   - IPC:
     - ipc/index.md
     - ipc/run_command.md
