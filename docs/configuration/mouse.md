@@ -38,7 +38,7 @@ acceleration: "none" | "adaptive"
 
 ## Example
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 # Override the mouse configuration to change the handedness to left
 # and slow down the pointer speed

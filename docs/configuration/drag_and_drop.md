@@ -34,7 +34,7 @@ drag_and_drop:
 
 ## Example
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 drag_and_drop:
   enabled: true

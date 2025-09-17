@@ -16,7 +16,7 @@ miracle-mw-sensible-terminal
 
 ## Example
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 terminal: konsole # Set konsole as the default terminal
 ```

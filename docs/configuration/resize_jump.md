@@ -17,7 +17,7 @@ An integer describing the number of pixels
 
 ## Example
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 resize_jump: 25 # Each resize will now add or remove 25px from the current window size
 ```

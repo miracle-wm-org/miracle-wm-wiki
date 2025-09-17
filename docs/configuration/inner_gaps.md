@@ -21,7 +21,7 @@ y: 10
 
 ## Example
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 inner_gaps:
     x: 50 # 50px between windows horizontally

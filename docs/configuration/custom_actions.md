@@ -53,7 +53,7 @@ A `Modifier` is defined as one of the following names:
 
 ## Example
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 custom_actions:           # Set meta + D to open wofi
   - command: wofi --show=drun

@@ -94,7 +94,7 @@ animations:
 
 ## Example
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 # Override the workspace switching animations such that it takes
 # 1s and linearally interpolates to the target workspace

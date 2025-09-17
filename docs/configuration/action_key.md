@@ -42,7 +42,7 @@ This is the `super` or `windows` key.
 
 ## Example
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 action_key: shift
 ```

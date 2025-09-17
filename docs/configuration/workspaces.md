@@ -41,7 +41,7 @@ workspaces:
 
 ## Example
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 workspaces:
     - number: 1

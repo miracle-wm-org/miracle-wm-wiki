@@ -25,7 +25,7 @@ move_modifier:
 
 ## Example
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 move_modifier:
   - primary

@@ -33,7 +33,7 @@ keymap:
 
 ## Example
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 # Use the english + dvorak keyboard layout.
 keyboard:

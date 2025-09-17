@@ -21,7 +21,7 @@ A list of:
 
 ## Example
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 # Start waybar and swaybg on startup
 startup_apps:

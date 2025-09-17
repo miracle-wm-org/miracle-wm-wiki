@@ -17,7 +17,7 @@ border:
 
 ## Example
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 border:
   size: 2

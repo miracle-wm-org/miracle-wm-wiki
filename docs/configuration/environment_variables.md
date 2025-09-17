@@ -17,7 +17,7 @@ A list of:
 ## Example
 
 ```yaml
-# ~/.config/miracle-wm.yaml
+# ~/.config/miracle-wm/config.yaml
 
 environment_variables:
   - key: mesa_glthread  # Setting mesa_glthread to false fixes some AMD issues
