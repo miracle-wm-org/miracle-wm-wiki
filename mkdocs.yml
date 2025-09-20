@@ -39,6 +39,7 @@ nav:
     - configuration/drag_and_drop.md
     - configuration/mouse.md
     - configuration/keyboard.md
+    - configuration/output_filter.md
     - Accessibility:
       - configuration/accessibility/hover_click.md
       - configuration/accessibility/simulated_secondary_click.md
