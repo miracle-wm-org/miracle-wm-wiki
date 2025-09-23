@@ -38,6 +38,7 @@ nav:
     - configuration/move_modifier.md
     - configuration/drag_and_drop.md
     - configuration/mouse.md
+    - configuration/cursor.md
     - configuration/keyboard.md
     - configuration/output_filter.md
     - Accessibility:
