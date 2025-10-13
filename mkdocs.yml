@@ -23,6 +23,7 @@ nav:
   - Configuration: 
     - configuration/introduction.md
     - configuration/action_key.md
+    - configuration/includes.md
     - configuration/default_keybinds.md
     - configuration/custom_actions.md
     - configuration/startup_apps.md
