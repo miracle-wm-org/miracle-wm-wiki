@@ -22,6 +22,7 @@ type: disabled,
     slide,
     grow,
     shrink,
+    fade
 
 # The interpolation function applied to the animation.
 # https://easings.net/ is a great resource to describe these
