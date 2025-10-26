@@ -47,6 +47,7 @@ nav:
       - configuration/accessibility/simulated_secondary_click.md
       - configuration/accessibility/slow_keys.md
       - configuration/accessibility/sticky_keys.md
+      - configuration/accessibility/magnifier.md
   - IPC:
     - ipc/index.md
     - ipc/run_command.md

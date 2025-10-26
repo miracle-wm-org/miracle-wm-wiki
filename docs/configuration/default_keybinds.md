@@ -32,6 +32,13 @@ The default commands defined in the compositor are described in this table:
 | `toggle_pinned_to_workspace` | Toggle whether a floating window is pinned outside of a workspace or not | `❖ Super + ⇧ Shift + P` |
 | `toggle_tabbing` | Toggle whether or not the currently selected container is in a tabbed layout mode | `❖ Super + W` |
 | `toggle_stacking` | Toggle whether or not the currently selected container is in a stacking layout mode | `❖ Super + S` |
+| `magnifier_on` | Toggle whether the magnifier accessibility feature is enabled | `❖ Super + Shift + =` |
+| `magnifier_off` | Enable the magnifier accessibility feature | `❖ Super + Esc` |
+| `magnifier_off` | Disable the magnifier accessibility feature | `❖ Super + Esc` |
+| `magnifier_increase_size` | Increase the area of the magnifier | `❖ Super + Shift + =` |
+| `magnifier_decrease_size` | Decrease the area of the magnifier | `❖ Super + Shift + -` |
+| `magnifier_increase_scale` | Increase the scale of the magnifier | `❖ Super + =` |
+| `magnifier_decrease_scale` | Decrease the scale of the magnifier | `❖ Super + -` |
 
 ## Key
 ```
