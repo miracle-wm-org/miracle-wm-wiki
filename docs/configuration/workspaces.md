@@ -10,40 +10,54 @@ workspaces
 A list of:
 
 ```yaml
-number: int  # Unique que of the workspace [0-9]
-layout: tiled, floating  # Default layout style for this workspace
+# The number of the workspace.
+#
+# Either name, number, or both must be provided.
+number: int?
+
+# The name of the workspace.
+#
+# Either name, number, or both must be provided.
+name: string?
+
+# The default layout strategy for the workspace.
+#
+# New windows will be placed either in the tiling grid or floating in their
+# own tree by default.
+layout: tiling, floating
 ```
 
 ## Default
 ```yaml
 workspaces:
     - number: 0
-      layout: tiled
+      layout: tiling
     - number: 1
-      layout: tiled
+      layout: tiling
     - number: 2
-      layout: tiled
+      layout: tiling
     - number: 3
-      layout: tiled
+      layout: tiling
     - number: 4
-      layout: tiled
+      layout: tiling
     - number: 5
-      layout: tiled
+      layout: tiling
     - number: 6
-      layout: tiled
+      layout: tiling
     - number: 7
-      layout: tiled
+      layout: tiling
     - number: 8
-      layout: tiled
+      layout: tiling
     - number: 9
-      layout: tiled
+      layout: tiling
 ```
 
 ## Example
 ```yaml
 # ~/.config/miracle-wm/config.yaml
 
+# Override workspace 1's layout strategy such that all new windows are floating.
 workspaces:
     - number: 1
-      layout: floating  # Override the default layout style to floating
+      layout: floating
 ```
