@@ -39,9 +39,11 @@ nav:
     - configuration/move_modifier.md
     - configuration/drag_and_drop.md
     - configuration/mouse.md
-    - configuration/cursor.md
-    - configuration/keyboard.md
     - configuration/output_filter.md
+    - Input Devices:
+      - configuration/input/touchpad.md
+      - configuration/input/cursor.md
+      - configuration/input/keyboard.md
     - Accessibility:
       - configuration/accessibility/hover_click.md
       - configuration/accessibility/simulated_secondary_click.md
