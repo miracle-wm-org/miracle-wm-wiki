@@ -53,7 +53,7 @@ click_mode: none | area_to_click | finger_count
 
 # The scroll mode for the touchpad.
 #
-# Defaults to none.
+# Defaults to two_finger_scroll.
 scroll_mode: none | two_finger_scroll | edge_scroll | button_down_scroll
 ```
 
