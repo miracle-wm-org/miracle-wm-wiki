@@ -36,6 +36,7 @@ nav:
     - configuration/resize_jump.md
     - configuration/environment_variables.md
     - configuration/workspaces.md
+    - configuration/workspace_back_and_forth.md
     - configuration/move_modifier.md
     - configuration/drag_and_drop.md
     - configuration/output_filter.md
