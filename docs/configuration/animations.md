@@ -36,7 +36,7 @@ animations:
   - event: window_open
     duration: 0.25
     type: plugin
-    plugin_path: /path/to/plugin.wasm
+    plugin_name: my_plugin
 ```
 
 
@@ -59,7 +59,7 @@ animations:
         c5?: <float=1.3962634015954636>
         n1?: <float=7.5625>
         d1?: <float=2.75>
-    plugin_path?: </path/to/plugin.wasm>
+    plugin_name?: <string friendly name of plugin>
 ```
 
 ## Properties
@@ -83,7 +83,7 @@ animations:
     The animation implementation:
     
     - `built_in` — Use one or more built-in animation parts (requires `parts`)
-    - `plugin` — Use a custom WebAssembly plugin (requires `plugin_path`)
+    - `plugin` — Use a custom WebAssembly plugin (requires `plugin`)
 
 ---
 
@@ -165,11 +165,11 @@ For animations with `type: built_in`:
 
 For animations with `type: plugin`:
 
-### `plugin_path`
+### `plugin_name`
 
 :   <small>required</small> **type:** String (filesystem path)
 
-    Path to a WebAssembly plugin file (e.g., `/path/to/animation.wasm`).
+    Name of a plugin WebAssembly plugin. The plugin must exist in the [Plugins](./plugins.md) list.
 
 ## Default
 ```yaml
