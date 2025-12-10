@@ -26,21 +26,21 @@ A list of animation rules. Each rule defines how a specific event should be anim
         plugin_path?: </path/to/plugin.wasm>
     ```
 
-### Properties
+## Properties
 
-#### `event` <small>required</small>
+### `event` <small>required</small>
 
 :   **Type:** `window_open` | `window_move` | `window_close` | `workspace_switch`
 
     The window or workspace event that triggers this animation.
 
-#### `duration` <small>required</small>
+### `duration` <small>required</small>
 
 :   **Type:** Float (seconds)
 
     Total time the animation takes to complete. All parts run sequentially within this duration.
 
-#### `type` <small>required</small>
+### `type` <small>required</small>
 
 :   **Type:** `built_in` | `plugin`
 
@@ -51,11 +51,11 @@ A list of animation rules. Each rule defines how a specific event should be anim
 
 ---
 
-### Built-in Animations
+## Built-in Animations
 
 For animations with `type: built_in`:
 
-#### `parts` <small>required</small>
+### `parts` <small>required</small>
 
 :   **Type:** List of animation parts
 
@@ -106,11 +106,11 @@ For animations with `type: built_in`:
 
 ---
 
-### Plugin Animations
+## Plugin Animations
 
 For animations with `type: plugin`:
 
-#### `plugin_path` <small>required</small>
+### `plugin_path` <small>required</small>
 
 :   **Type:** String (filesystem path)
 
