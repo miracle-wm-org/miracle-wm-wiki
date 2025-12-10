@@ -1002,10 +1002,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key
+        Example
       
     </span>
   </a>
@@ -1013,13 +1013,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
+  <a href="#schema" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Value
+        Schema
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#move_modifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        move_modifier
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1028,17 +1056,6 @@
     <span class="md-ellipsis">
       
         Default
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
       
     </span>
   </a>
@@ -2702,10 +2719,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key
+        Example
       
     </span>
   </a>
@@ -2713,13 +2730,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
+  <a href="#schema" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Value
+        Schema
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#move_modifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        move_modifier
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2728,17 +2773,6 @@
     <span class="md-ellipsis">
       
         Default
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
       
     </span>
   </a>
@@ -2770,24 +2804,29 @@
 button, they will be able to translate the container 
 under the pointer to the resulting position of the cursor. If this
 container belongs to a group of containers (e.g. a floating mini tree), then
-the entire tree will be translated. This command does <strong>not</strong></p>
-<h2 id="key">Key<a class="headerlink" href="#key" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>move_modifier
-</code></pre></div>
-<h2 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">String[]</span>
-</code></pre></div>
-<p>For a list of valid modifiers, see <a href="../action_key/">Action Key</a>.</p>
-<h2 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nt">move_modifier</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">primary</span>
-</code></pre></div>
+the entire tree will be translated.</p>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm/config.yaml</span>
 
 <span class="nt">move_modifier</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">primary</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">shift</span>
+</code></pre></div>
+<h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">move_modifier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;Modifier[]&gt;</span>
+</code></pre></div>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h3 id="move_modifier"><code>move_modifier</code><a class="headerlink" href="#move_modifier" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><small>required</small> <strong>type:</strong> List of modifier keys</p>
+<p>Modifier keys that must be held while clicking the primary mouse button to translate (move) the container under the pointer. If the container belongs to a group (e.g., a floating mini tree), the entire tree will be translated.</p>
+<p>For a list of valid modifiers, see <a href="../action_key/">Action Key</a>.</p>
+</dd>
+</dl>
+<h2 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">move_modifier</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">primary</span>
 </code></pre></div>
 
 

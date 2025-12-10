@@ -694,32 +694,82 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Value
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart_on_death" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        restart_on_death
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_systemd_scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        in_systemd_scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default
       
     </span>
   </a>
@@ -2691,32 +2741,82 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Value
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart_on_death" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        restart_on_death
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_systemd_scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        in_systemd_scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default
       
     </span>
   </a>
@@ -2745,19 +2845,6 @@
 
 <h1 id="startup-apps">Startup Apps<a class="headerlink" href="#startup-apps" title="Permanent link">&para;</a></h1>
 <p>A list of applications that will be started when the compositor starts.</p>
-<h2 id="key">Key<a class="headerlink" href="#key" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>startup_apps
-</code></pre></div>
-<h2 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h2>
-<p>A list of:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span><span class="w">  </span><span class="c1"># A shell command to be executed</span>
-
-<span class="c1"># If true, the application will automatically restart</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">restart_on_death</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bool</span>
-
-<span class="c1"># If true, the application will be started with &quot;systemd-run --user --property Restart=on-failure &lt;COMMAND&gt;&quot;</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">in_systemd_scope</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bool</span>
-</code></pre></div>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm/config.yaml</span>
 
@@ -2768,6 +2855,40 @@
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">swaybg -i /path/to/my/image</span>
 <span class="w">    </span><span class="nt">restart_on_death</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">    </span><span class="nt">in_systemd_scope</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+<h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<p>A list of startup application definitions:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">startup_apps</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;string&gt;</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">restart_on_death?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;boolean&gt;</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">in_systemd_scope?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;boolean&gt;</span>
+</code></pre></div>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h3 id="command"><code>command</code><a class="headerlink" href="#command" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><small>required</small> <strong>type:</strong> String</p>
+<p>A shell command to execute on startup.</p>
+</dd>
+</dl>
+<h3 id="restart_on_death"><code>restart_on_death</code><a class="headerlink" href="#restart_on_death" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><strong>type:</strong> Boolean<br />
+<strong>Default:</strong> <code>false</code></p>
+<p>If <code>true</code>, the application will automatically restart if it crashes or exits.</p>
+</dd>
+</dl>
+<h3 id="in_systemd_scope"><code>in_systemd_scope</code><a class="headerlink" href="#in_systemd_scope" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><strong>type:</strong> Boolean<br />
+<strong>Default:</strong> <code>false</code></p>
+<p>If <code>true</code>, the application will be started with <code>systemd-run --user --property Restart=on-failure &lt;COMMAND&gt;</code>.</p>
+</dd>
+</dl>
+<h2 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">startup_apps</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
 </code></pre></div>
 
 

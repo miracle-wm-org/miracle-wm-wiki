@@ -1086,32 +1086,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Value
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focus_mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        focus_mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default
       
     </span>
   </a>
@@ -2691,32 +2730,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Value
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focus_mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        focus_mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default
       
     </span>
   </a>
@@ -2745,26 +2823,43 @@
 
 <h1 id="cursor">Cursor<a class="headerlink" href="#cursor" title="Permanent link">&para;</a></h1>
 <p>Describes the cursor configuration.</p>
-<h2 id="key">Key<a class="headerlink" href="#key" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>cursor
-</code></pre></div>
-<h2 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># The scale of the cursor.</span>
-<span class="c1">#</span>
-<span class="c1"># Defaults to 1.</span>
-<span class="nt">scale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">float</span>
-
-<span class="c1"># How to focus windows with the cursor.</span>
-<span class="c1">#</span>
-<span class="c1"># Defaults to &quot;hover&quot;.</span>
-<span class="nt">focus_mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hover, click</span>
-</code></pre></div>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm/config.yaml</span>
 
 <span class="nt">cursor</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">scale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.0</span><span class="w"> </span><span class="c1"># Sets the cursor scale to 4 times its original size.</span>
 <span class="w">    </span><span class="nt">focus_mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">click</span><span class="w"> </span><span class="c1"># Click a mouse button while hovering a window to focus</span>
+</code></pre></div>
+<h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">cursor</span><span class="p">:</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">scale?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;float&gt;</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">focus_mode?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;hover|click&gt;</span>
+</code></pre></div>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h3 id="scale"><code>scale</code><a class="headerlink" href="#scale" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><strong>type:</strong> Float<br />
+<strong>Default:</strong> <code>1.0</code></p>
+<p>The scale multiplier of the cursor. A value of <code>2.0</code> makes the cursor twice its original size.</p>
+</dd>
+</dl>
+<h3 id="focus_mode"><code>focus_mode</code><a class="headerlink" href="#focus_mode" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><strong>type:</strong> <code>hover</code> | <code>click</code><br />
+<strong>Default:</strong> <code>hover</code></p>
+<p>How to focus windows with the cursor:</p>
+<ul>
+<li><code>hover</code> — Focus windows by hovering over them with the cursor</li>
+<li><code>click</code> — Click a mouse button while hovering a window to focus it</li>
+</ul>
+</dd>
+</dl>
+<h2 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">cursor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">scale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0</span>
+<span class="w">  </span><span class="nt">focus_mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hover</span>
 </code></pre></div>
 
 

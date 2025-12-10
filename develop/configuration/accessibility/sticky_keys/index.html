@@ -1386,32 +1386,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Value
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        enabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#should_disable_if_two_keys_are_pressed_together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        should_disable_if_two_keys_are_pressed_together
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default
       
     </span>
   </a>
@@ -2693,32 +2732,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Value
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        enabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#should_disable_if_two_keys_are_pressed_together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        should_disable_if_two_keys_are_pressed_together
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default
       
     </span>
   </a>
@@ -2750,28 +2828,39 @@
 shortcut one key at a time instead of having to hold down all modifier keys at
 once. For example, a user who wants to move the focused window to workspace
 two could click <code>Super</code> then <code>Shift</code> and finally <code>2</code> in order to move the window.</p>
-<h2 id="key">Key<a class="headerlink" href="#key" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>sticky_keys
-</code></pre></div>
-<h2 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Whether or not sticky keys is enabled.</span>
-<span class="c1">#</span>
-<span class="c1"># Defaults to `false`.</span>
-<span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">boolean</span>
-
-<span class="c1"># When set to true, depressing two modifier keys simultaneously will</span>
-<span class="c1"># result in sticky keys being temporarily disabled until all keys are</span>
-<span class="c1"># released.</span>
-<span class="c1">#</span>
-<span class="c1"># Defaults to `true`</span>
-<span class="nt">should_disable_if_two_keys_are_pressed_together</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">boolean</span>
-</code></pre></div>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm/config.yaml</span>
 
 <span class="nt">sticky_keys</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">    </span><span class="nt">should_disable_if_two_keys_are_pressed_together</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</code></pre></div>
+<h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">sticky_keys</span><span class="p">:</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">enabled?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;boolean&gt;</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">should_disable_if_two_keys_are_pressed_together?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;boolean&gt;</span>
+</code></pre></div>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h3 id="enabled"><code>enabled</code><a class="headerlink" href="#enabled" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><strong>type:</strong> Boolean<br />
+<strong>Default:</strong> <code>false</code></p>
+<p>Whether or not sticky keys is enabled.</p>
+</dd>
+</dl>
+<h3 id="should_disable_if_two_keys_are_pressed_together"><code>should_disable_if_two_keys_are_pressed_together</code><a class="headerlink" href="#should_disable_if_two_keys_are_pressed_together" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><strong>type:</strong> Boolean<br />
+<strong>Default:</strong> <code>true</code></p>
+<p>When set to <code>true</code>, depressing two modifier keys simultaneously will result in sticky keys being temporarily disabled until all keys are released.</p>
+</dd>
+</dl>
+<h2 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">sticky_keys</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">should_disable_if_two_keys_are_pressed_together</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 
 

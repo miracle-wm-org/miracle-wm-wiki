@@ -666,32 +666,93 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Value
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        action
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        modifiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        key
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default
       
     </span>
   </a>
@@ -2691,32 +2752,93 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Value
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        action
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        modifiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        key
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default
       
     </span>
   </a>
@@ -2748,26 +2870,50 @@
 bound to a specific key combination. These actions always have preference
 over those defined in <a href="#default_keybinds.md">Default Keybinds</a> when they are
 bound to the same key combination.</p>
-<h2 id="key">Key<a class="headerlink" href="#key" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>custom_actions
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm/config.yaml</span>
+
+<span class="nt">custom_actions</span><span class="p">:</span><span class="w">           </span><span class="c1"># Set meta + D to open wofi</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wofi --show=drun</span>
+<span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">down</span>
+<span class="w">    </span><span class="nt">modifiers</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">primary</span>
+<span class="w">    </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KEY_D</span>
 </code></pre></div>
-<h2 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h2>
-<p>A list of: </p>
-<div class="highlight"><pre><span></span><code><span class="c1"># The shell command that you want to execute</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
-
-<span class="c1"># The key action that will trigger the default action</span>
-<span class="w w-Error"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;up&quot;</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="err"> &quot;down&quot; | &quot;repeat&quot; | &quot;modifiers&quot;</span>
-
-<span class="c1"># A list of modifiers that need to accompany the action for the command to happen</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">modifiers</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Modifier[]</span>
-
-<span class="c1"># Name of the keycode that the action should respond to.</span>
-<span class="c1"># See https://github.com/torvalds/linux/blob/master/include/uapi/linux/input-event-codes.h</span>
-<span class="c1"># for the list of available keycodes (e.g. KEY_ENTER, KEY_Z, etc.)</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KeyCodeName</span>
+<h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<p>A list of custom keybind actions:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">custom_actions</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;string&gt;</span>
+<span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;up|down|repeat|modifiers&gt;</span>
+<span class="w">    </span><span class="nt">modifiers</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;Modifier[]&gt;</span>
+<span class="w">    </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;KeyCodeName&gt;</span>
 </code></pre></div>
-<p>A <code>Modifier</code> is defined as one of the following names:</p>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h3 id="command"><code>command</code><a class="headerlink" href="#command" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><small>required</small> <strong>type:</strong> String</p>
+<p>The shell command to execute when the keybind is triggered.</p>
+</dd>
+</dl>
+<h3 id="action"><code>action</code><a class="headerlink" href="#action" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><small>required</small> <strong>type:</strong> <code>up</code> | <code>down</code> | <code>repeat</code> | <code>modifiers</code></p>
+<p>The key action that triggers the command:</p>
+<ul>
+<li><code>up</code> — Triggered when the key is released</li>
+<li><code>down</code> — Triggered when the key is pressed</li>
+<li><code>repeat</code> — Triggered repeatedly while the key is held</li>
+<li><code>modifiers</code> — Triggered when modifiers change</li>
+</ul>
+</dd>
+</dl>
+<h3 id="modifiers"><code>modifiers</code><a class="headerlink" href="#modifiers" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><small>required</small> <strong>type:</strong> List of modifier keys</p>
+<p>Modifier keys that must be held for the command to execute. Available modifiers:</p>
 <table>
 <thead>
 <tr>
@@ -2850,15 +2996,17 @@ bound to the same key combination.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm/config.yaml</span>
-
-<span class="nt">custom_actions</span><span class="p">:</span><span class="w">           </span><span class="c1"># Set meta + D to open wofi</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wofi --show=drun</span>
-<span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">down</span>
-<span class="w">    </span><span class="nt">modifiers</span><span class="p">:</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">primary</span>
-<span class="w">    </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KEY_D</span>
+</dd>
+</dl>
+<h3 id="key"><code>key</code><a class="headerlink" href="#key" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><small>required</small> <strong>type:</strong> KeyCodeName</p>
+<p>Name of the keycode that the action responds to. See the <a href="https://github.com/torvalds/linux/blob/master/include/uapi/linux/input-event-codes.h">Linux input event codes</a> for available keycodes (e.g., <code>KEY_ENTER</code>, <code>KEY_Z</code>, etc.)</p>
+</dd>
+</dl>
+<h2 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">custom_actions</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
 </code></pre></div>
 
 

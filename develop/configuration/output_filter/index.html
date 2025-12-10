@@ -1058,32 +1058,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Value
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shader_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        shader_path
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default
       
     </span>
   </a>
@@ -2691,32 +2719,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Value
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shader_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        shader_path
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default
       
     </span>
   </a>
@@ -2745,41 +2801,8 @@
 
 <h1 id="output-filter">Output Filter<a class="headerlink" href="#output-filter" title="Permanent link">&para;</a></h1>
 <p>Apply a custom output filter to the final render via a shader.</p>
-<h2 id="key">Key<a class="headerlink" href="#key" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>output_filter
-</code></pre></div>
-<h2 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># A path to the fragment shader code for this filter.</span>
-<span class="c1">#</span>
-<span class="c1"># Note that tildes (~) are respected and will resolve to the appropriate</span>
-<span class="c1"># home directory.</span>
-<span class="c1">#</span>
-<span class="c1"># Shaders can be placed in any directory.</span>
-<span class="nt">shader_path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
-</code></pre></div>
-<p>The shader must specify a function named <code>sample_to_rgba</code> with the following
-signature:</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// The &#39;tex&#39; uniform must be manually provided by the shader author.</span>
-<span class="c1">// This is the texture for the output.</span>
-<span class="n">uniform</span><span class="w"> </span><span class="n">sampler2D</span><span class="w"> </span><span class="n">tex</span><span class="p">;</span>
-
-<span class="c1">// This method takes in a texture coordinate and expects the user</span>
-<span class="c1">// to output a color. Note that this texture corresponds to a corner</span>
-<span class="c1">// of the screen, not an individual window.</span>
-<span class="n">vec4</span><span class="w"> </span><span class="nf">sample_to_rgba</span><span class="p">(</span><span class="n">in</span><span class="w"> </span><span class="n">vec2</span><span class="w"> </span><span class="n">texcoord</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">vec4</span><span class="w"> </span><span class="n">originalColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">texture2D</span><span class="p">(</span><span class="n">tex</span><span class="p">,</span><span class="w"> </span><span class="n">texcoord</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">/// Do some changes on the color...</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">vec4</span><span class="p">(...);</span><span class="w">  </span><span class="c1">/// Return a new color</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>Miracle will call this method to resolve the color.</p>
-<p>The shader will automatically reload when it is changed. If the shader fails
-to compile for whatever reason (e.g. bad path or poor program), then the error
-will be logged to the console and Miracle will use the default shader instead.</p>
-<p>Miracle ships a number of default shaders that are installed in
-<code>/usr/share/miracle-wm/shaders/output_filter</code>.</p>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<p>This example applies a grayscale filter to the </p>
+<p>This example applies a grayscale filter to the output:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm/config.yaml</span>
 
 <span class="nt">output_filter</span><span class="p">:</span>
@@ -2794,6 +2817,39 @@ will be logged to the console and Miracle will use the default shader instead.</
 <span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">col</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">col</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">col</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">3.0</span><span class="p">;</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">vec4</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
 <span class="p">}</span>
+</code></pre></div>
+<h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">output_filter</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">shader_path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;string&gt;</span>
+</code></pre></div>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h3 id="shader_path"><code>shader_path</code><a class="headerlink" href="#shader_path" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><small>required</small> <strong>type:</strong> String (filesystem path)</p>
+<p>Path to the fragment shader code for this filter. Tildes (<code>~</code>) are respected and will resolve to the appropriate home directory. Shaders can be placed in any directory.</p>
+<p>The shader must specify a function named <code>sample_to_rgba</code> with the following signature:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// The &#39;tex&#39; uniform must be manually provided by the shader author.</span>
+<span class="c1">// This is the texture for the output.</span>
+<span class="n">uniform</span><span class="w"> </span><span class="n">sampler2D</span><span class="w"> </span><span class="n">tex</span><span class="p">;</span>
+
+<span class="c1">// This method takes in a texture coordinate and expects the user</span>
+<span class="c1">// to output a color. Note that this texture corresponds to a corner</span>
+<span class="c1">// of the screen, not an individual window.</span>
+<span class="n">vec4</span><span class="w"> </span><span class="nf">sample_to_rgba</span><span class="p">(</span><span class="n">in</span><span class="w"> </span><span class="n">vec2</span><span class="w"> </span><span class="n">texcoord</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">vec4</span><span class="w"> </span><span class="n">originalColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">texture2D</span><span class="p">(</span><span class="n">tex</span><span class="p">,</span><span class="w"> </span><span class="n">texcoord</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">/// Do some changes on the color...</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">vec4</span><span class="p">(...);</span><span class="w">  </span><span class="c1">/// Return a new color</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Miracle will call this method to resolve the color.</p>
+<p>The shader will automatically reload when it is changed. If the shader fails to compile for whatever reason (e.g., bad path or poor program), then the error will be logged to the console and Miracle will use the default shader instead.</p>
+<p>Miracle ships a number of default shaders that are installed in <code>/usr/share/miracle-wm/shaders/output_filter</code>.</p>
+</dd>
+</dl>
+<h2 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">output_filter</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">shader_path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
 </code></pre></div>
 
 

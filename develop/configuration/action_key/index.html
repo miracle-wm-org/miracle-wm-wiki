@@ -582,10 +582,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key
+        Example
       
     </span>
   </a>
@@ -593,13 +593,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
+  <a href="#schema" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Value
+        Schema
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#action_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        action_key
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -608,17 +636,6 @@
     <span class="md-ellipsis">
       
         Default
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
       
     </span>
   </a>
@@ -2702,10 +2719,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key
+        Example
       
     </span>
   </a>
@@ -2713,13 +2730,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#value" class="md-nav__link">
+  <a href="#schema" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Value
+        Schema
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#action_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        action_key
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2728,17 +2773,6 @@
     <span class="md-ellipsis">
       
         Default
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
       
     </span>
   </a>
@@ -2770,11 +2804,20 @@
 <a href="../default_keybinds/">Default Keybinds</a> and <a href="../custom_actions/">Custom Actions</a> can refer
 to this key using the word <code>primary</code> as a modifier key. Please see those configuration options
 for more info.</p>
-<h2 id="key">Key<a class="headerlink" href="#key" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>action_key
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm/config.yaml</span>
+
+<span class="nt">action_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">shift</span>
 </code></pre></div>
-<h2 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h2>
-<p>A <code>modifier</code> string, which is defined as a name in the following table:</p>
+<h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">action_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;modifier&gt;</span>
+</code></pre></div>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h3 id="action_key"><code>action_key</code><a class="headerlink" href="#action_key" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><small>required</small> <strong>type:</strong> Modifier key name</p>
+<p>A modifier string that defines the primary action key. Available options:</p>
 <table>
 <thead>
 <tr>
@@ -2853,15 +2896,12 @@ for more info.</p>
 </tr>
 </tbody>
 </table>
+</dd>
+</dl>
 <h2 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>meta
+<div class="highlight"><pre><span></span><code><span class="nt">action_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">meta</span>
 </code></pre></div>
 <p>This is the <code>super</code> or <code>windows</code> key.</p>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm/config.yaml</span>
-
-<span class="nt">action_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">shift</span>
-</code></pre></div>
 
 
 
