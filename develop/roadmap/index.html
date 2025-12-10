@@ -27,6 +27,9 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
       
 
 
@@ -39,8 +42,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -53,7 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -108,6 +118,24 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -2821,14 +2849,14 @@
   
 
 
-<h1 id="roadmap">Roadmap</h1>
+<h1 id="roadmap">Roadmap<a class="headerlink" href="#roadmap" title="Permanent link">&para;</a></h1>
 <p>The goal is to have an environment that I am comfortable daily-driving by <strong>July 2025</strong>.
 This goal will be marked by the <code>1.0.0</code> release. Until then, all releases will be
 <code>0.x.0</code>.</p>
 <p>The dates attached to these releases aren't set in stone. Any release may come
 earlier if the work is done. Also, new features may be added to the release while it's
 in progress if priority changes, which may push back the release date.</p>
-<h2 id="010">✅ 0.1.0</h2>
+<h2 id="010">✅ 0.1.0<a class="headerlink" href="#010" title="Permanent link">&para;</a></h2>
 <p><strong>Proof of Concept (Due: February 17th 2024)</strong></p>
 <p>Features:</p>
 <ul class="task-list">
@@ -2869,7 +2897,7 @@ in progress if priority changes, which may push back the release date.</p>
 </ul>
 </li>
 </ul>
-<h2 id="020">✅ 0.2.0</h2>
+<h2 id="020">✅ 0.2.0<a class="headerlink" href="#020" title="Permanent link">&para;</a></h2>
 <p><strong>Stabilization + Usability (Due: April 15th 2024)</strong></p>
 <p>Features:</p>
 <ul class="task-list">
@@ -2895,7 +2923,7 @@ in progress if priority changes, which may push back the release date.</p>
 </ul>
 </li>
 </ul>
-<h2 id="030">✅ 0.3.0</h2>
+<h2 id="030">✅ 0.3.0<a class="headerlink" href="#030" title="Permanent link">&para;</a></h2>
 <p><strong>Aimations + Sway IPC Release (Due: June 15th 2024)</strong></p>
 <p>This release relies on having the <em>Mir</em>'s renderer capabilities opened up to us.
 If we can override the renderer, we can put <em>whatever we like</em> on the screen.</p>
@@ -2916,7 +2944,7 @@ If we can override the renderer, we can put <em>whatever we like</em> on the scr
 </ul>
 </li>
 </ul>
-<h2 id="040">0.4.0</h2>
+<h2 id="040">0.4.0<a class="headerlink" href="#040" title="Permanent link">&para;</a></h2>
 <p><strong>Complete i3 ipc implementation (Due: November 30th 2024)</strong></p>
 <p>Features:</p>
 <ul class="task-list">
@@ -2927,7 +2955,7 @@ If we can override the renderer, we can put <em>whatever we like</em> on the scr
 </li>
 <li class="task-list-item"><input type="checkbox" disabled checked/> Increase test coverage using the new harness</li>
 </ul>
-<h2 id="050">✅ 0.5.0</h2>
+<h2 id="050">✅ 0.5.0<a class="headerlink" href="#050" title="Permanent link">&para;</a></h2>
 <p><strong>Pointer Support (Due: January 2025)</strong></p>
 <p>Features:</p>
 <ul class="task-list">
@@ -2941,16 +2969,16 @@ If we can override the renderer, we can put <em>whatever we like</em> on the scr
 </ul>
 </li>
 </ul>
-<h2 id="060">🚧 0.6.0</h2>
+<h2 id="060">🚧 0.6.0<a class="headerlink" href="#060" title="Permanent link">&para;</a></h2>
 <p><strong>Settings Application (Due May 2025)</strong></p>
 <p>Features:</p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox" disabled/> Settings application</li>
 </ul>
-<h2 id="070">0.7.0</h2>
+<h2 id="070">0.7.0<a class="headerlink" href="#070" title="Permanent link">&para;</a></h2>
 <p>Features:
 - [ ] TBD</p>
-<h2 id="100">1.0.0</h2>
+<h2 id="100">1.0.0<a class="headerlink" href="#100" title="Permanent link">&para;</a></h2>
 <p><strong>Feature Complete</strong></p>
 <p>Features:</p>
 <ul class="task-list">
@@ -2981,8 +3009,16 @@ If we can override the renderer, we can put <em>whatever we like</em> on the scr
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -3013,7 +3049,7 @@ If we can override the renderer, we can put <em>whatever we like</em> on the scr
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.top", "content.tabs.link", "palette.toggle", "content.heading.permalink"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>

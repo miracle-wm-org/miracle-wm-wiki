@@ -29,6 +29,9 @@
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
       
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
       
 
 
@@ -41,8 +44,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -55,7 +58,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -110,6 +120,24 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -2927,11 +2955,11 @@
   
 
 
-<h1 id="animations">Animations</h1>
+<h1 id="animations">Animations<a class="headerlink" href="#animations" title="Permanent link">&para;</a></h1>
 <p>Miracle supports a number of different built-in animations that can
 be configured by the user. If you would like to turn off animations
 by default, please see <a href="../enable_animations/">Enable Animations</a>.</p>
-<h2 id="schema">Schema</h2>
+<h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
 <p>A list of animation rules. Each rule defines how a specific event should be animated.</p>
 <details class="info" open="open">
 <summary>Schema</summary>
@@ -2952,22 +2980,22 @@ by default, please see <a href="../enable_animations/">Enable Animations</a>.</p
 <span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">plugin_path?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;/path/to/plugin.wasm&gt;</span>
 </code></pre></div>
 </details>
-<h2 id="properties">Properties</h2>
-<h3 id="event-required"><code>event</code> <small>required</small></h3>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<h3 id="event-required"><code>event</code> <small>required</small><a class="headerlink" href="#event-required" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>
 <p><strong>Type:</strong> <code>window_open</code> | <code>window_move</code> | <code>window_close</code> | <code>workspace_switch</code></p>
 <p>The window or workspace event that triggers this animation.</p>
 </dd>
 </dl>
-<h3 id="duration-required"><code>duration</code> <small>required</small></h3>
+<h3 id="duration-required"><code>duration</code> <small>required</small><a class="headerlink" href="#duration-required" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>
 <p><strong>Type:</strong> Float (seconds)</p>
 <p>Total time the animation takes to complete. All parts run sequentially within this duration.</p>
 </dd>
 </dl>
-<h3 id="type-required"><code>type</code> <small>required</small></h3>
+<h3 id="type-required"><code>type</code> <small>required</small><a class="headerlink" href="#type-required" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>
 <p><strong>Type:</strong> <code>built_in</code> | <code>plugin</code></p>
@@ -2979,9 +3007,9 @@ by default, please see <a href="../enable_animations/">Enable Animations</a>.</p
 </dd>
 </dl>
 <hr />
-<h2 id="built-in-animations">Built-in Animations</h2>
+<h2 id="built-in-animations">Built-in Animations<a class="headerlink" href="#built-in-animations" title="Permanent link">&para;</a></h2>
 <p>For animations with <code>type: built_in</code>:</p>
-<h3 id="parts-required"><code>parts</code> <small>required</small></h3>
+<h3 id="parts-required"><code>parts</code> <small>required</small><a class="headerlink" href="#parts-required" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>
 <p><strong>Type:</strong> List of animation parts</p>
@@ -3043,16 +3071,16 @@ by default, please see <a href="../enable_animations/">Enable Animations</a>.</p
 </dd>
 </dl>
 <hr />
-<h2 id="plugin-animations">Plugin Animations</h2>
+<h2 id="plugin-animations">Plugin Animations<a class="headerlink" href="#plugin-animations" title="Permanent link">&para;</a></h2>
 <p>For animations with <code>type: plugin</code>:</p>
-<h3 id="plugin_path-required"><code>plugin_path</code> <small>required</small></h3>
+<h3 id="plugin_path-required"><code>plugin_path</code> <small>required</small><a class="headerlink" href="#plugin_path-required" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>
 <p><strong>Type:</strong> String (filesystem path)</p>
 <p>Path to a WebAssembly plugin file (e.g., <code>/path/to/animation.wasm</code>).</p>
 </dd>
 </dl>
-<h2 id="defaults">Defaults</h2>
+<h2 id="defaults">Defaults<a class="headerlink" href="#defaults" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nt">animations</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">event</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">window_open</span>
 <span class="w">    </span><span class="nt">duration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.25</span>
@@ -3079,7 +3107,7 @@ by default, please see <a href="../enable_animations/">Enable Animations</a>.</p
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">slide</span>
 <span class="w">        </span><span class="nt">function</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ease_out_sine</span>
 </code></pre></div>
-<h2 id="examples">Examples</h2>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm/config.yaml</span>
 
 <span class="c1"># Override workspace switching to take 1s with linear interpolation</span>
@@ -3126,8 +3154,16 @@ by default, please see <a href="../enable_animations/">Enable Animations</a>.</p
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -3158,7 +3194,7 @@ by default, please see <a href="../enable_animations/">Enable Animations</a>.</p
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.top", "content.tabs.link", "palette.toggle", "content.heading.permalink"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
