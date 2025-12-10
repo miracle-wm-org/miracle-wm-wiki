@@ -3,6 +3,25 @@ theme:
   name: material
   icon:
     repo: fontawesome/brands/github
+  font:
+    text: Open Sans
+  features:
+    - content.code.copy
+    - navigation.top
+    - content.tabs.link
+    - palette.toggle
+    - content.heading.permalink
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+
 repo_url: https://github.com/mattkae/miracle
 markdown_extensions:
   - pymdownx.superfences
@@ -13,6 +32,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - toc:
+      permalink: true
 nav:
   - Home: index.md
   - Getting Started:
