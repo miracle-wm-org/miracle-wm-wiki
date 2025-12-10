@@ -814,10 +814,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Schema">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#properties" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -866,8 +865,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#built-in-animations" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -894,8 +893,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#plugin-animations" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -915,11 +914,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2783,10 +2777,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Schema">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#properties" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2835,8 +2828,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#built-in-animations" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2863,8 +2856,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#plugin-animations" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2884,11 +2877,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2964,22 +2952,22 @@ by default, please see <a href="../enable_animations/">Enable Animations</a>.</p
 <span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">plugin_path?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;/path/to/plugin.wasm&gt;</span>
 </code></pre></div>
 </details>
-<h3 id="properties">Properties</h3>
-<h4 id="event-required"><code>event</code> <small>required</small></h4>
+<h2 id="properties">Properties</h2>
+<h3 id="event-required"><code>event</code> <small>required</small></h3>
 <dl>
 <dd>
 <p><strong>Type:</strong> <code>window_open</code> | <code>window_move</code> | <code>window_close</code> | <code>workspace_switch</code></p>
 <p>The window or workspace event that triggers this animation.</p>
 </dd>
 </dl>
-<h4 id="duration-required"><code>duration</code> <small>required</small></h4>
+<h3 id="duration-required"><code>duration</code> <small>required</small></h3>
 <dl>
 <dd>
 <p><strong>Type:</strong> Float (seconds)</p>
 <p>Total time the animation takes to complete. All parts run sequentially within this duration.</p>
 </dd>
 </dl>
-<h4 id="type-required"><code>type</code> <small>required</small></h4>
+<h3 id="type-required"><code>type</code> <small>required</small></h3>
 <dl>
 <dd>
 <p><strong>Type:</strong> <code>built_in</code> | <code>plugin</code></p>
@@ -2991,9 +2979,9 @@ by default, please see <a href="../enable_animations/">Enable Animations</a>.</p
 </dd>
 </dl>
 <hr />
-<h3 id="built-in-animations">Built-in Animations</h3>
+<h2 id="built-in-animations">Built-in Animations</h2>
 <p>For animations with <code>type: built_in</code>:</p>
-<h4 id="parts-required"><code>parts</code> <small>required</small></h4>
+<h3 id="parts-required"><code>parts</code> <small>required</small></h3>
 <dl>
 <dd>
 <p><strong>Type:</strong> List of animation parts</p>
@@ -3055,9 +3043,9 @@ by default, please see <a href="../enable_animations/">Enable Animations</a>.</p
 </dd>
 </dl>
 <hr />
-<h3 id="plugin-animations">Plugin Animations</h3>
+<h2 id="plugin-animations">Plugin Animations</h2>
 <p>For animations with <code>type: plugin</code>:</p>
-<h4 id="plugin_path-required"><code>plugin_path</code> <small>required</small></h4>
+<h3 id="plugin_path-required"><code>plugin_path</code> <small>required</small></h3>
 <dl>
 <dd>
 <p><strong>Type:</strong> String (filesystem path)</p>
