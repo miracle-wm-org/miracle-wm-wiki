@@ -32,11 +32,15 @@ animations:
 
 ```yaml
 # Use a plugin animation for window open
+plugins:
+  - path: /path/to/plugin_playground.wasm
+    name: playground
+
 animations:
   - event: window_open
     duration: 0.25
     type: plugin
-    plugin_name: my_plugin
+    plugin_name: playground
 ```
 
 
