@@ -1,13 +1,13 @@
 # Display Configuration
 
 The display configuration is a distinct YAML file from the regular configuration.
-It is populated on the initial startup of `miracle` with a basic information for
-your particular monitor sitation if it does not yet exist.
+It is populated on the initial startup of `miracle` with basic information for
+your particular monitor situation if it does not yet exist.
 
 The most likely location is:
 
 ```
-~/.config/miracle-wm/display.yaml.
+~/.config/miracle-wm/display.yaml
 ```
 
 !!! note
@@ -17,28 +17,6 @@ You may specify an alternative location by providing the commandline argument:
 
 ```sh
 miracle-wm --display-config-path=/path/to/file
-```
-
-## Configuration
-The contents of the file describe a list of outputs. If the output is in the list, it is
-considered "used" and will have the provided attributes applied to it. An output is
-matched by its `name`. All attributes aside from the `name` are optional.
-
-```yaml
-  outputs:
-    name: string      # the name of the output to match
-    enabled: boolean  # whether or not the output is used
-    primary: boolean  # whether or not the output is primary. If set true on multiple outputs, only the first one will be primary.
-    position:         # the XY position of the output
-      x: int
-      y: int
-    size:             # the size of the output, must match a resolution that the output supports, otherwise ignored
-      width: int
-      height: int
-    refresh: double   # the refresh rate of the output, must match a valid resolution that the output supports, otherwise ignored
-    orientation: normal | inverted | left | right
-    scale: float      # a scale factor for the whole output
-    group_id: int     # when non-zero, outputs with the same group_id will display the same content
 ```
 
 ## Example
@@ -73,3 +51,84 @@ outputs:
     scale: 1
     group_id: 0
 ```
+
+## Schema
+
+A list of output configurations:
+
+```yaml
+outputs:
+  - name: <string>
+    enabled?: <boolean>
+    primary?: <boolean>
+    position?:
+      x: <int>
+      y: <int>
+    size?:
+      width: <int>
+      height: <int>
+    refresh?: <double>
+    orientation?: <normal|inverted|left|right>
+    scale?: <float>
+    group_id?: <int>
+```
+
+## Properties
+
+The contents of the file describe a list of outputs. If the output is in the list, it is
+considered "used" and will have the provided attributes applied to it. An output is
+matched by its `name`. All attributes aside from the `name` are optional.
+
+### `name`
+
+:   <small>required</small> **type:** String
+
+    The name of the output to match.
+
+### `enabled`
+
+:   **type:** Boolean
+
+    Whether or not the output is used.
+
+### `primary`
+
+:   **type:** Boolean
+
+    Whether or not the output is primary. If set to `true` on multiple outputs, only the first one will be primary.
+
+### `position`
+
+:   **type:** Object with `x` and `y` integer properties
+
+    The XY position of the output.
+
+### `size`
+
+:   **type:** Object with `width` and `height` integer properties
+
+    The size of the output. Must match a resolution that the output supports, otherwise ignored.
+
+### `refresh`
+
+:   **type:** Double
+
+    The refresh rate of the output in Hz. Must match a valid resolution that the output supports, otherwise ignored.
+
+### `orientation`
+
+:   **type:** `normal` | `inverted` | `left` | `right`
+
+    The orientation of the output.
+
+### `scale`
+
+:   **type:** Float
+
+    A scale factor for the whole output.
+
+### `group_id`
+
+:   **type:** Integer
+
+    When non-zero, outputs with the same `group_id` will display the same content (mirrored displays).

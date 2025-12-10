@@ -40,53 +40,6 @@ The default commands defined in the compositor are described in this table:
 | `magnifier_increase_scale` | Increase the scale of the magnifier | `❖ Super + =` |
 | `magnifier_decrease_scale` | Decrease the scale of the magnifier | `❖ Super + -` |
 
-## Key
-```
-default_action_overrides
-```
-
-## Value
-A list of: 
-
-```yaml
-# The name of the action that you want to override (taken from the list above)
-- name: string
-
-# The key action that will trigger the default action
- - action: "up" | "down" | "repeat" | "modifiers"
-
-# A list of modifiers that need to accompany the action for the command to happen
-- modifiers: Modifier[]
-
-# Name of the keycode that the action should respond to.
-# See https://github.com/torvalds/linux/blob/master/include/uapi/linux/input-event-codes.h
-# for the list of available keycodes (e.g. KEY_ENTER, KEY_Z, etc.)
-- key: KeyCodeName
-```
-
-A `Modifier` is defined as one of the following names:
-
-| Name | Description |
-| ---- | ----------- |
-| `primary` | the key defined by the [Action Key](action_key.md) |
-| `alt` | Any alt key |
-| `alt_left` | The left alt key only |
-| `alt_right` | The right alt key only |
-| `shift` | Any shift key |
-| `shift_left` | The left shift key only |
-| `shift_right` | The right shift key only |
-| `ctrl` | Any ctrl key |
-| `ctrl_left` | The left ctrl key only |
-| `ctrl_right` | The right ctrl key only |
-| `meta` | The `super` or `windows` key |
-| `meta_left` | The left `super` or `windows` key only |
-| `meta_right` | The right `super` or `windows` key only |
-| `sym` | The sym key |
-| `function` | The `fn` key |
-| `caps_lock` | The caps lock key |
-| `num_lock` | The num lock key |
-| `scroll_lock` | The scroll lock key |
-
 ## Example
 ```yaml
 # ~/.config/miracle-wm/config.yaml
@@ -98,4 +51,73 @@ default_action_overrides:
       - ctrl
       - shift
     key: KEY_ENTER
+```
+
+## Schema
+
+A list of keybind override definitions:
+
+```yaml
+default_action_overrides:
+  - name: <string>
+    action: <up|down|repeat|modifiers>
+    modifiers: <Modifier[]>
+    key: <KeyCodeName>
+```
+
+## Properties
+
+### `name`
+
+:   <small>required</small> **type:** String
+
+    The name of the default action to override (see table above).
+
+### `action`
+
+:   <small>required</small> **type:** `up` | `down` | `repeat` | `modifiers`
+
+    The key action that triggers the command:
+    
+    - `up` — Triggered when the key is released
+    - `down` — Triggered when the key is pressed
+    - `repeat` — Triggered repeatedly while the key is held
+    - `modifiers` — Triggered when modifiers change
+
+### `modifiers`
+
+:   <small>required</small> **type:** List of modifier keys
+
+    Modifier keys that must be held for the action to execute. Available modifiers:
+    
+    | Name | Description |
+    | ---- | ----------- |
+    | `primary` | the key defined by the [Action Key](action_key.md) |
+    | `alt` | Any alt key |
+    | `alt_left` | The left alt key only |
+    | `alt_right` | The right alt key only |
+    | `shift` | Any shift key |
+    | `shift_left` | The left shift key only |
+    | `shift_right` | The right shift key only |
+    | `ctrl` | Any ctrl key |
+    | `ctrl_left` | The left ctrl key only |
+    | `ctrl_right` | The right ctrl key only |
+    | `meta` | The `super` or `windows` key |
+    | `meta_left` | The left `super` or `windows` key only |
+    | `meta_right` | The right `super` or `windows` key only |
+    | `sym` | The sym key |
+    | `function` | The `fn` key |
+    | `caps_lock` | The caps lock key |
+    | `num_lock` | The num lock key |
+    | `scroll_lock` | The scroll lock key |
+
+### `key`
+
+:   <small>required</small> **type:** KeyCodeName
+
+    Name of the keycode that the action responds to. See the [Linux input event codes](https://github.com/torvalds/linux/blob/master/include/uapi/linux/input-event-codes.h) for available keycodes (e.g., `KEY_ENTER`, `KEY_Z`, etc.)
+
+## Default
+```yaml
+default_action_overrides: []
 ```

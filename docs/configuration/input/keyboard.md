@@ -1,36 +1,6 @@
 # Keyboard Configuration
 Configure the keyboard input device.
 
-## Key
-```
-keyboard
-```
-
-## Value
-```yaml
-# The keymap.
-keymap:
-    # The language.
-    #
-    # You may list the available languages using:
-    #   localectl list-x11-keymap-layouts
-    language: string
-
-    # The variant of the language.
-    #
-    # You may list the available variants using:
-    #   localectl list-x11-keymap-variants
-    variant: optional<string>
-
-    # Options on the language variant.
-    #
-    # These are only applied  if a variant is supplied.
-    #
-    # You may list the available options using:
-    #   localectl list-x11-keymap-options
-    options: optional<string>[]
-```
-
 ## Example
 ```yaml
 # ~/.config/miracle-wm/config.yaml
@@ -41,4 +11,58 @@ keyboard:
         language: en
         variant: dvorak
         options: []
+```
+
+## Schema
+
+```yaml
+keyboard:
+  keymap:
+    language: <string>
+    variant?: <string>
+    options?: <string[]>
+```
+
+## Properties
+
+### `keymap`
+
+:   <small>required</small> **type:** Object
+
+    The keyboard layout configuration.
+
+#### `language`
+
+:   <small>required</small> **type:** String
+
+    The keyboard layout language. You may list the available languages using:
+    ```sh
+    localectl list-x11-keymap-layouts
+    ```
+
+#### `variant`
+
+:   **type:** String
+
+    The variant of the language. You may list the available variants using:
+    ```sh
+    localectl list-x11-keymap-variants
+    ```
+
+#### `options`
+
+:   **type:** List of strings
+
+    Options on the language variant. These are only applied if a variant is supplied. You may list the available options using:
+    ```sh
+    localectl list-x11-keymap-options
+    ```
+
+## Default
+```yaml
+keyboard:
+  keymap:
+    language: us
+    variant: null
+    options: []
 ```

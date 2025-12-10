@@ -6,32 +6,6 @@ pointer above other containers to drag the active container into that position.
 If the user releases the pointer, the container will snap to the desired
 location.
 
-## Key
-```
-drag_and_drop
-```
-
-## Value
-```yaml
-# When set to false, drag and drop is disabled entirely
-enabled: boolean
-
-# List of modifiers expected to be held when left clicking.
-# Defaults to the primary action key
-modifiers: String[]
-```
-
-For a list of valid modifiers, see [Action Key](action_key.md).
-
-## Default
-```yaml
-drag_and_drop:
-  enabled: true
-  modifiers:
-    - primary
-    - shift
-```
-
 ## Example
 ```yaml
 # ~/.config/miracle-wm/config.yaml
@@ -41,4 +15,39 @@ drag_and_drop:
   modifiers:
     - primary
     - alt
+```
+
+## Schema
+
+```yaml
+drag_and_drop:
+  enabled: <boolean>
+  modifiers: <Modifier[]>
+```
+
+## Properties
+
+### `enabled`
+
+:   <small>required</small> **type:** Boolean  
+    **Default:** `true`
+
+    When `false`, drag and drop is disabled entirely. When `true`, drag and drop is enabled.
+
+### `modifiers`
+
+:   <small>required</small> **type:** List of modifier keys  
+    **Default:** `[primary, shift]`
+
+    List of modifiers that must be held when left clicking to initiate drag and drop.
+    
+    For a list of valid modifiers, see [Action Key](action_key.md).
+
+## Default
+```yaml
+drag_and_drop:
+  enabled: true
+  modifiers:
+    - primary
+    - shift
 ```

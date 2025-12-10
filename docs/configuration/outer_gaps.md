@@ -1,24 +1,6 @@
 # Outer Gaps
 Gaps between the window tiles and the edge of the screen.
 
-## Key
-```
-outer_gaps
-```
-
-## Value
-A 2D integer point describing the gaps in pixels in the X and Y directions:
-```yaml
-x: int
-y: int
-```
-
-## Default
-```yaml
-x: 10
-y: 10
-```
-
 ## Example
 ```yaml
 # ~/.config/miracle-wm/config.yaml
@@ -26,4 +8,35 @@ y: 10
 outer_gaps:
     x: 50  # 50px between the tiling grid and the edge of the output, horizontally
     y: 100 # 100px between the tiling grid and the edge of the output, vertically 
+```
+
+## Schema
+
+```yaml
+outer_gaps:
+  x: <int>
+  y: <int>
+```
+
+## Properties
+
+### `x`
+
+:   <small>required</small> **type:** Integer  
+    **Default:** `10`
+
+    Horizontal gap between the tiling grid and the edge of the output in pixels.
+
+### `y`
+
+:   <small>required</small> **type:** Integer  
+    **Default:** `10`
+
+    Vertical gap between the tiling grid and the edge of the output in pixels.
+
+## Default
+```yaml
+outer_gaps:
+  x: 10
+  y: 10
 ```

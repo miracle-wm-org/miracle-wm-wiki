@@ -1,41 +1,6 @@
 # Mouse Configuration
 Configure the mouse input device.
 
-## Key
-```
-mouse
-```
-
-## Value
-```yaml
-# The handedness of the mouse.
-#
-# Setting this will change which button is considered 'primary'.
-# Defaults to "right".
-handedness: "left" | "right"
-
-# The verical scroll speed, if supported.
-#
-# Defaults to 1.
-vscroll_speed: double
-
-# The horizontal scroll speed if supported.
-#
-# Defaults to 1. 
-hscroll_speed: double
-
-# The acceleration bias of your mouse.
-#
-# Between [-1, 1]. A value of -1 will be slow, and a value of
-# 1 will be fast. Defaults to 0.
-acceleration_bias: double
-
-# The acceleration type of your mouse.
-#
-# Defaults to "none".
-acceleration: "none" | "adaptive"
-```
-
 ## Example
 ```yaml
 # ~/.config/miracle-wm/config.yaml
@@ -45,4 +10,62 @@ acceleration: "none" | "adaptive"
 mouse:
     handedness: left
     acceleration_bias: -0.5
+```
+
+## Schema
+
+```yaml
+mouse:
+  handedness?: <left|right>
+  vscroll_speed?: <double>
+  hscroll_speed?: <double>
+  acceleration_bias?: <double>
+  acceleration?: <none|adaptive>
+```
+
+## Properties
+
+### `handedness`
+
+:   **type:** `left` | `right`  
+    **Default:** `right`
+
+    The handedness of the mouse. Setting this will change which button is considered 'primary'.
+
+### `vscroll_speed`
+
+:   **type:** Double  
+    **Default:** `1.0`
+
+    The vertical scroll speed, if supported.
+
+### `hscroll_speed`
+
+:   **type:** Double  
+    **Default:** `1.0`
+
+    The horizontal scroll speed, if supported.
+
+### `acceleration_bias`
+
+:   **type:** Double (range: -1 to 1)  
+    **Default:** `0.0`
+
+    The acceleration bias of your mouse. A value of -1 will be slow, and a value of 1 will be fast.
+
+### `acceleration`
+
+:   **type:** `none` | `adaptive`  
+    **Default:** `none`
+
+    The acceleration type of your mouse.
+
+## Default
+```yaml
+mouse:
+  handedness: right
+  vscroll_speed: 1.0
+  hscroll_speed: 1.0
+  acceleration_bias: 0.0
+  acceleration: none
 ```
