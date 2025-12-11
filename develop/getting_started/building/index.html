@@ -2811,10 +2811,12 @@
 <li><a href="https://cmake.org/">cmake</a> &gt;= 3.7</li>
 <li><a href="https://gcc.gnu.org/">gcc</a> or <a href="https://clang.llvm.org/">clang</a> with C++23 support</li>
 <li><a href="https://canonical-mir.readthedocs-hosted.com/stable/tutorial/">miral</a> &gt;= 7</li>
-<li><a href="https://canonical-mir.readthedocs-hosted.com/stable/tutorial/">mirrenderer</a></li>
+<li><a href="https://canonical-mir.readthedocs-hosted.com/stable/tutorial/">mirplatform</a></li>
 <li><a href="https://canonical-mir.readthedocs-hosted.com/stable/tutorial/">mirwayland</a></li>
 <li><a href="https://canonical-mir.readthedocs-hosted.com/stable/tutorial/">mirserver</a></li>
 <li><a href="https://canonical-mir.readthedocs-hosted.com/stable/tutorial/">mirserver-internal</a></li>
+<li><a href="https://canonical-mir.readthedocs-hosted.com/stable/tutorial/">mircommon</a></li>
+<li><a href="https://canonical-mir.readthedocs-hosted.com/stable/tutorial/">mircommon-internal</a></li>
 <li><a href="https://canonical-mir.readthedocs-hosted.com/stable/tutorial/">mir-graphics-drivers-desktop</a> &gt;= 2.14</li>
 <li><a href="https://canonical-mir.readthedocs-hosted.com/stable/tutorial/">mir-graphics-drivers-nvidia</a> &gt;= 2.14 (NVIDIA Only)</li>
 <li><a href="https://docs.gtk.org/glib/">glib-2.0</a></li>
@@ -2827,13 +2829,18 @@
 <li><a href="https://github.com/json-c/json-c">json-c</a> &gt;= 0.17</li>
 <li><a href="https://pypi.org/project/dbus-next/">dbus-next</a></li>
 <li><a href="https://pypi.org/project/tenacity/">tenacity</a></li>
+<li><a href="https://wasmedge.org/">wasmedge</a></li>
 </ul>
 <h2 id="from-source">From source<a class="headerlink" href="#from-source" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># First, clone the repo:</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># If on Debian or a derivative, first install Mir from the mir-team/release ppa:</span>
+sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>ppa:mir-team/release
+sudo<span class="w"> </span>apt<span class="w"> </span>update
+
+<span class="c1"># Then, clone the repo:</span>
 git<span class="w"> </span>clone<span class="w"> </span>https://github.com/miracle-window-manager/miracle-wm.git
 <span class="nb">cd</span><span class="w"> </span>miracle-wm
 
-<span class="c1"># The, build a debug build...</span>
+<span class="c1"># Next, build a debug build...</span>
 cmake<span class="w"> </span>-B<span class="w"> </span>build<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Debug
 cmake<span class="w"> </span>--build<span class="w"> </span>build
 
@@ -2841,7 +2848,7 @@ cmake<span class="w"> </span>--build<span class="w"> </span>build
 cmake<span class="w"> </span>-B<span class="w"> </span>build<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span>-DENABLE_LTO<span class="o">=</span>ON
 cmake<span class="w"> </span>--build<span class="w"> </span>build
 
-<span class="c1"># Then run with:</span>
+<span class="c1"># Finally run with:</span>
 <span class="nv">WAYLAND_DISPLAY</span><span class="o">=</span>wayland-98<span class="w"> </span>./build/miracle-wm
 </code></pre></div>
 <h3 id="cmake-options">CMake Options<a class="headerlink" href="#cmake-options" title="Permanent link">&para;</a></h3>
