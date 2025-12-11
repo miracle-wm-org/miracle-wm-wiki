@@ -12,15 +12,19 @@ theme:
     - palette.toggle
     - content.heading.permalink
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
       primary: indigo
       accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
 
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: indigo
       accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 repo_url: https://github.com/mattkae/miracle
 markdown_extensions:
