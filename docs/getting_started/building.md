@@ -4,10 +4,12 @@
 - [cmake](https://cmake.org/) >= 3.7
 - [gcc](https://gcc.gnu.org/) or [clang](https://clang.llvm.org/) with C++23 support
 - [miral](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/) >= 7
-- [mirrenderer](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
+- [mirplatform](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
 - [mirwayland](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
 - [mirserver](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
 - [mirserver-internal](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
+- [mircommon](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
+- [mircommon-internal](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
 - [mir-graphics-drivers-desktop](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/) >= 2.14
 - [mir-graphics-drivers-nvidia](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/) >= 2.14 (NVIDIA Only)
 - [glib-2.0](https://docs.gtk.org/glib/)
@@ -20,15 +22,20 @@
 - [json-c](https://github.com/json-c/json-c) >= 0.17
 - [dbus-next](https://pypi.org/project/dbus-next/)
 - [tenacity](https://pypi.org/project/tenacity/)
+- [wasmedge](https://wasmedge.org/)
 
 
 ## From source
 ```sh
-# First, clone the repo:
+# If on Debian or a derivative, first install Mir from the mir-team/release ppa:
+sudo add-apt-repository ppa:mir-team/release
+sudo apt update
+
+# Then, clone the repo:
 git clone https://github.com/miracle-window-manager/miracle-wm.git
 cd miracle-wm
 
-# The, build a debug build...
+# Next, build a debug build...
 cmake -B build -DCMAKE_BUILD_TYPE=Debug
 cmake --build build
 
@@ -36,7 +43,7 @@ cmake --build build
 cmake -B build -DCMAKE_BUILD_TYPE=Release -DENABLE_LTO=ON
 cmake --build build
 
-# Then run with:
+# Finally run with:
 WAYLAND_DISPLAY=wayland-98 ./build/miracle-wm
 ```
 
