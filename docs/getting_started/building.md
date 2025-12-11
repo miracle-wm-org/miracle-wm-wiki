@@ -50,6 +50,8 @@ The following options are available at build time:
   importing the proper environment variables in to systemd.
 - `-DEND_TO_END_TESTS`: If enabled, miracle's end-to-end tests will
   be compiled as part of the test suite.
+- `-DENABLE_PLUGIN_SYSTEM`: If enable, the experimental WebAssembly
+  plugin system will also be enabled.
 
 
 ## Snap
