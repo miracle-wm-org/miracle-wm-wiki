@@ -30,6 +30,11 @@
 # If on Debian or a derivative, first install Mir from the mir-team/release ppa:
 sudo add-apt-repository ppa:mir-team/release
 sudo apt update
+sudo apt install libmiral-dev libmircommon-internal-dev libmircommon-dev libmirserver-internal-dev \
+  libgtest-dev libyaml-cpp-dev libglib2.0-dev libevdev-dev nlohmann-json3-dev libnotify-dev pcre2-utils \
+  libmiroil-dev libmirplatform-dev libgles2-mesa-dev libmirwayland-dev libjson-c-dev libgtest-dev libgmock-dev \
+  mirtest-dev mirtest-internal-dev mir-wlcs-integration libxkbcommon-dev libboost-filesystem-dev libboost-system-dev
+  xwayland mir-platform-graphics-gbm-kms mir-platform-rendering-egl-generic
 
 # Then, clone the repo:
 git clone https://github.com/miracle-window-manager/miracle-wm.git
@@ -55,6 +60,7 @@ The following options are available at build time:
 - `-DSYSTEMD_INTEGRATION`: If enabled, miracle will build with full
   systemd integration, including establishing a user session and
   importing the proper environment variables in to systemd.
+- `DENABLE_TESTS`: If enabled, tests are built (default=true)
 - `-DEND_TO_END_TESTS`: If enabled, miracle's end-to-end tests will
   be compiled as part of the test suite.
 - `-DENABLE_PLUGIN_SYSTEM`: If enable, the experimental WebAssembly
