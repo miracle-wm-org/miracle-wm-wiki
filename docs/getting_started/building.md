@@ -36,6 +36,9 @@ sudo apt install libmiral-dev libmircommon-internal-dev libmircommon-dev libmirs
   mirtest-dev mirtest-internal-dev mir-wlcs-integration libxkbcommon-dev libboost-filesystem-dev libboost-system-dev
   xwayland mir-platform-graphics-gbm-kms mir-platform-rendering-egl-generic
 
+# If running on a desktop, you will also want to add the desktop graphics drivers.
+sudo apt install mir-graphics-drivers-desktop
+
 # Then, clone the repo:
 git clone https://github.com/miracle-window-manager/miracle-wm.git
 cd miracle-wm
