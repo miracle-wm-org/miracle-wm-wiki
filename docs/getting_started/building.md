@@ -66,9 +66,14 @@ The following options are available at build time:
 - `DENABLE_TESTS`: If enabled, tests are built (default=true)
 - `-DEND_TO_END_TESTS`: If enabled, miracle's end-to-end tests will
   be compiled as part of the test suite.
-- `-DENABLE_PLUGIN_SYSTEM`: If enable, the experimental WebAssembly
-  plugin system will also be enabled.
 
+### Feature Flags
+- `-DFEATURE_PLUGIN_SYSTEM`: if 1, the experimental WebAssembly
+  plugin system will also be enabled.
+- `-DFEATURE_MULTI_SELECT`: if 1, the experimental multi select
+  functionality will be enabled.
+- `-DFEATURE_PARENT_CONTAINER_WALLPAPERS`: if 1, the experimental
+  background on floating parent containers will be enabled.
 
 ## Snap
 ```sh
