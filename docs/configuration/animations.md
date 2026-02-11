@@ -175,6 +175,12 @@ For animations with `type: plugin`:
 
     Name of a plugin WebAssembly plugin. The plugin must exist in the [Plugins](./plugins.md) list.
 
+### `function_name`
+
+:   <small>required</small> **type:** String
+
+    Name of the animation function to call from the WebAssembly plugin.
+
 ## Default
 ```yaml
 animations:
