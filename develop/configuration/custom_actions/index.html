@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
     
     
       
@@ -2914,7 +2914,7 @@ bound to the same key combination.</p>
 <span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">down</span>
 <span class="w">    </span><span class="nt">modifiers</span><span class="p">:</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">primary</span>
-<span class="w">    </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KEY_D</span>
+<span class="w">    </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">d</span>
 </code></pre></div>
 <h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
 <p>A list of custom keybind actions:</p>
@@ -2922,7 +2922,7 @@ bound to the same key combination.</p>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;string&gt;</span>
 <span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;up|down|repeat|modifiers&gt;</span>
 <span class="w">    </span><span class="nt">modifiers</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;Modifier[]&gt;</span>
-<span class="w">    </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;KeyCodeName&gt;</span>
+<span class="w">    </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;KeysymName&gt;</span>
 </code></pre></div>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="command"><code>command</code><a class="headerlink" href="#command" title="Permanent link">&para;</a></h3>
@@ -3037,8 +3037,9 @@ bound to the same key combination.</p>
 <h3 id="key"><code>key</code><a class="headerlink" href="#key" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>
-<p><small>required</small> <strong>type:</strong> KeyCodeName</p>
-<p>Name of the keycode that the action responds to. See the <a href="https://github.com/torvalds/linux/blob/master/include/uapi/linux/input-event-codes.h">Linux input event codes</a> for available keycodes (e.g., <code>KEY_ENTER</code>, <code>KEY_Z</code>, etc.)</p>
+<p><small>required</small> <strong>type:</strong> KeysymName</p>
+<p>Name of the XKB keysym that the action responds to. See the <a href="https://xkbcommon.org/doc/current/xbkcommon-keysyms_8h.html">xkbcommon keysym list</a> for available names (e.g., <code>Return</code>, <code>z</code>, <code>Up</code>).</p>
+<p>For shifted characters, use the shifted keysym directly instead of combining a lowercase key with the <code>shift</code> modifier. For example, use <code>Q</code> instead of <code>q</code> + <code>shift</code>, and use <code>exclam</code> instead of <code>1</code> + <code>shift</code>.</p>
 </dd>
 </dl>
 <h2 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h2>
