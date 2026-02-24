@@ -50,7 +50,7 @@ default_action_overrides:
     modifiers:
       - ctrl
       - shift
-    key: KEY_ENTER
+    key: Return
 ```
 
 ## Schema
@@ -62,7 +62,7 @@ default_action_overrides:
   - name: <string>
     action: <up|down|repeat|modifiers>
     modifiers: <Modifier[]>
-    key: <KeyCodeName>
+    key: <KeysymName>
 ```
 
 ## Properties
@@ -113,9 +113,11 @@ default_action_overrides:
 
 ### `key`
 
-:   <small>required</small> **type:** KeyCodeName
+:   <small>required</small> **type:** KeysymName
 
-    Name of the keycode that the action responds to. See the [Linux input event codes](https://github.com/torvalds/linux/blob/master/include/uapi/linux/input-event-codes.h) for available keycodes (e.g., `KEY_ENTER`, `KEY_Z`, etc.)
+    Name of the XKB keysym that the action responds to. See the [xkbcommon keysym list](https://xkbcommon.org/doc/current/xbkcommon-keysyms_8h.html) for available names (e.g., `Return`, `z`, `Up`).
+
+    For shifted characters, use the shifted keysym directly instead of combining a lowercase key with the `shift` modifier. For example, use `Q` instead of `q` + `shift`, and use `exclam` instead of `1` + `shift`.
 
 ## Default
 ```yaml
