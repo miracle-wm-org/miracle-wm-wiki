@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
     
     
       
@@ -691,10 +691,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#name" class="md-nav__link">
+  <a href="#key1n" class="md-nav__link">
     <span class="md-ellipsis">
       
-        name
+        [key1...n]
       
     </span>
   </a>
@@ -2800,10 +2800,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#name" class="md-nav__link">
+  <a href="#key1n" class="md-nav__link">
     <span class="md-ellipsis">
       
-        name
+        [key1...n]
       
     </span>
   </a>
@@ -2836,28 +2836,28 @@
 
 
 <h1 id="plugins">Plugins<a class="headerlink" href="#plugins" title="Permanent link">&para;</a></h1>
-<p>Specify the plugins that should be registered in the system. A plugin may
-be referenced later by its unique name (See <a href="../animations/">Animations</a>)
-for an example.</p>
+<p>Specify plugins that will be executed by the system.</p>
+<p>Plugins will be executed by the order in which they appear in the list. For example,
+if one plugin has a method that handles <code>place_new_window</code>, then the plugin that
+follows it will <em>not</em> get to run its <code>place_new_window</code> method.</p>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># Use a plugin animation for window open</span>
 <span class="nt">plugins</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/path/to/plugin_playground.wasm</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">playground</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/another/file.wasm</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">another</span>
-
-<span class="nt">animations</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">event</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">window_open</span>
-<span class="w">    </span><span class="nt">duration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.25</span>
-<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">plugin</span>
-<span class="w">    </span><span class="nt">plugin_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">playground</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/path/to/plug1.wasm</span>
+<span class="w">    </span><span class="nt">data1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xyz</span>
+<span class="w">    </span><span class="nt">data2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">abc</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/path/to/plug2.wasm</span>
+<span class="w">    </span><span class="nt">data3</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">1</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">2</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">3</span><span class="p p-Indicator">]</span>
 </code></pre></div>
 <h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
-<p>A list of plugins with a path and unique name for reference.</p>
+<p>A list of plugins with a path and an arbitrary number of keyed data that the plugin
+is able to use in order to modify its behavior.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;string path&gt;</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;string unique&gt;</span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">key1</span><span class="p p-Indicator">]:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;arbitary YAML&gt;</span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">key2</span><span class="p p-Indicator">]:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;arbitary YAML&gt;</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">keyn</span><span class="p p-Indicator">]:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;arbitary YAML&gt;</span>
 </code></pre></div>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="path">path<a class="headerlink" href="#path" title="Permanent link">&para;</a></h3>
@@ -2867,11 +2867,14 @@ for an example.</p>
 <p>The path to the WebAssembly module that should be loaded as a plugin.</p>
 </dd>
 </dl>
-<h3 id="name">name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h3>
+<h3 id="key1n">[key1...n]<a class="headerlink" href="#key1n" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>
-<p><small>required</small> <strong>type:</strong> String</p>
-<p>A unique, referenceable name for the plugin. If a name is specified more than once, only the first encountered plugin will be used.</p>
+<p><strong>type:</strong> YAML</p>
+<p>Users may specify data that they would like to be supplied to the plugin at runtime.
+The plugin will have access to this arbitrary data so that their behavior
+is configurable by the user.</p>
+<p>See your specific plugin docs for the valid configuration details.</p>
 </dd>
 </dl>
 
