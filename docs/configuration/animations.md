@@ -30,19 +30,6 @@ animations:
         d1: 2.5
 ```
 
-```yaml
-# Use a plugin animation for window open
-plugins:
-  - path: /path/to/plugin_playground.wasm
-    name: playground
-
-animations:
-  - event: window_open
-    duration: 0.25
-    type: plugin
-    plugin_name: playground
-```
-
 
 ## Schema
 
@@ -52,7 +39,7 @@ A list of animation rules. Each rule defines how a specific event should be anim
 animations:
   - event: <window_open|window_move|window_close|workspace_switch>
     duration: <float seconds>
-    type: <built_in|plugin>
+    type: <built_in>
     parts?:
       - type: <disabled|slide|grow|shrink|fade>
         function: <linear|ease_in_*|ease_out_*|ease_in_out_*>  # see https://easings.net/
@@ -63,7 +50,6 @@ animations:
         c5?: <float=1.3962634015954636>
         n1?: <float=7.5625>
         d1?: <float=2.75>
-    plugin_name?: <string friendly name of plugin>
 ```
 
 ## Properties
@@ -82,12 +68,11 @@ animations:
 
 ### `type`
 
-:   <small>required</small> **type:** `built_in` | `plugin`
+:   <small>required</small> **type:** `built_in`
 
     The animation implementation:
     
     - `built_in` — Use one or more built-in animation parts (requires `parts`)
-    - `plugin` — Use a custom WebAssembly plugin (requires `plugin`)
 
 ---
 
@@ -165,21 +150,6 @@ For animations with `type: built_in`:
 
 ---
 
-## Plugin Animations
-
-For animations with `type: plugin`:
-
-### `plugin_name`
-
-:   <small>required</small> **type:** String (filesystem path)
-
-    Name of a plugin WebAssembly plugin. The plugin must exist in the [Plugins](./plugins.md) list.
-
-### `function_name`
-
-:   <small>required</small> **type:** String
-
-    Name of the animation function to call from the WebAssembly plugin.
 
 ## Default
 ```yaml
