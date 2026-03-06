@@ -1075,45 +1075,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#plugin-animations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Plugin Animations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Plugin Animations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#plugin_name" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        plugin_name
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#function_name" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        function_name
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#default" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3154,45 +3115,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#plugin-animations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Plugin Animations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Plugin Animations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#plugin_name" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        plugin_name
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#function_name" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        function_name
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#default" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3250,23 +3172,12 @@ by default, please see <a href="../enable_animations/">Enable Animations</a>.</p
 <span class="w">        </span><span class="nt">n1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7.0</span>
 <span class="w">        </span><span class="nt">d1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2.5</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Use a plugin animation for window open</span>
-<span class="nt">plugins</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/path/to/plugin_playground.wasm</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">playground</span>
-
-<span class="nt">animations</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">event</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">window_open</span>
-<span class="w">    </span><span class="nt">duration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.25</span>
-<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">plugin</span>
-<span class="w">    </span><span class="nt">plugin_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">playground</span>
-</code></pre></div>
 <h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
 <p>A list of animation rules. Each rule defines how a specific event should be animated.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">animations</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">event</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;window_open|window_move|window_close|workspace_switch&gt;</span>
 <span class="w">    </span><span class="nt">duration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;float seconds&gt;</span>
-<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;built_in|plugin&gt;</span>
+<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;built_in&gt;</span>
 <span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">parts?</span><span class="p p-Indicator">:</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;disabled|slide|grow|shrink|fade&gt;</span>
 <span class="w">        </span><span class="nt">function</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;linear|ease_in_*|ease_out_*|ease_in_out_*&gt;</span><span class="w">  </span><span class="c1"># see https://easings.net/</span>
@@ -3277,7 +3188,6 @@ by default, please see <a href="../enable_animations/">Enable Animations</a>.</p
 <span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">c5?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;float=1.3962634015954636&gt;</span>
 <span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">n1?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;float=7.5625&gt;</span>
 <span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">d1?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;float=2.75&gt;</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">plugin_name?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;string friendly name of plugin&gt;</span>
 </code></pre></div>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="event"><code>event</code><a class="headerlink" href="#event" title="Permanent link">&para;</a></h3>
@@ -3297,11 +3207,10 @@ by default, please see <a href="../enable_animations/">Enable Animations</a>.</p
 <h3 id="type"><code>type</code><a class="headerlink" href="#type" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>
-<p><small>required</small> <strong>type:</strong> <code>built_in</code> | <code>plugin</code></p>
+<p><small>required</small> <strong>type:</strong> <code>built_in</code></p>
 <p>The animation implementation:</p>
 <ul>
 <li><code>built_in</code> — Use one or more built-in animation parts (requires <code>parts</code>)</li>
-<li><code>plugin</code> — Use a custom WebAssembly plugin (requires <code>plugin</code>)</li>
 </ul>
 </dd>
 </dl>
@@ -3387,22 +3296,6 @@ Options: <code>linear</code>, <code>ease_in_sine</code>, <code>ease_out_sine</co
 </dd>
 </dl>
 <hr />
-<h2 id="plugin-animations">Plugin Animations<a class="headerlink" href="#plugin-animations" title="Permanent link">&para;</a></h2>
-<p>For animations with <code>type: plugin</code>:</p>
-<h3 id="plugin_name"><code>plugin_name</code><a class="headerlink" href="#plugin_name" title="Permanent link">&para;</a></h3>
-<dl>
-<dd>
-<p><small>required</small> <strong>type:</strong> String (filesystem path)</p>
-<p>Name of a plugin WebAssembly plugin. The plugin must exist in the <a href="../plugins/">Plugins</a> list.</p>
-</dd>
-</dl>
-<h3 id="function_name"><code>function_name</code><a class="headerlink" href="#function_name" title="Permanent link">&para;</a></h3>
-<dl>
-<dd>
-<p><small>required</small> <strong>type:</strong> String</p>
-<p>Name of the animation function to call from the WebAssembly plugin.</p>
-</dd>
-</dl>
 <h2 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nt">animations</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">event</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">window_open</span>
