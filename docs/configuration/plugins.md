@@ -1,32 +1,33 @@
 # Plugins
-Specify the plugins that should be registered in the system. A plugin may
-be referenced later by its unique name (See [Animations](./animations.md))
-for an example.
+Specify plugins that will be executed by the system.
+
+Plugins will be executed by the order in which they appear in the list. For example,
+if one plugin has a method that handles `place_new_window`, then the plugin that
+follows it will *not* get to run its `place_new_window` method.
 
 ## Example
 
 ```yaml
 # Use a plugin animation for window open
 plugins:
-  - path: /path/to/plugin_playground.wasm
-    name: playground
-  - path: /another/file.wasm
-    name: another
-
-animations:
-  - event: window_open
-    duration: 0.25
-    type: plugin
-    plugin_name: playground
+  - path: /path/to/plug1.wasm
+    data1: xyz
+    data2: abc
+  - path: /path/to/plug2.wasm
+    data3: [1, 2, 3]
 ```
 
 ## Schema
-A list of plugins with a path and unique name for reference.
+A list of plugins with a path and an arbitrary number of keyed data that the plugin
+is able to use in order to modify its behavior.
 
 ```yaml
 plugins:
   - path: <string path>
-    name: <string unique>
+    [key1]: <arbitary YAML>
+    [key2]: <arbitary YAML>
+    ...
+    [keyn]: <arbitary YAML>
 ```
 
 ## Properties
@@ -36,8 +37,12 @@ plugins:
 
     The path to the WebAssembly module that should be loaded as a plugin.
 
-### name
-:   <small>required</small> **type:** String
+### [key1...n]
+:   **type:** YAML
 
-    A unique, referenceable name for the plugin. If a name is specified more than once, only the first encountered plugin will be used.
+    Users may specify data that they would like to be supplied to the plugin at runtime.
+    The plugin will have access to this arbitrary data so that their behavior
+    is configurable by the user.
+
+    See your specific plugin docs for the valid configuration details.
 
