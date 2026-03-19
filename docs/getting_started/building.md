@@ -30,7 +30,7 @@
 # If on Debian or a derivative, first install Mir from the mir-team/release ppa:
 sudo add-apt-repository ppa:mir-team/release
 sudo apt update
-sudo apt install libmiral-devlibmircommon-dev libmirserver-internal-dev \
+sudo apt install libmiral-dev libmircommon-dev libmirserver-internal-dev \
   libgtest-dev libyaml-cpp-dev libglib2.0-dev libevdev-dev nlohmann-json3-dev libnotify-dev pcre2-utils \
   libmiroil-dev libmirplatform-dev libgles2-mesa-dev libmirwayland-dev libjson-c-dev libgtest-dev libgmock-dev \
   mirtest-dev mirtest-internal-dev mir-wlcs-integration libxkbcommon-dev libboost-filesystem-dev libboost-system-dev \
