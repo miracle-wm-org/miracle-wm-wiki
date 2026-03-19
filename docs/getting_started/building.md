@@ -1,6 +1,7 @@
 # Building
 
 ## Dependencies
+
 - [cmake](https://cmake.org/) >= 3.7
 - [gcc](https://gcc.gnu.org/) or [clang](https://clang.llvm.org/) with C++23 support
 - [miral](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/) >= 7
@@ -9,7 +10,6 @@
 - [mirserver](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
 - [mirserver-internal](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
 - [mircommon](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
-- [mircommon-internal](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/)
 - [mir-graphics-drivers-desktop](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/) >= 2.14
 - [mir-graphics-drivers-nvidia](https://canonical-mir.readthedocs-hosted.com/stable/tutorial/) >= 2.14 (NVIDIA Only)
 - [glib-2.0](https://docs.gtk.org/glib/)
@@ -24,16 +24,16 @@
 - [tenacity](https://pypi.org/project/tenacity/)
 - [wasmedge](https://wasmedge.org/)
 
-
 ## From source
+
 ```sh
 # If on Debian or a derivative, first install Mir from the mir-team/release ppa:
 sudo add-apt-repository ppa:mir-team/release
 sudo apt update
-sudo apt install libmiral-dev libmircommon-internal-dev libmircommon-dev libmirserver-internal-dev \
+sudo apt install libmiral-devlibmircommon-dev libmirserver-internal-dev \
   libgtest-dev libyaml-cpp-dev libglib2.0-dev libevdev-dev nlohmann-json3-dev libnotify-dev pcre2-utils \
   libmiroil-dev libmirplatform-dev libgles2-mesa-dev libmirwayland-dev libjson-c-dev libgtest-dev libgmock-dev \
-  mirtest-dev mirtest-internal-dev mir-wlcs-integration libxkbcommon-dev libboost-filesystem-dev libboost-system-dev
+  mirtest-dev mirtest-internal-dev mir-wlcs-integration libxkbcommon-dev libboost-filesystem-dev libboost-system-dev \
   xwayland mir-platform-graphics-gbm-kms mir-platform-rendering-egl-generic
 
 # If running on a desktop, you will also want to add the desktop graphics drivers.
@@ -56,6 +56,7 @@ WAYLAND_DISPLAY=wayland-98 ./build/miracle-wm
 ```
 
 ### CMake Options
+
 The following options are available at build time:
 
 - `-DSNAP_BUILD`: Informs cmake that this is being built for a snap
@@ -68,6 +69,7 @@ The following options are available at build time:
   be compiled as part of the test suite.
 
 ### Feature Flags
+
 - `-DFEATURE_PLUGIN_SYSTEM`: if 1, the experimental WebAssembly
   plugin system will also be enabled.
 - `-DFEATURE_MULTI_SELECT`: if 1, the experimental multi select
@@ -76,6 +78,7 @@ The following options are available at build time:
   background on floating parent containers will be enabled.
 
 ## Snap
+
 ```sh
 cd miracle-wm
 snapcraft
