@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -1174,6 +1174,34 @@
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        theme
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="theme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propagating-the-theme-to-x-clients" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propagating the theme to X clients
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2821,6 +2849,34 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        theme
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="theme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propagating-the-theme-to-x-clients" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propagating the theme to X clients
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2865,11 +2921,13 @@
 <span class="nt">cursor</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">scale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.0</span><span class="w"> </span><span class="c1"># Sets the cursor scale to 4 times its original size.</span>
 <span class="w">    </span><span class="nt">focus_mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">click</span><span class="w"> </span><span class="c1"># Click a mouse button while hovering a window to focus</span>
+<span class="w">    </span><span class="nt">theme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">redglass</span><span class="w"> </span><span class="c1"># The theme of the cursor</span>
 </code></pre></div>
 <h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nt">cursor</span><span class="p">:</span>
 <span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">scale?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;float&gt;</span>
 <span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">focus_mode?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;hover|click&gt;</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">theme?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;string&gt;</span>
 </code></pre></div>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="scale"><code>scale</code><a class="headerlink" href="#scale" title="Permanent link">&para;</a></h3>
@@ -2890,6 +2948,34 @@
 <li><code>hover</code> — Focus windows by hovering over them with the cursor</li>
 <li><code>click</code> — Click a mouse button while hovering a window to focus it</li>
 </ul>
+</dd>
+</dl>
+<h3 id="theme"><code>theme</code><a class="headerlink" href="#theme" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p><strong>type:</strong> String<br />
+<strong>Default:</strong> System default</p>
+<p>The name of the cursor theme to use (e.g. <code>redglass</code>, <code>Adwaita</code>, <code>DMZ-White</code>).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The cursor size is currently fixed at 24x24 regardless of the <code>scale</code> setting. This is a known limitation and will be addressed in a future release of Mir.</p>
+</div>
+<p>To find available themes on your system, look in the following directories:</p>
+<ul>
+<li><code>~/.local/share/icons/</code></li>
+<li><code>/usr/share/icons/</code></li>
+</ul>
+<p>Any directory in those locations that contains a <code>cursors/</code> subdirectory is a valid cursor theme. You can also list them with:</p>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>/usr/share/icons<span class="w"> </span>~/.local/share/icons<span class="w"> </span>-maxdepth<span class="w"> </span><span class="m">2</span><span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;cursors&quot;</span><span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s|/cursors||&#39;</span>
+</code></pre></div>
+<h4 id="propagating-the-theme-to-x-clients">Propagating the theme to X clients<a class="headerlink" href="#propagating-the-theme-to-x-clients" title="Permanent link">&para;</a></h4>
+<p>miracle-wm sets the cursor theme for Wayland clients, but X clients (running via XWayland) read the theme from <code>~/.Xresources</code>. To keep them consistent, add the following to your <code>~/.Xresources</code>:</p>
+<div class="highlight"><pre><span></span><code>Xcursor.theme: redglass
+Xcursor.size: 24
+</code></pre></div>
+<p>Then reload it with:</p>
+<div class="highlight"><pre><span></span><code>xrdb<span class="w"> </span>-merge<span class="w"> </span>~/.Xresources
+</code></pre></div>
 </dd>
 </dl>
 <h2 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h2>
