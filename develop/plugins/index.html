@@ -9,28 +9,28 @@
       
       
       
-        <link rel="prev" href="../output_filter/">
+        <link rel="prev" href="../ipc/events/tick/">
       
       
-        <link rel="next" href="../input/touchpad/">
+        <link rel="next" href="../configuration/display_configuration/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Cursor - miracle-wm wiki</title>
+        <title>Plugins - miracle-wm wiki</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cursor" class="md-skip">
+        <a href="#plugins" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="miracle-wm wiki" class="md-header__button md-logo" aria-label="miracle-wm wiki" data-md-component="logo">
+    <a href=".." title="miracle-wm wiki" class="md-header__button md-logo" aria-label="miracle-wm wiki" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cursor
+              Plugins
             
           </span>
         </div>
@@ -230,7 +230,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="miracle-wm wiki" class="md-nav__button md-logo" aria-label="miracle-wm wiki" data-md-component="logo">
+    <a href=".." title="miracle-wm wiki" class="md-nav__button md-logo" aria-label="miracle-wm wiki" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -260,7 +260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -334,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/installation/" class="md-nav__link">
+      <a href="../getting_started/installation/" class="md-nav__link">
         
   
   
@@ -362,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/building/" class="md-nav__link">
+      <a href="../getting_started/building/" class="md-nav__link">
         
   
   
@@ -390,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/logs/" class="md-nav__link">
+      <a href="../getting_started/logs/" class="md-nav__link">
         
   
   
@@ -418,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/what_is_a_wayland_compositor/" class="md-nav__link">
+      <a href="../getting_started/what_is_a_wayland_compositor/" class="md-nav__link">
         
   
   
@@ -450,20 +450,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -484,7 +482,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -502,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../configuration/introduction/" class="md-nav__link">
         
   
   
@@ -530,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../action_key/" class="md-nav__link">
+      <a href="../configuration/action_key/" class="md-nav__link">
         
   
   
@@ -558,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../includes/" class="md-nav__link">
+      <a href="../configuration/includes/" class="md-nav__link">
         
   
   
@@ -586,7 +584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../plugins/" class="md-nav__link">
+      <a href="../configuration/plugins/" class="md-nav__link">
         
   
   
@@ -614,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../default_keybinds/" class="md-nav__link">
+      <a href="../configuration/default_keybinds/" class="md-nav__link">
         
   
   
@@ -642,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../custom_actions/" class="md-nav__link">
+      <a href="../configuration/custom_actions/" class="md-nav__link">
         
   
   
@@ -670,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../startup_apps/" class="md-nav__link">
+      <a href="../configuration/startup_apps/" class="md-nav__link">
         
   
   
@@ -698,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../inner_gaps/" class="md-nav__link">
+      <a href="../configuration/inner_gaps/" class="md-nav__link">
         
   
   
@@ -726,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../outer_gaps/" class="md-nav__link">
+      <a href="../configuration/outer_gaps/" class="md-nav__link">
         
   
   
@@ -754,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../border/" class="md-nav__link">
+      <a href="../configuration/border/" class="md-nav__link">
         
   
   
@@ -782,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../enable_animations/" class="md-nav__link">
+      <a href="../configuration/enable_animations/" class="md-nav__link">
         
   
   
@@ -810,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../animations/" class="md-nav__link">
+      <a href="../configuration/animations/" class="md-nav__link">
         
   
   
@@ -838,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../terminal/" class="md-nav__link">
+      <a href="../configuration/terminal/" class="md-nav__link">
         
   
   
@@ -866,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../resize_jump/" class="md-nav__link">
+      <a href="../configuration/resize_jump/" class="md-nav__link">
         
   
   
@@ -894,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../environment_variables/" class="md-nav__link">
+      <a href="../configuration/environment_variables/" class="md-nav__link">
         
   
   
@@ -922,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../workspaces/" class="md-nav__link">
+      <a href="../configuration/workspaces/" class="md-nav__link">
         
   
   
@@ -950,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../workspace_back_and_forth/" class="md-nav__link">
+      <a href="../configuration/workspace_back_and_forth/" class="md-nav__link">
         
   
   
@@ -978,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../move_modifier/" class="md-nav__link">
+      <a href="../configuration/move_modifier/" class="md-nav__link">
         
   
   
@@ -1006,7 +1004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../drag_and_drop/" class="md-nav__link">
+      <a href="../configuration/drag_and_drop/" class="md-nav__link">
         
   
   
@@ -1034,7 +1032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../output_filter/" class="md-nav__link">
+      <a href="../configuration/output_filter/" class="md-nav__link">
         
   
   
@@ -1059,37 +1057,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Cursor
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../configuration/cursor/" class="md-nav__link">
         
   
   
@@ -1105,126 +1076,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#schema" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schema
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Properties
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Properties">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#scale" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        scale
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#focus_mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        focus_mode
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theme" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        theme
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="theme">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#propagating-the-theme-to-x-clients" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Propagating the theme to X clients
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#default" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Default
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1284,7 +1135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../input/touchpad/" class="md-nav__link">
+      <a href="../configuration/input/touchpad/" class="md-nav__link">
         
   
   
@@ -1312,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../input/mouse/" class="md-nav__link">
+      <a href="../configuration/input/mouse/" class="md-nav__link">
         
   
   
@@ -1340,7 +1191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../input/keyboard/" class="md-nav__link">
+      <a href="../configuration/input/keyboard/" class="md-nav__link">
         
   
   
@@ -1423,7 +1274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessibility/hover_click/" class="md-nav__link">
+      <a href="../configuration/accessibility/hover_click/" class="md-nav__link">
         
   
   
@@ -1451,7 +1302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessibility/simulated_secondary_click/" class="md-nav__link">
+      <a href="../configuration/accessibility/simulated_secondary_click/" class="md-nav__link">
         
   
   
@@ -1479,7 +1330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessibility/slow_keys/" class="md-nav__link">
+      <a href="../configuration/accessibility/slow_keys/" class="md-nav__link">
         
   
   
@@ -1507,7 +1358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessibility/sticky_keys/" class="md-nav__link">
+      <a href="../configuration/accessibility/sticky_keys/" class="md-nav__link">
         
   
   
@@ -1535,7 +1386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../accessibility/magnifier/" class="md-nav__link">
+      <a href="../configuration/accessibility/magnifier/" class="md-nav__link">
         
   
   
@@ -1625,7 +1476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/" class="md-nav__link">
+      <a href="../ipc/" class="md-nav__link">
         
   
   
@@ -1653,7 +1504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/run_command/" class="md-nav__link">
+      <a href="../ipc/run_command/" class="md-nav__link">
         
   
   
@@ -1681,7 +1532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/get_workspaces/" class="md-nav__link">
+      <a href="../ipc/get_workspaces/" class="md-nav__link">
         
   
   
@@ -1709,7 +1560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/subscribe/" class="md-nav__link">
+      <a href="../ipc/subscribe/" class="md-nav__link">
         
   
   
@@ -1737,7 +1588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/get_outputs/" class="md-nav__link">
+      <a href="../ipc/get_outputs/" class="md-nav__link">
         
   
   
@@ -1765,7 +1616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/get_tree/" class="md-nav__link">
+      <a href="../ipc/get_tree/" class="md-nav__link">
         
   
   
@@ -1793,7 +1644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/get_marks/" class="md-nav__link">
+      <a href="../ipc/get_marks/" class="md-nav__link">
         
   
   
@@ -1821,7 +1672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/get_version/" class="md-nav__link">
+      <a href="../ipc/get_version/" class="md-nav__link">
         
   
   
@@ -1849,7 +1700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/get_binding_modes/" class="md-nav__link">
+      <a href="../ipc/get_binding_modes/" class="md-nav__link">
         
   
   
@@ -1877,7 +1728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/send_tick/" class="md-nav__link">
+      <a href="../ipc/send_tick/" class="md-nav__link">
         
   
   
@@ -1905,7 +1756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/sync/" class="md-nav__link">
+      <a href="../ipc/sync/" class="md-nav__link">
         
   
   
@@ -1933,7 +1784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/get_binding_state/" class="md-nav__link">
+      <a href="../ipc/get_binding_state/" class="md-nav__link">
         
   
   
@@ -2008,7 +1859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/exec/" class="md-nav__link">
+      <a href="../ipc/commands/exec/" class="md-nav__link">
         
   
   
@@ -2036,7 +1887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/split/" class="md-nav__link">
+      <a href="../ipc/commands/split/" class="md-nav__link">
         
   
   
@@ -2064,7 +1915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/layout/" class="md-nav__link">
+      <a href="../ipc/commands/layout/" class="md-nav__link">
         
   
   
@@ -2092,7 +1943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/focus/" class="md-nav__link">
+      <a href="../ipc/commands/focus/" class="md-nav__link">
         
   
   
@@ -2120,7 +1971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/move/" class="md-nav__link">
+      <a href="../ipc/commands/move/" class="md-nav__link">
         
   
   
@@ -2148,7 +1999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/resize/" class="md-nav__link">
+      <a href="../ipc/commands/resize/" class="md-nav__link">
         
   
   
@@ -2176,7 +2027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/mark/" class="md-nav__link">
+      <a href="../ipc/commands/mark/" class="md-nav__link">
         
   
   
@@ -2204,7 +2055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/swap/" class="md-nav__link">
+      <a href="../ipc/commands/swap/" class="md-nav__link">
         
   
   
@@ -2232,7 +2083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/sticky/" class="md-nav__link">
+      <a href="../ipc/commands/sticky/" class="md-nav__link">
         
   
   
@@ -2260,7 +2111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/workspace/" class="md-nav__link">
+      <a href="../ipc/commands/workspace/" class="md-nav__link">
         
   
   
@@ -2288,7 +2139,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/rename/" class="md-nav__link">
+      <a href="../ipc/commands/rename/" class="md-nav__link">
         
   
   
@@ -2316,7 +2167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/gaps/" class="md-nav__link">
+      <a href="../ipc/commands/gaps/" class="md-nav__link">
         
   
   
@@ -2344,7 +2195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/scratchpad/" class="md-nav__link">
+      <a href="../ipc/commands/scratchpad/" class="md-nav__link">
         
   
   
@@ -2372,7 +2223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/commands/nop/" class="md-nav__link">
+      <a href="../ipc/commands/nop/" class="md-nav__link">
         
   
   
@@ -2455,7 +2306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/events/workspace/" class="md-nav__link">
+      <a href="../ipc/events/workspace/" class="md-nav__link">
         
   
   
@@ -2483,7 +2334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/events/output/" class="md-nav__link">
+      <a href="../ipc/events/output/" class="md-nav__link">
         
   
   
@@ -2511,7 +2362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/events/mode/" class="md-nav__link">
+      <a href="../ipc/events/mode/" class="md-nav__link">
         
   
   
@@ -2539,7 +2390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/events/window/" class="md-nav__link">
+      <a href="../ipc/events/window/" class="md-nav__link">
         
   
   
@@ -2567,7 +2418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/events/binding/" class="md-nav__link">
+      <a href="../ipc/events/binding/" class="md-nav__link">
         
   
   
@@ -2595,7 +2446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/events/shutdown/" class="md-nav__link">
+      <a href="../ipc/events/shutdown/" class="md-nav__link">
         
   
   
@@ -2623,7 +2474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipc/events/tick/" class="md-nav__link">
+      <a href="../ipc/events/tick/" class="md-nav__link">
         
   
   
@@ -2663,10 +2514,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../plugins/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2682,6 +2560,87 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#writing-a-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Writing a Plugin
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing a Plugin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-you-can-hook-into" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you can hook into
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting started
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring Plugins
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2693,7 +2652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../display_configuration/" class="md-nav__link">
+      <a href="../configuration/display_configuration/" class="md-nav__link">
         
   
   
@@ -2720,7 +2679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../screenshare/" class="md-nav__link">
+      <a href="../screenshare/" class="md-nav__link">
         
   
   
@@ -2747,7 +2706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mir/" class="md-nav__link">
+      <a href="../configuration/mir/" class="md-nav__link">
         
   
   
@@ -2774,7 +2733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../roadmap/" class="md-nav__link">
+      <a href="../roadmap/" class="md-nav__link">
         
   
   
@@ -2821,44 +2780,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#writing-a-plugin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example
+        Writing a Plugin
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#schema" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schema
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Properties
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Properties">
+    <nav class="md-nav" aria-label="Writing a Plugin">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#scale" class="md-nav__link">
+  <a href="#what-you-can-hook-into" class="md-nav__link">
     <span class="md-ellipsis">
       
-        scale
+        What you can hook into
       
     </span>
   </a>
@@ -2866,33 +2803,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#focus_mode" class="md-nav__link">
+  <a href="#getting-started" class="md-nav__link">
     <span class="md-ellipsis">
       
-        focus_mode
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theme" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        theme
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="theme">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#propagating-the-theme-to-x-clients" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Propagating the theme to X clients
+        Getting started
       
     </span>
   </a>
@@ -2903,17 +2817,23 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#default" class="md-nav__link">
+  <a href="#configuring-plugins" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Default
+        Configuring Plugins
       
     </span>
   </a>
@@ -2940,76 +2860,39 @@
   
 
 
-<h1 id="cursor">Cursor<a class="headerlink" href="#cursor" title="Permanent link">&para;</a></h1>
-<p>Describes the cursor configuration.</p>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># ~/.config/miracle-wm/config.yaml</span>
+<h1 id="plugins">Plugins<a class="headerlink" href="#plugins" title="Permanent link">&para;</a></h1>
+<p>miracle-wm's plugin system lets you extend and override core compositor behavior through sandboxed <a href="https://webassembly.org/">WebAssembly</a> modules. Because plugins run in a WebAssembly sandbox, a misbehaving plugin cannot crash or corrupt the compositor.</p>
+<h2 id="writing-a-plugin">Writing a Plugin<a class="headerlink" href="#writing-a-plugin" title="Permanent link">&para;</a></h2>
+<p>Plugins are written in <strong>Rust</strong> using the <a href="https://crates.io/crates/miracle-plugin"><code>miracle-plugin</code></a> crate. The crate provides macros and types for hooking into compositor lifecycle events. Other languages may be supported in the future in addition to Rust.</p>
+<p>Full API documentation is available at <a href="https://docs.miracle-wm.org/miracle_plugin/">docs.miracle-wm.org/miracle_plugin/</a>.</p>
+<h3 id="what-you-can-hook-into">What you can hook into<a class="headerlink" href="#what-you-can-hook-into" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Window placement</strong> — control where new windows are placed</li>
+<li><strong>Input events</strong> — intercept keystrokes and pointer events before the compositor handles them</li>
+<li><strong>Animations</strong> — trigger custom animations at any lifecycle event</li>
+<li><strong>Workspace and output events</strong> — react to workspace creation, deletion, and switching</li>
+<li><strong>Configuration</strong> — programmatically specify the configuration as a plugin data at runtime</li>
+</ul>
+<h3 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h3>
+<p>Add the crate to your <code>Cargo.toml</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="k">[dependencies]</span>
+<span class="n">miracle-plugin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
 
-<span class="nt">cursor</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">scale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.0</span><span class="w"> </span><span class="c1"># Sets the cursor scale to 4 times its original size.</span>
-<span class="w">    </span><span class="nt">focus_mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">click</span><span class="w"> </span><span class="c1"># Click a mouse button while hovering a window to focus</span>
-<span class="w">    </span><span class="nt">theme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">redglass</span><span class="w"> </span><span class="c1"># The theme of the cursor</span>
+<span class="k">[lib]</span>
+<span class="n">crate-type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;cdylib&quot;</span><span class="p">]</span>
 </code></pre></div>
-<h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nt">cursor</span><span class="p">:</span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">scale?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;float&gt;</span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">focus_mode?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;hover|click&gt;</span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">theme?</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;string&gt;</span>
+<p>Then compile to WebAssembly:</p>
+<div class="highlight"><pre><span></span><code>rustup<span class="w"> </span>target<span class="w"> </span>add<span class="w"> </span>wasm32-wasip1<span class="w">  </span><span class="c1"># This should be done once</span>
+cargo<span class="w"> </span>build<span class="w"> </span>--target<span class="w"> </span>wasm32-wasip2<span class="w"> </span>--release
 </code></pre></div>
-<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
-<h3 id="scale"><code>scale</code><a class="headerlink" href="#scale" title="Permanent link">&para;</a></h3>
-<dl>
-<dd>
-<p><strong>type:</strong> Float<br />
-<strong>Default:</strong> <code>1.0</code></p>
-<p>The scale multiplier of the cursor. A value of <code>2.0</code> makes the cursor twice its original size.</p>
-</dd>
-</dl>
-<h3 id="focus_mode"><code>focus_mode</code><a class="headerlink" href="#focus_mode" title="Permanent link">&para;</a></h3>
-<dl>
-<dd>
-<p><strong>type:</strong> <code>hover</code> | <code>click</code><br />
-<strong>Default:</strong> <code>hover</code></p>
-<p>How to focus windows with the cursor:</p>
+<p>The resulting <code>.wasm</code> file is what you load in your miracle-wm configuration.</p>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>hover</code> — Focus windows by hovering over them with the cursor</li>
-<li><code>click</code> — Click a mouse button while hovering a window to focus it</li>
+<li><strong><a href="https://crates.io/crates/miracle-plugin"><code>miracle-plugin</code> crate</a></strong> — the Miri plugin bundled with the crate serves as a reference implementation</li>
+<li><strong><a href="https://github.com/mattkae/dotfiles/tree/master/config/miracle-wm/matts-config">mattkae/dotfiles</a></strong> — a real-world plugin used in the author's personal setup</li>
 </ul>
-</dd>
-</dl>
-<h3 id="theme"><code>theme</code><a class="headerlink" href="#theme" title="Permanent link">&para;</a></h3>
-<dl>
-<dd>
-<p><strong>type:</strong> String<br />
-<strong>Default:</strong> System default</p>
-<p>The name of the cursor theme to use (e.g. <code>redglass</code>, <code>Adwaita</code>, <code>DMZ-White</code>).</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The cursor size is currently fixed at 24x24 regardless of the <code>scale</code> setting. This is a known limitation and will be addressed in a future release of Mir.</p>
-</div>
-<p>To find available themes on your system, look in the following directories:</p>
-<ul>
-<li><code>~/.local/share/icons/</code></li>
-<li><code>/usr/share/icons/</code></li>
-</ul>
-<p>Any directory in those locations that contains a <code>cursors/</code> subdirectory is a valid cursor theme. You can also list them with:</p>
-<div class="highlight"><pre><span></span><code>find<span class="w"> </span>/usr/share/icons<span class="w"> </span>~/.local/share/icons<span class="w"> </span>-maxdepth<span class="w"> </span><span class="m">2</span><span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;cursors&quot;</span><span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s|/cursors||&#39;</span>
-</code></pre></div>
-<h4 id="propagating-the-theme-to-x-clients">Propagating the theme to X clients<a class="headerlink" href="#propagating-the-theme-to-x-clients" title="Permanent link">&para;</a></h4>
-<p>miracle-wm sets the cursor theme for Wayland clients, but X clients (running via XWayland) read the theme from <code>~/.Xresources</code>. To keep them consistent, add the following to your <code>~/.Xresources</code>:</p>
-<div class="highlight"><pre><span></span><code>Xcursor.theme: redglass
-Xcursor.size: 24
-</code></pre></div>
-<p>Then reload it with:</p>
-<div class="highlight"><pre><span></span><code>xrdb<span class="w"> </span>-merge<span class="w"> </span>~/.Xresources
-</code></pre></div>
-</dd>
-</dl>
-<h2 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nt">cursor</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">scale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0</span>
-<span class="w">  </span><span class="nt">focus_mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hover</span>
-</code></pre></div>
+<h2 id="configuring-plugins">Configuring Plugins<a class="headerlink" href="#configuring-plugins" title="Permanent link">&para;</a></h2>
+<p>Plugins still need to be specified in your configuration before they are loaded into Miracle. See <a href="../configuration/plugins/">configuration/plugins.md</a> for how to load plugins and pass user data to them from your <code>miracle-wm/config.yaml</code>.</p>
 
 
 
@@ -3067,10 +2950,10 @@ Xcursor.size: 24
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.top", "content.tabs.link", "palette.toggle", "content.heading.permalink"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.top", "content.tabs.link", "palette.toggle", "content.heading.permalink"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
