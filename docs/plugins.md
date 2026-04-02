@@ -39,7 +39,7 @@ The resulting `.wasm` file is what you load in your miracle-wm configuration.
 
 ## Examples
 
-- **[`miracle-plugin` crate](https://crates.io/crates/miracle-plugin)** — the Miri plugin bundled with the crate serves as a reference implementation
+- **[`miri-plugin` crate](https://github.com/miracle-wm-org/miri-plugin)** — the Miri plugin that turns any Miracle compositor into a scrolling window manager
 - **[mattkae/dotfiles](https://github.com/mattkae/dotfiles/tree/master/config/miracle-wm/matts-config)** — a real-world plugin used in the author's personal setup
 
 ## Configuring Plugins
