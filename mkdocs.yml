@@ -113,6 +113,7 @@ nav:
       - ipc/events/binding.md
       - ipc/events/shutdown.md
       - ipc/events/tick.md
+  - Plugins: plugins.md
   - Display Configuration: configuration/display_configuration.md
   - Screen Sharing: screenshare.md
   - Mir's Built-in Configuration: configuration/mir.md
