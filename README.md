@@ -1,3 +1,7 @@
+
+> [!WARNING]
+> **This repository is deprecated.** Content has moved to https://github.com/miracle-wm-org/miracle-wm/tree/develop/wiki. This repo is no longer maintained.
+
 # miracle-wm-wiki
 This repository contains documentation for [miracle-wm](https://github.com/mattkae/miracle-wm).
 There will be a new release of this documentation every time that `miracle-wm` has a release.
